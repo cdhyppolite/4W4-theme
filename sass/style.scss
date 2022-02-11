@@ -1,0 +1,40 @@
+/*
+theme name: Lab3 Florence Lemieux Cayer
+*/
+
+
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+
+@import "elements/links";
+
+/* ---------------------------------------------------------
+COMPOSANTS
+--------------------------------------------------------- */
+
+@import "composants/cours";
+@import "composants/entete";
+@import "composants/navigation";
+@import "composants/footer";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+
+@import "layout/layout";

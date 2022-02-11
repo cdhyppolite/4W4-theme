@@ -1,0 +1,11 @@
+.site__footer {
+    font-family: $font__titre;
+    background: $color__background-footer;
+    padding: 15px;
+}
+
+.footer__titre,
+.footer__copyright {
+    color: $color__font-footer;
+    text-align: center;
+}

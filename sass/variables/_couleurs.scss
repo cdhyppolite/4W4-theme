@@ -1,0 +1,24 @@
+/* ---------------- BACKGROUND */
+
+$color__background-body: crimson;
+$color__background-main: #eee;
+$color__background-cours: #dbf2ff;
+$color__background-header: #17223d;
+$color__background-barre: linear-gradient(70deg, #bd2a69, crimson);
+// $color__background-barre: hsl(0, 100%, 76%);
+$color__background-footer: linear-gradient(0deg, #001e62, crimson);
+$color__background-link: hsl(0, 100%, 82%);
+$color__background-link-hover: hsl(0, 100%, 91%);
+
+/* ---------------- LIENS */
+
+$color__link: hsl(18, 27%, 38%);
+$color__link-hover: hsl(0, 0%, 100%);
+$color__link-visited: hsl(19, 29%, 28%);
+
+/* ---------------- FONT */
+
+$color__font-header: rgb(183, 255, 249);
+$color__font-main :black;
+$color__font-barre: rgb(255, 255, 255);
+$color__font-footer: rgb(255, 202, 188);
