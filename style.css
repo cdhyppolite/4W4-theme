@@ -546,6 +546,12 @@ COMPOSANTS
   align-items: center;
 }
 
+@media screen and (min-width: 576px) {
+  .site__header__utile {
+    flex-direction: row;
+  }
+}
+
 .icone {
   background-color: crimson;
   border-radius: 5px;
@@ -588,6 +594,10 @@ COMPOSANTS
   .recherche {
     width: 245px;
   }
+}
+
+.recherche label {
+  text-align: center;
 }
 
 .recherche__input {
