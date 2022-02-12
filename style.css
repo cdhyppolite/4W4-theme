@@ -599,16 +599,18 @@ COMPOSANTS
   }
 }
 
+@media screen and (max-width: 575px) {
+  #chk-burger:checked ~ .menu-principal-container .menu {
+    visibility: hidden;
+  }
+}
+
 #chk-burger {
   display: none;
 }
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
-}
-
-#chk-burger:checked ~ .menu-principal-container .menu {
-  height: 0px;
 }
 
 .menu-principal-container {
@@ -620,7 +622,6 @@ COMPOSANTS
   margin: 0;
   padding: 0;
   overflow: hidden;
-  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .menu-principal-container .menu-item {

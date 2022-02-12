@@ -9,6 +9,17 @@
     #burger {
         display: none;
     }
+    #chk-burger:checked~.menu-principal-container .menu {
+        // height: auto;
+        // visibility: visible;
+    }
+}
+
+@media screen and (max-width: $largeur__media-mobile) {
+    #chk-burger:checked~.menu-principal-container .menu {
+        // height: 0px;
+        visibility: hidden;
+    }
 }
 
 #chk-burger {
@@ -19,10 +30,6 @@
     transform: rotate(90deg);
 }
 
-#chk-burger:checked~.menu-principal-container .menu {
-    height: 0px;
-}
-
 .menu-principal-container {
     padding: 30px 0 0 0;
     // Ul
@@ -31,7 +38,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        transition: .4s cubic-bezier(.5, 0, .5, 1.7);
+        // transition: .4s cubic-bezier(.5, 0, .5, 1.7);
     }
     .menu-item {
         padding: 1rem;
