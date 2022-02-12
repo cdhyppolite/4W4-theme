@@ -14,14 +14,13 @@
         }
         &__titre {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: space-between;
             h1 {
                 font-size: clamp(.1rem, 2vw, 16rem);
                 font-family: $font__main;
                 // font-family: $font__titre;
-                margin-bottom: -20px;
-                margin-top: 5px;
+                margin: 5px 15px -20px 0;
             }
             h2 {
                 font-size: clamp(.6rem, 5vw, 2rem);
@@ -34,6 +33,7 @@
         &__utile {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
     }
     
@@ -68,10 +68,13 @@
     
     // ------------------------- Recherche
     .recherche {
+        width: 85%;
+        @media screen and (min-width: $largeur__media-tablette) {
+            width: 245px;
+        }
         // display: flex;
         // align-items: center;
         position: relative;
-        width: 245px;
         // text-align: center;
         // padding: 25px;
         & label {
@@ -80,15 +83,22 @@
             // font-weight: bold;
         }
         &__input {
-            // width: 70%;
+            width: 75%;
             // padding: 10px;
             border: 1px solid #bbb;
             border-radius: 3px;
             font-size: 0.85em;
             margin-left: 20px;
-            height: 30px;
+            height: 55px;
+            @media screen and (min-width: $largeur__media-tablette) {
+                height: 30px;
+            }
         }
         &__button {
+            height: 55px;
+            @media screen and (min-width: $largeur__media-tablette) {
+                height: auto;
+            }
             // overflow: hidden;
             position: absolute;
             border: none;
