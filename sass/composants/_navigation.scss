@@ -5,12 +5,22 @@
     transition-duration: 0.4s;
 }
 
+@media screen and (min-width: $largeur__media-tablette) {
+    #burger {
+        display: none;
+    }
+}
+
 #chk-burger {
     display: none;
 }
 
 #chk-burger:checked~#burger {
     transform: rotate(90deg);
+}
+
+#chk-burger:checked~.menu-principal-container .menu {
+    height: 0px;
 }
 
 .menu-principal-container {
@@ -20,6 +30,8 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        overflow: hidden;
+        transition: .4s cubic-bezier(.5, 0, .5, 1.7);
     }
     .menu-item {
         padding: 1rem;

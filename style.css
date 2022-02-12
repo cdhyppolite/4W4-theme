@@ -593,12 +593,22 @@ COMPOSANTS
   transition-duration: 0.4s;
 }
 
+@media screen and (min-width: 576px) {
+  #burger {
+    display: none;
+  }
+}
+
 #chk-burger {
   display: none;
 }
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
+}
+
+#chk-burger:checked ~ .menu-principal-container .menu {
+  height: 0px;
 }
 
 .menu-principal-container {
@@ -609,6 +619,8 @@ COMPOSANTS
   list-style: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .menu-principal-container .menu-item {
@@ -646,13 +658,13 @@ theme name: Lab 2 Lemieux Florence
 .site {
   display: grid;
   grid-template-columns: 350px auto;
-  grid-template-areas: "header header" "main main" "footer footer";
+  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .site {
     grid-template-columns: 350px auto;
-    grid-template-areas: "header header" "barre main" "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
   __barre {
     display: block;
@@ -667,7 +679,6 @@ theme name: Lab 2 Lemieux Florence
 .site__barre {
   grid-area: sidebar;
   background: linear-gradient(70deg, #bd2a69, crimson);
-  min-height: 1000px;
 }
 
 @media (max-width: 575px) {
