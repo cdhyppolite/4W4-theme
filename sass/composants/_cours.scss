@@ -30,15 +30,14 @@
     margin: 10px auto;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 95%;
     padding: 10px;
     overflow: hidden;
-}
-
-@media screen and (min-width: $largeur__media-desktop) {
-    .formation__cours {
-        margin: 10px;
-        width: 23%;
+    @media screen and (min-width: $largeur__media-tablette) {
+        width: 45%;
+    }
+    @media screen and (min-width: $largeur__media-desktop) {
+        width: 28%;
     }
 }
 

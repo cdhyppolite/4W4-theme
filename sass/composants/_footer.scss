@@ -2,6 +2,10 @@
     font-family: $font__titre;
     background: $color__background-footer;
     padding: 15px;
+    & a {
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 .footer__titre,

@@ -17,8 +17,7 @@
 
 @media screen and (max-width: $largeur__media-mobile) {
     #chk-burger:checked~.menu-principal-container .menu {
-        // height: 0px;
-        visibility: hidden;
+        height: 0px;
     }
 }
 

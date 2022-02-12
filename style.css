@@ -336,11 +336,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #001d61;
 }
 
 a:visited {
-  color: #5c4033;
+  color: crimson;
 }
 
 a:hover, a:focus, a:active {
@@ -390,15 +390,20 @@ COMPOSANTS
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 95%;
   padding: 10px;
   overflow: hidden;
 }
 
+@media screen and (min-width: 576px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .formation__cours {
-    margin: 10px;
-    width: 23%;
+    width: 28%;
   }
 }
 
@@ -565,7 +570,7 @@ COMPOSANTS
 }
 
 .icone__lien:hover {
-  background-color: #ffd1d1;
+  background-color: #d1e1ff;
 }
 
 .recherche {
@@ -601,7 +606,7 @@ COMPOSANTS
 
 @media screen and (max-width: 575px) {
   #chk-burger:checked ~ .menu-principal-container .menu {
-    visibility: hidden;
+    height: 0px;
   }
 }
 
@@ -626,17 +631,22 @@ COMPOSANTS
 
 .menu-principal-container .menu-item {
   padding: 1rem;
-  background-color: #ffa3a3;
+  background-color: #a3c3ff;
 }
 
 .menu-principal-container .menu-item:hover {
-  background-color: #ffd1d1;
+  background-color: #d1e1ff;
 }
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background: linear-gradient(0deg, #001e62, crimson);
   padding: 15px;
+}
+
+.site__footer a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer__titre,
