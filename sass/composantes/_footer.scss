@@ -1,0 +1,65 @@
+.site__footer {
+    font-family: $font__titre;
+    background-color: $color__background-footer;
+    padding: 15px;
+    color: $color__link;
+    &__info1 {
+        display: flex;
+        justify-content: center;
+        .elem {
+            width: 20%;
+            border: 1px solid #bbb;
+            &__h2 {
+                background-color: lightblue;
+            }
+            &__h3 {
+                background-color: lightgreen;
+            }
+            &__p {
+                background-color: lemonchiffon;
+            }
+        }
+    }
+    i {
+        opacity: 50%;
+    }
+    &__menu {
+        // .site__footer__menu
+        &__ul {
+            // .site__footer__menu__ul
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            .menu-item {
+                // .site__footer__menu__ul .menu-item
+                margin: 10px 5px;
+                a {
+                    // .site__footer__menu__ul .menu-item a
+                    display: flex;
+                    align-items: center;
+                    padding: 3px;
+                    svg {
+                        // .site__footer__menu__ul .menu-item a svg
+                        color: $color__link__footer;
+                        // color: gold;
+                    }
+                    &:hover {
+                        svg {
+                            color: $color__link__footer-hover;
+                        }
+                    }
+                    &:visited {
+                        color: $color__link__footer-visited;
+                    }
+                }
+            }
+        }
+    }
+    .footer__titre,
+    .footer__presentation,
+    .footer__author,
+    .footer__date {
+        color: $color__background-footer;
+        text-align: center;
+    }
+}
