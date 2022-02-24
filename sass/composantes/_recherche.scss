@@ -1,0 +1,100 @@
+.util {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: $largeur__media--tablette) {
+        min-width: 400px;
+        align-items: flex-end;
+        width: 25%;
+        flex-direction: row;
+        .icone {
+            margin-bottom: 0px;
+            margin: 0 auto;
+        }
+        .recherche {
+            margin-bottom: 0;
+            width: auto;
+            margin-right: 20px;
+        }
+    }
+    @media screen and (min-width: $largeur__media--desktop) {
+        flex-direction: row;
+    }
+}
+
+.icone {
+    /*display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    &__lien {
+        margin-right: 0.1rem;
+        svg {
+            color: $color__texte__icones;
+        }
+    }*/
+    /*******************/
+    background-color: $color__background-header;
+    border-radius: 5px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    &__lien {
+        padding: 1px;
+        background-color: $color__background-body;
+        width: 55px;
+        display: flex;
+        justify-content: center;
+        transition-duration: 0.4s;
+        svg {
+            color: white;
+            text-align: center;
+        }
+        svg:hover {
+            color: $color__background-header;
+        }
+    }
+    &__lien:hover {
+        background-color: $color__background-link-hover;
+    }
+}
+
+.recherche {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    &__input {
+        height: 23px;
+        border: none;
+        outline: none;
+        font-style: italic;
+        background-color: whitesmoke;
+        width: 100%;
+        border-radius: 5px;
+    }
+    &__bouton {
+        padding: 0;
+        background-color: $color__background-footer;
+        top: 0;
+        right: 0;
+        width: 23px;
+        height: 23px;
+        outline: none;
+        border: none;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        svg {
+            color: $color__texte__recherche;
+            width: 100%;
+            height: auto;
+        }
+    }
+}

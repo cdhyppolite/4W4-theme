@@ -1,5 +1,5 @@
 /*
-Theme name: EX1 - Carl-David Hyppolite
+Theme name: EX2 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
 Author URI: https://github.com/cdhyppolite/4W4-theme
 Description: Exercice dans le cadre du cours 4W4
@@ -32,13 +32,23 @@ INITIALISATION
 @import "elements/links";
 
 /* ---------------------------------------------------------
-COMPOSANTS
+COMPOSANTES
 --------------------------------------------------------- */
 
-@import "composants/cours";
-@import "composants/entete";
-@import "composants/navigation";
-@import "composants/footer";
+@import "composantes/contenu";
+@import "composantes/cours-border";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/footer";
+@import "composantes/404";
+@import "composantes/single-post";
+@import "composantes/recherche";
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+
+@import "animation/entete";
 
 /* ---------------------------------------------------------
 LAYOUT

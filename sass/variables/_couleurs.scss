@@ -1,24 +1,42 @@
 /* ---------------- BACKGROUND */
 
-$color__background-body: crimson;
-$color__background-main: #eee;
-$color__background-cours: #dbf2ff;
-$color__background-header: #17223d;
-$color__background-barre: linear-gradient(70deg, #bd2a69, crimson);
-// $color__background-barre: hsl(0, 100%, 76%);
-$color__background-footer: linear-gradient(0deg, #001e62, crimson);
-$color__background-link: hsl(219, 100%, 82%);
-$color__background-link-hover: hsl(219, 100%, 91%);
+$color__background-body: hsl(30, 45%, 90%);
+$color__background-main: hsl(30, 50%, 89%);
+$color__background-cours: hsl(30, 100%, 91%);
+$color__background-header: hsl(30, 66%, 66%);
+$color__background-barre: hsl(30, 78%, 9%);
+$color__background-footer: hsl(30, 79%, 13%);
+$color__background-link: hsl(30, 63%, 70%);
+$color__background-link-hover: hsl(30, 64%, 44%);
 
 /* ---------------- LIENS */
 
-$color__link: hsl(222, 100%, 19%);
+$color__link: hsl(30, 27%, 38%);
 $color__link-hover: hsl(0, 0%, 100%);
-$color__link-visited: crimson;
+$color__link-visited: hsl(30, 29%, 28%);
+
+/* ---------------- LIENS FOOTER */
+
+$color__link__footer: black; //hsl(34, 91%, 50%);
+$color__link__footer-hover: orange;
+$color__link__footer-visited: gold;
+
+/* ---------------- LIENS HEADER titre principal du site */
+
+$color__link__header: hsl(54, 100%, 50%);
+$color__link__header-hover: hsl(34, 63%, 72%);
+$color__link__header-visited: gold;
 
 /* ---------------- FONT */
 
-$color__font-header: rgb(183, 255, 249);
-$color__font-main :black;
-$color__font-barre: rgb(255, 255, 255);
-$color__font-footer: rgb(255, 202, 188);
+$color__font-header: hsl(34, 91%, 78%);
+$color__font-main :rgb(68, 57, 54);
+$color__font-barre: hsl(0, 0%, 100%);
+$color__font-footer: hsl(30, 100%, 87%);
+
+/****************Recherche*******/
+
+$color__texte__recherche: rgb(202, 209, 212);
+$color__texte__icones: rgb(167, 173, 181);
+$color__texte__defaut: rgb(247, 247, 247);
+$color__colorbackground-recherche: rgb(95, 106, 117);

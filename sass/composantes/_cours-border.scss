@@ -1,0 +1,66 @@
+.a-faire {
+    border: 4px solid #FF8F00;
+}
+
+.en-cours {
+    border: 4px solid #01579B;
+}
+
+.reussi {
+    border: 4px solid #1B5E20;
+}
+
+.echoue {
+    border: 4px solid #D32F2F;
+}
+
+.propose,
+.choisi {
+    border: 4px solid #7E57C2;
+}
+
+// etat
+.cours_etat {
+    padding: 3px 5px;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    width: clamp(3.5rem, 5vw, 6rem);
+}
+
+.a-faire .cours_etat {
+    background-color: #FF8F00;
+    &::before {
+        content: "À faire";
+    }
+}
+
+.en-cours .cours_etat {
+    background-color: #01579B;
+    &::before {
+        content: "En cours";
+    }
+}
+
+.reussi .cours_etat {
+    background-color: #1B5E20;
+    &::before {
+        content: "Réussi";
+    }
+}
+
+.echoue .cours_etat {
+    background-color: #D32F2F;
+    &::before {
+        content: "Échoué";
+    }
+}
+
+.propose .cours_etat,
+.choisi .cours_etat {
+    background-color: #7E57C2;
+    &::before {
+        content: "Choisi";
+    }
+}
