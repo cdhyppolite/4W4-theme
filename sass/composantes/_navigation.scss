@@ -19,20 +19,11 @@
     position: relative;
     overflow: hidden;
     transition: .4s cubic-bezier(.5, 0, .5, 1.7);
-    @media screen and (max-width: $largeur__media--mobile) {
-        height: 0px;
-    }
 }
 
 #chk-burger {
     display: none;
 }
-
-#chk-burger:checked~.menu-principal-container {
-    height: 450px;
-}
-
-.menu-principal-container {}
 
 .menu {
     list-style-type: none;
@@ -60,5 +51,17 @@
     }
     .menu-principal-container {
         display: block;
+    }
+    #chk-burger:checked~.menu-principal-container {
+        // height: auto;
+    }
+}
+
+@media screen and (max-width: $largeur__media--mobile) {
+    .menu-principal-container {
+        height: 0px;
+    }
+    #chk-burger:checked~.menu-principal-container {
+        height: 450px;
     }
 }

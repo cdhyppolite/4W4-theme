@@ -2,7 +2,7 @@
 <main class="principal">
     <h1>category-cours.php</h1>
     <section class="formation">
-        <h2 class="formation__titre">Liste des cours du programme TIM</h2>
+        <h2 class="formation__titre">Liste de cours - Technique d'intégration multimédia</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
@@ -24,7 +24,7 @@
                     //-----------------------------
                 ?>
                 
-                <article class="formation__cours lol <?= $etat; ?>">
+                <article class="formation__cours <?= $etat; ?>">
                     <?php the_post_thumbnail('thumbnail'); ?>
                     <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
                     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>

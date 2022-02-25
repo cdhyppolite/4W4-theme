@@ -1,20 +1,44 @@
 .site__header {
-    background-color: $color__background-header;
-    color: $color__font-header;
-    padding-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    @media screen and (min-width: $largeur__media--tablette) {
+    @media screen and (min-width: $largeur__media-tablette) {
         flex-direction: row;
     }
-    .header__titre {
-        font-size: 3em;
-        font-family: $font__titre;
+    a {
+        text-decoration: none;
     }
-    .header__description {
-        font-size: 1.5rem;
-        font-family: $font__main;
+    &__titre {
+        // display: flex;
+        display: none;
+        align-items: center;
+        margin: 15px 0 5px 0;
+        color: #F7F1F0;
+        @media screen and (min-width: $largeur__media-tablette) {
+            margin: 0;
+        }
+        h1 {
+            text-align: right;
+            padding: 0 clamp(.5rem, 2vw, 7rem) 0 15%;
+            font-size: clamp(2.5rem, 4vw, 6rem);
+            font-family: 'Ubuntu';
+            color: #A15C38;
+            @media screen and (min-width: $largeur__media-tablette) {
+                margin-left: 20px;
+                text-align: left;
+                padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
+            }
+        }
+        h2 {
+            font-size: clamp(1.2rem, 2vw, 4rem);
+            padding: 0 15% 0 clamp(.5rem, 2vw, 7rem);
+            font-family: 'Ubuntu';
+            @media screen and (min-width: $largeur__media-tablette) {
+                padding: 0 1.5rem 0 0;
+            }
+            @media screen and (min-width:$largeur__media-desktop) {
+                padding: 0;
+            }
+        }
     }
 }

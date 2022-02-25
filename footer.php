@@ -1,6 +1,11 @@
+<?php
+    $date = new DateTime();
+    $date->setTimezone(new DateTimeZone('America/Detroit'));
+    $fdate = $date->format('d-M-Y à H:i');
+?>
 <footer class="site__footer">
-    <h2 class="footer__titre">Le beau footer</h2>
-    <p class="footer__presentation">Un site web fait par une élève du TIM à l'aide de Wordpress.</p>
+    <h2 class="footer__titre">Page généré le: <?= $fdate; ?></h2>
+    <p class="footer__presentation">Prototype de site web Wordpress fait dans le cours 4W4</p>
     <h3 class="footer__author"><i>Version original Fait par Florence Lemieux Cayer</i> - Modifié par Carl-David Hyppolite</h3>
     <p class="footer__presentation elem elem__p">&copy; <?php echo date("Y"); ?> - TIM Maisonneuve - Tous droits réservés</p>
 <?php 
