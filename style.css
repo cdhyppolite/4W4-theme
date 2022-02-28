@@ -388,7 +388,6 @@ a:hover, a:active {
 
 .header__titre a {
   color: #ffe600;
-  text-decoration: none;
 }
 
 .header__titre a:visited {
@@ -434,7 +433,7 @@ COMPOSANTES
   font-size: 2rem;
   color: #A15C38;
   margin: 10px 0px;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
 }
 
@@ -475,6 +474,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   color: #443936;
   margin: 5px 0px;
 }
@@ -624,81 +624,6 @@ COMPOSANTES
   text-decoration: none;
 }
 
-.util {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-@media screen and (min-width: 576px) {
-  .util {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 44.4%;
-  }
-}
-
-.icone {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-right: 5px;
-}
-
-.icone a {
-  text-decoration: none;
-}
-
-.icone__lien svg {
-  margin: 0px 2px;
-}
-
-@media screen and (min-width: 576px) {
-  .icone__lien svg {
-    margin: 1px;
-  }
-}
-
-.recherche {
-  position: relative;
-  border: none;
-}
-
-.recherche__input {
-  width: 96vw;
-  font-family: 'Roboto';
-  height: 35px;
-  border: none;
-  outline: none;
-  background-color: #3f3936;
-  color: #000000;
-}
-
-@media screen and (min-width: 576px) {
-  .recherche__input {
-    width: 250px;
-  }
-}
-
-.recherche__bouton {
-  background-color: #3f3936;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.recherche__bouton:hover {
-  cursor: pointer;
-}
-
 #burger {
   position: absolute;
   transition-duration: 0.4s;
@@ -769,7 +694,7 @@ COMPOSANTES
 }
 
 .site__footer {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #3b2107;
   padding: 15px;
 }
@@ -819,12 +744,12 @@ COMPOSANTES
 
 .erreur404 h1 {
   font-size: 3rem;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   color: #3b2107;
 }
 
 .err {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 11rem;
   position: absolute;
   left: 20%;
@@ -839,7 +764,7 @@ COMPOSANTES
 }
 
 .err2 {
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 11rem;
   position: absolute;
   left: 68%;
@@ -864,7 +789,7 @@ COMPOSANTES
   padding: 15px;
   background-color: #2622201f;
   color: #3b2107;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
@@ -874,62 +799,108 @@ COMPOSANTES
   display: flex;
   font-size: 1rem;
   color: #262220a1;
-  font-family: "Roboto";
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
   font-weight: normal;
   text-align: justify;
   padding: 20px 45px 20px 0px;
 }
 
+.util {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .util {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 44.4%;
+  }
+}
+
+.icone {
+  background-color: #f1e6da;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.icone a {
+  text-decoration: none;
+}
+
+.icone__lien {
+  background-color: #f1e6da;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.4s;
+}
+
+.icone__lien svg {
+  margin: 0px 2px;
+}
+
+@media screen and (min-width: 576px) {
+  .icone__lien svg {
+    margin: 1px;
+  }
+}
+
+.icone__lien svg:hover {
+  color: #e2a86f;
+}
+
+.icone__lien:hover {
+  background-color: #b87028;
+}
+
+.recherche {
+  position: relative;
+  border: none;
+}
+
+.recherche__input {
+  width: 96vw;
+  font-family: 'Roboto';
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #3f3936;
+  color: #000000;
+}
+
+@media screen and (min-width: 576px) {
+  .recherche__input {
+    width: 250px;
+  }
+}
+
+.recherche__bouton {
+  background-color: #3f3936;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recherche__bouton:hover {
+  cursor: pointer;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
-.animation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.animation__bloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #3b2107;
-  color: #fff;
-  font-size: 3rem;
-  animation: anim-entete 1s forwards;
-}
-
-.animation__bloc:nth-child(1) {
-  animation: anim-entete 1s 0s forwards;
-}
-
-.animation__bloc:nth-child(2) {
-  animation: anim-entete 1s 0.25s forwards;
-}
-
-.animation__bloc:nth-child(3) {
-  animation: anim-entete 1s 0.5s forwards;
-}
-
-.animation__bloc:nth-child(4) {
-  animation: anim-entete 1s 0.75s forwards;
-}
-
-.animation__bloc:nth-child(5) {
-  animation: anim-entete 1s 1s forwards;
-}
-
-@keyframes anim-entete {
-  0% {
-    transform: translateY(-100vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -938,7 +909,7 @@ theme name: Lab 2 Lemieux Florence
 */
 .site {
   background-color: #f1e6da;
-  font-family: "Roboto";
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 .site__header {

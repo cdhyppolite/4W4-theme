@@ -1,47 +1,45 @@
+// Ajustement de la barre de recherche et des icônes du header
 .util {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
     @media screen and (min-width: $largeur__media--tablette) {
-        min-width: 400px;
-        align-items: flex-end;
-        // width: 25%;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-end;
         width: 44.4%;
-        flex-direction: row;
-        .icone {
-            margin-bottom: 0px;
-            margin: 0 auto;
-        }
-        .recherche {
-            margin-bottom: 0;
-            width: auto;
-            margin-right: 20px;
-        }
-    }
-    @media screen and (min-width: $largeur__media--desktop) {
-        flex-direction: row;
     }
 }
 
 .icone {
+    background-color: $color__background-body;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-right: 5px;
+    overflow: hidden;
     a {
         text-decoration: none;
     }
     &__lien {
+        background-color: $color__background-body;
+        display: flex;
+        justify-content: center;
+        transition-duration: 0.4s;
         svg {
             margin: 0px 2px;
             @media screen and (min-width: $largeur__media--tablette) {
                 margin: 1px;
             }
         }
-    } // .icone__lien svg {}
+        svg:hover {
+            color: $color__background-header;
+        }
+    }
+    &__lien:hover {
+        background-color: $color__background-link-hover;
+    }
 }
 
 .recherche {
@@ -74,5 +72,5 @@
         &:hover {
             cursor: pointer;
         }
-    } // .recherche__bouton {}
+    }
 }
