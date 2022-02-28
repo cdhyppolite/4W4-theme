@@ -347,11 +347,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b6147;
+  color: #477b5d;
 }
 
 a:visited {
-  color: #5c4733;
+  color: #335c44;
 }
 
 a:hover, a:focus, a:active {
@@ -371,11 +371,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: gold;
+  color: #00ff6a;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: orange;
+  color: #15ff00;
 }
 
 .site__footer a:focus {
@@ -387,15 +387,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #ffe600;
+  color: #00ff91;
 }
 
 .header__titre a:visited {
-  color: gold;
+  color: #00ff6a;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #e5be8b;
+  color: #8be5b6;
 }
 
 .header__titre a:focus {
@@ -412,14 +412,14 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #f1e3d5;
+  background-color: #d5f1e1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #f1e3d5;
+  background-color: #d5f1e1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -431,7 +431,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #A15C38;
+  color: #39a259;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -444,7 +444,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffe8d1;
+  background-color: #d1ffe4;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 25px;
   margin: 10px;
@@ -479,14 +479,15 @@ COMPOSANTES
   margin: 5px 0px;
 }
 
-.cours__sigle {
-  font-size: 1.2rem;
-  color: #8a5353;
-  margin: 0;
-}
-
 .cours__description {
   font-size: 1rem;
+}
+
+.cours__code {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #28b864;
+  font-weight: bold;
 }
 
 .a-faire {
@@ -643,7 +644,6 @@ COMPOSANTES
 }
 
 .menu-principal-container {
-  top: 35px;
   position: relative;
   overflow: hidden;
   transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
@@ -668,25 +668,23 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #e3b382;
+  background-color: #82e3aa;
 }
 
 .menu-item a:hover {
-  background-color: #b87028;
+  background-color: #28b864;
 }
 
 @media screen and (min-width: 576px) {
   #burger {
     display: none;
   }
-  .menu-principal-container {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 575px) {
   .menu-principal-container {
     height: 0px;
+    top: 35px;
   }
   #chk-burger:checked ~ .menu-principal-container {
     height: 450px;
@@ -695,7 +693,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #3b2107;
+  background-color: #073b1d;
   padding: 15px;
 }
 
@@ -724,13 +722,13 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a:hover svg {
-  color: orange;
+  color: #15ff00;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffdebd;
+  color: #bdffd8;
   text-align: center;
 }
 
@@ -738,14 +736,14 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #ffe600;
+  color: #00ff91;
   margin: 0 auto;
 }
 
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #3b2107;
+  color: #073b1d;
 }
 
 .err {
@@ -772,7 +770,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #3b2107;
+  color: #073b1d;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -787,8 +785,7 @@ COMPOSANTES
   padding: 0 20px;
   border-radius: 25px;
   padding: 15px;
-  background-color: #2622201f;
-  color: #3b2107;
+  color: #073b1d;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -821,7 +818,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #f1e6da;
+  background-color: #daf1e4;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -835,7 +832,7 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #f1e6da;
+  background-color: #daf1e4;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
@@ -852,11 +849,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #e2a86f;
+  color: #6fe29f;
 }
 
 .icone__lien:hover {
-  background-color: #b87028;
+  background-color: #28b864;
 }
 
 .recherche {
@@ -898,6 +895,10 @@ COMPOSANTES
   cursor: pointer;
 }
 
+.mot_recherche {
+  color: #39a259;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -908,28 +909,28 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #f1e6da;
+  background-color: #daf1e4;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 .site__header {
   grid-area: header;
-  background-color: #e2a86f;
+  background-color: #6fe29f;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #291705;
+  background-color: #052914;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #f1e3d5;
+  background-color: #d5f1e1;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #3b2107;
+  background-color: #073b1d;
 }
 
 .site {
@@ -941,8 +942,8 @@ theme name: Lab 2 Lemieux Florence
 
 @media screen and (min-width: 576px) {
   .site {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-columns: auto 300px;
+    grid-template-areas: "header header" " main sidebar" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

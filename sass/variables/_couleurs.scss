@@ -1,39 +1,39 @@
 /* ---------------- BACKGROUND */
 
-$color__background-body: hsl(30, 45%, 90%);
-$color__background-main: hsl(30, 50%, 89%);
-$color__background-cours: hsl(30, 100%, 91%);
-$color__background-header: hsl(30, 66%, 66%);
-$color__background-barre: hsl(30, 78%, 9%);
-$color__background-footer: hsl(30, 79%, 13%);
-$color__background-link: hsl(30, 63%, 70%);
-$color__background-link-hover: hsl(30, 64%, 44%);
+$color__background-body: hsl(145, 45%, 90%);
+$color__background-main: hsl(145, 50%, 89%);
+$color__background-cours: hsl(145, 100%, 91%);
+$color__background-header: hsl(145, 66%, 66%);
+$color__background-barre: hsl(145, 78%, 9%);
+$color__background-footer: hsl(145, 79%, 13%);
+$color__background-link: hsl(145, 63%, 70%);
+$color__background-link-hover: hsl(145, 64%, 44%);
 
 /* ---------------- LIENS */
 
-$color__link: hsl(30, 27%, 38%);
+$color__link: hsl(145, 27%, 38%);
 $color__link-hover: hsl(0, 0%, 100%);
-$color__link-visited: hsl(30, 29%, 28%);
-$color__cours-titre: #A15C38;
+$color__link-visited: hsl(145, 29%, 28%);
+$color__cours-titre: hsl(138, 48%, 43%);
 
 /* ---------------- LIENS FOOTER */
 
 $color__link__footer: black; //hsl(34, 91%, 50%);
-$color__link__footer-hover: orange;
-$color__link__footer-visited: gold;
+$color__link__footer-hover: hsl(115, 100%, 50%);
+$color__link__footer-visited: hsl(145, 100%, 50%);
 
 /* ---------------- LIENS HEADER titre principal du site */
 
-$color__link__header: hsl(54, 100%, 50%);
-$color__link__header-hover: hsl(34, 63%, 72%);
-$color__link__header-visited: gold;
+$color__link__header: hsl(154, 100%, 50%);
+$color__link__header-hover: hsl(149, 63%, 72%);
+$color__link__header-visited: hsl(145, 100%, 50%);
 
 /* ---------------- FONT */
 
-$color__font-header: hsl(34, 91%, 78%);
+$color__font-header: hsl(149, 91%, 78%);
 $color__font-main :rgb(68, 57, 54);
 $color__font-barre: hsl(0, 0%, 100%);
-$color__font-footer: hsl(30, 100%, 87%);
+$color__font-footer: hsl(145, 100%, 87%);
 
 /****************Recherche*******/
 

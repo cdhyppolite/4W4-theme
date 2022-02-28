@@ -3,7 +3,7 @@ theme name: Lab 2 Lemieux Florence
 */
 
 .site {
-    //background-color: rgb(122, 176, 207);
+    // background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
 }
@@ -37,7 +37,7 @@ theme name: Lab 2 Lemieux Florence
 
 @media screen and (min-width: $largeur__media--tablette) {
     .site {
-        grid-template-columns: ($size__site-barre) auto;
-        grid-template-areas: "header header" "sidebar main" "footer footer";
+        grid-template-columns: auto ($size__site-barre);
+        grid-template-areas: "header header" " main sidebar" "footer footer";
     }
 }
