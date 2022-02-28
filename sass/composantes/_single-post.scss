@@ -1,7 +1,21 @@
-.cours {
-    &__titre {}
-    section {
-        img {}
-        p {}
+.article {
+    margin: 20px;
+    padding: 0 20px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #2622201f;
+    color: $color__background-footer;
+    font-family: $font__titre;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    &__contenu {
+        display: flex;
+        font-size: 1rem;
+        color: #262220a1;
+        font-family: $font__main;
+        font-weight: normal;
+        text-align: justify;
+        padding: 20px 45px 20px 0px;
     }
 }

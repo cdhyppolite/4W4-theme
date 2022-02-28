@@ -2,19 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (min-width: $largeur__media-tablette) {
+    @media screen and (min-width: $largeur__media--tablette) {
         flex-direction: row;
     }
-    a {
-        text-decoration: none;
-    }
     &__titre {
-        // display: flex;
-        display: none;
+        display: flex;
         align-items: center;
         margin: 15px 0 5px 0;
         color: #F7F1F0;
-        @media screen and (min-width: $largeur__media-tablette) {
+        @media screen and (min-width: $largeur__media--tablette) {
             margin: 0;
         }
         h1 {
@@ -23,7 +19,7 @@
             font-size: clamp(2.5rem, 4vw, 6rem);
             font-family: 'Ubuntu';
             color: #A15C38;
-            @media screen and (min-width: $largeur__media-tablette) {
+            @media screen and (min-width: $largeur__media--tablette) {
                 margin-left: 20px;
                 text-align: left;
                 padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
@@ -33,12 +29,79 @@
             font-size: clamp(1.2rem, 2vw, 4rem);
             padding: 0 15% 0 clamp(.5rem, 2vw, 7rem);
             font-family: 'Ubuntu';
-            @media screen and (min-width: $largeur__media-tablette) {
+            @media screen and (min-width: $largeur__media--tablette) {
                 padding: 0 1.5rem 0 0;
             }
-            @media screen and (min-width:$largeur__media-desktop) {
+            @media screen and (min-width:$largeur__media--desktop) {
                 padding: 0;
             }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+// Ajustement de la barre de recherche et des icônes du header
+.util {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media screen and (min-width: $largeur__media--tablette) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 44.4%;
+    }
+}
+
+.icone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5px;
+    a {
+        text-decoration: none;
+    }
+    &__lien {
+        svg {
+            margin: 0px 2px;
+            @media screen and (min-width: $largeur__media--tablette) {
+                margin: 1px;
+            }
+        }
+    } // .icone__lien svg {}
+}
+
+.recherche {
+    position: relative;
+    border: none;
+    &__input {
+        width: 96vw;
+        font-family: 'Roboto';
+        height: 35px;
+        border: none;
+        outline: none;
+        background-color: #3f3936;
+        color: #000000;
+        @media screen and (min-width: $largeur__media--tablette) {
+            width: 250px;
+        }
+    } // .recherche__input {}
+    &__bouton {
+        background-color: #3f3936;
+        top: 0;
+        right: 0;
+        border: none;
+        outline: none;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            cursor: pointer;
         }
     }
 }

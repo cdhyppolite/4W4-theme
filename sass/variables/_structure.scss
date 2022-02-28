@@ -2,6 +2,9 @@ $size__site-barre: 300px;
 
 /* ------------------------------------- points de rupture des media queries */
 
-$largeur__media--mobile: 799px;
-$largeur__media--tablette: 800px;
-$largeur__media--desktop: 1100px;
+$largeur__media--mobile: 575px;
+$largeur__media--tablette: 576px;
+$largeur__media--desktop: 992px;
+// $largeur__media--mobile: 799px;
+// $largeur__media--tablette: 800px;
+// $largeur__media--desktop: 1100px;

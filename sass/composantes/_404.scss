@@ -1,13 +1,18 @@
-.mainbox {
+.erreur404 {
     height: 600px;
     width: 600px;
     position: relative;
     color: $color__link__header;
     margin: 0 auto;
+    h1 {
+        font-size: 3rem;
+        font-family: $font__titre;
+        color: $color__background-footer;
+    }
 }
 
 .err {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $font__titre;
     font-size: 11rem;
     position: absolute;
     left: 20%;
@@ -22,7 +27,7 @@
 }
 
 .err2 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $font__titre;
     font-size: 11rem;
     position: absolute;
     left: 68%;

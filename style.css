@@ -410,6 +410,14 @@ a:hover, a:active {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+.principal {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #f1e3d5;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+}
+
 .site__main {
   padding: 10px 15px;
   background-color: #f1e3d5;
@@ -433,6 +441,7 @@ COMPOSANTES
 .formation__liste {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .formation__cours {
@@ -447,13 +456,13 @@ COMPOSANTES
   padding: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 576px) {
   .formation__cours {
     width: 45%;
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
   .formation__cours {
     width: 30%;
   }
@@ -553,29 +562,141 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #e2a86f;
-  color: #face94;
-  padding-left: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 576px) {
   .site__header {
     flex-direction: row;
   }
 }
 
-.site__header .header__titre {
-  font-size: 3em;
-  font-family: "Ubuntu";
+.site__header__titre {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 5px 0;
+  color: #F7F1F0;
 }
 
-.site__header .header__description {
-  font-size: 1.5rem;
-  font-family: "Roboto";
+@media screen and (min-width: 576px) {
+  .site__header__titre {
+    margin: 0;
+  }
+}
+
+.site__header__titre h1 {
+  text-align: right;
+  padding: 0 clamp(0.5rem, 2vw, 7rem) 0 15%;
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-family: 'Ubuntu';
+  color: #A15C38;
+}
+
+@media screen and (min-width: 576px) {
+  .site__header__titre h1 {
+    margin-left: 20px;
+    text-align: left;
+    padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
+  }
+}
+
+.site__header__titre h2 {
+  font-size: clamp(1.2rem, 2vw, 4rem);
+  padding: 0 15% 0 clamp(0.5rem, 2vw, 7rem);
+  font-family: 'Ubuntu';
+}
+
+@media screen and (min-width: 576px) {
+  .site__header__titre h2 {
+    padding: 0 1.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .site__header__titre h2 {
+    padding: 0;
+  }
+}
+
+.site__header__titre a {
+  text-decoration: none;
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .util {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 44.4%;
+  }
+}
+
+.icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.icone a {
+  text-decoration: none;
+}
+
+.icone__lien svg {
+  margin: 0px 2px;
+}
+
+@media screen and (min-width: 576px) {
+  .icone__lien svg {
+    margin: 1px;
+  }
+}
+
+.recherche {
+  position: relative;
+  border: none;
+}
+
+.recherche__input {
+  width: 96vw;
+  font-family: 'Roboto';
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #3f3936;
+  color: #000000;
+}
+
+@media screen and (min-width: 576px) {
+  .recherche__input {
+    width: 250px;
+  }
+}
+
+.recherche__bouton {
+  background-color: #3f3936;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recherche__bouton:hover {
+  cursor: pointer;
 }
 
 #burger {
@@ -629,7 +750,7 @@ COMPOSANTES
   background-color: #b87028;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 576px) {
   #burger {
     display: none;
   }
@@ -638,7 +759,7 @@ COMPOSANTES
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 575px) {
   .menu-principal-container {
     height: 0px;
   }
@@ -688,7 +809,7 @@ COMPOSANTES
   text-align: center;
 }
 
-.mainbox {
+.erreur404 {
   height: 600px;
   width: 600px;
   position: relative;
@@ -696,8 +817,14 @@ COMPOSANTES
   margin: 0 auto;
 }
 
+.erreur404 h1 {
+  font-size: 3rem;
+  font-family: "Ubuntu";
+  color: #3b2107;
+}
+
 .err {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Ubuntu";
   font-size: 11rem;
   position: absolute;
   left: 20%;
@@ -712,7 +839,7 @@ COMPOSANTES
 }
 
 .err2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Ubuntu";
   font-size: 11rem;
   position: absolute;
   left: 68%;
@@ -730,118 +857,27 @@ COMPOSANTES
   width: 75%;
 }
 
-.util {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 800px) {
-  .util {
-    min-width: 400px;
-    align-items: flex-end;
-    width: 25%;
-    flex-direction: row;
-  }
-  .util .icone {
-    margin-bottom: 0px;
-    margin: 0 auto;
-  }
-  .util .recherche {
-    margin-bottom: 0;
-    width: auto;
-    margin-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .util {
-    flex-direction: row;
-  }
-}
-
-.icone {
-  /*display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 10px;
-    &__lien {
-        margin-right: 0.1rem;
-        svg {
-            color: $color__texte__icones;
-        }
-    }*/
-  /*******************/
-  background-color: #e2a86f;
-  border-radius: 5px;
-  width: 280px;
-  margin-bottom: 10px;
-  margin-right: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.icone__lien {
-  padding: 1px;
-  background-color: #f1e6da;
-  width: 55px;
-  display: flex;
-  justify-content: center;
-  transition-duration: 0.4s;
-}
-
-.icone__lien svg {
-  color: white;
+.article {
+  margin: 20px;
+  padding: 0 20px;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #2622201f;
+  color: #3b2107;
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
 }
 
-.icone__lien svg:hover {
-  color: #e2a86f;
-}
-
-.icone__lien:hover {
-  background-color: #b87028;
-}
-
-.recherche {
-  position: relative;
-  width: 80%;
-  margin-bottom: 20px;
-}
-
-.recherche__input {
-  height: 23px;
-  border: none;
-  outline: none;
-  font-style: italic;
-  background-color: whitesmoke;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.recherche__bouton {
-  padding: 0;
-  background-color: #3b2107;
-  top: 0;
-  right: 0;
-  width: 23px;
-  height: 23px;
-  outline: none;
-  border: none;
-  position: absolute;
+.article__contenu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.recherche__bouton svg {
-  color: #cad1d4;
-  width: 100%;
-  height: auto;
+  font-size: 1rem;
+  color: #262220a1;
+  font-family: "Roboto";
+  font-weight: normal;
+  text-align: justify;
+  padding: 20px 45px 20px 0px;
 }
 
 /* ---------------------------------------------------------
@@ -932,7 +968,7 @@ theme name: Lab 2 Lemieux Florence
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 576px) {
   .site {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";

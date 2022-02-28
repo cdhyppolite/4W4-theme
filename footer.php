@@ -4,6 +4,7 @@
     $fdate = $date->format('d-M-Y à H:i');
 ?>
 <footer class="site__footer">
+    <!-- <h2>-<?= get_userdata($user_id); ?>-</h2> -->
     <h2 class="footer__titre">Page généré le: <?= $fdate; ?></h2>
     <p class="footer__presentation">Prototype de site web Wordpress fait dans le cours 4W4</p>
     <h3 class="footer__author"><i>Version original Fait par Florence Lemieux Cayer</i> - Modifié par Carl-David Hyppolite</h3>
