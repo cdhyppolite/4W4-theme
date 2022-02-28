@@ -444,6 +444,8 @@ COMPOSANTES
 }
 
 .formation__cours {
+  background-position: center;
+  background-size: auto 100%;
   background-color: #d1ffe4;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 25px;
@@ -780,7 +782,10 @@ COMPOSANTES
   width: 75%;
 }
 
-.article {
+.article__seul {
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
   margin: 20px;
   padding: 0 20px;
   border-radius: 25px;
@@ -792,7 +797,7 @@ COMPOSANTES
   text-align: center;
 }
 
-.article__contenu {
+.article__seul__contenu {
   display: flex;
   font-size: 1rem;
   color: #262220a1;

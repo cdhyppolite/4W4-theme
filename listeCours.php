@@ -21,7 +21,7 @@
                     //-----------------------------
                 ?>
                 
-                <article style="background-image: url('<?= get_the_post_thumbnail_url(); ?>'); background-size: 100% 100%;" class="formation__cours <?= $etat; ?>">
+                <article style="background-image: url('<?= get_the_post_thumbnail_url(); ?>');" class="formation__cours <?= $etat; ?>">
                     <!-- <?php the_post_thumbnail('thumbnail'); ?> -->
                     <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
                     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
