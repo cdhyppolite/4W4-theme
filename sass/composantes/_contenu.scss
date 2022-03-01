@@ -39,7 +39,7 @@
         flex-direction: column;
         width: 100%;
         @media screen and (min-width: $largeur__media--tablette) {
-            width: 45%;
+            // width: 45%;
         }
         @media screen and (min-width: $largeur__media--desktop) {
             width: 30%;
@@ -49,6 +49,9 @@
         &:hover {
             background-color: #2622201f;
             transform: scale(1.05);
+        }
+        * {
+            // background-color: #26222054;
         }
     }
 }

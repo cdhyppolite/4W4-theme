@@ -28,13 +28,14 @@
         justify-content: center;
         transition-duration: 0.4s;
         svg {
+            color: $color__background-header;
             margin: 0px 2px;
             @media screen and (min-width: $largeur__media--tablette) {
                 margin: 1px;
             }
         }
         svg:hover {
-            color: $color__background-header;
+            color: $color__background-cours;
         }
     }
     &__lien:hover {

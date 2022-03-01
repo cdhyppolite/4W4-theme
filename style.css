@@ -457,12 +457,6 @@ COMPOSANTES
   padding: 10px;
 }
 
-@media screen and (min-width: 576px) {
-  .formation__cours {
-    width: 45%;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .formation__cours {
     width: 30%;
@@ -844,6 +838,7 @@ COMPOSANTES
 }
 
 .icone__lien svg {
+  color: #6fe29f;
   margin: 0px 2px;
 }
 
@@ -854,7 +849,7 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #6fe29f;
+  color: #d1ffe4;
 }
 
 .icone__lien:hover {
