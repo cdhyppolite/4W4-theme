@@ -1,24 +1,27 @@
 .article__seul {
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    margin: 20px;
-    padding: 0 20px;
-    border-radius: 25px;
     padding: 15px;
-    // background-color: #2622201f;
+    margin: 20px;
     color: $color__background-footer;
     font-family: $font__titre;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     &__contenu {
-        display: flex;
-        font-size: 1rem;
-        color: #262220a1;
-        font-family: $font__main;
         font-weight: normal;
-        text-align: justify;
+        display: flex;
+        color: $color__background-barre;
+        font-size: 1rem;
         padding: 20px 45px 20px 0px;
+        font-family: $font__main;
+        text-align: justify;
+    }
+}
+
+.site__main {
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    @media screen and (min-width: $largeur__media--desktop) {
+        background-size: 100% auto;
     }
 }

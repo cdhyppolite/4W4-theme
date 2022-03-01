@@ -777,13 +777,8 @@ COMPOSANTES
 }
 
 .article__seul {
-  background-position: center;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  margin: 20px;
-  padding: 0 20px;
-  border-radius: 25px;
   padding: 15px;
+  margin: 20px;
   color: #073b1d;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
@@ -792,13 +787,25 @@ COMPOSANTES
 }
 
 .article__seul__contenu {
-  display: flex;
-  font-size: 1rem;
-  color: #262220a1;
-  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
   font-weight: normal;
-  text-align: justify;
+  display: flex;
+  color: #052914;
+  font-size: 1rem;
   padding: 20px 45px 20px 0px;
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  text-align: justify;
+}
+
+.site__main {
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .site__main {
+    background-size: 100% auto;
+  }
 }
 
 .util {

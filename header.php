@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Carl-David Hyppolite</title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('site'); ?>>

@@ -11,6 +11,8 @@
 
     <?php endwhile ?>
 
+    <?php else: ?>
+    <h3 class="cours__titre"> Aucun résultat trouvé...</h3>
     <?php endif ?>
 </main>
 
