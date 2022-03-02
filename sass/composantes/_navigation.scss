@@ -28,6 +28,9 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    li:nth-child(2) {
+        margin-bottom: 1px;
+    }
 }
 
 .menu-item {

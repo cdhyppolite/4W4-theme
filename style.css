@@ -655,6 +655,10 @@ COMPOSANTES
   padding: 0;
 }
 
+.menu li:nth-child(2) {
+  margin-bottom: 1px;
+}
+
 .menu-item {
   margin: 0;
   padding: 0;

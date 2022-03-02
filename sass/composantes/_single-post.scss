@@ -21,6 +21,9 @@
     background-position: center;
     background-size: auto 100%;
     background-repeat: no-repeat;
+    // @media screen and (min-width: $largeur__media--tablette) {
+    //     background-size: auto auto;
+    // }
     @media screen and (min-width: $largeur__media--desktop) {
         background-size: 100% auto;
     }
