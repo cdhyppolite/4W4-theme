@@ -20,7 +20,7 @@ $color__cours-titre: hsl(138, 48%, 43%);
 
 $color__link__footer: black; //hsl(34, 91%, 50%);
 $color__link__footer-hover: hsl(115, 100%, 50%);
-$color__link__footer-visited: hsl(145, 100%, 50%);
+$color__link__footer-visited: #00bfff;
 
 /* ---------------- LIENS HEADER titre principal du site */
 
@@ -41,3 +41,11 @@ $color__texte__recherche: rgb(202, 209, 212);
 $color__texte__icones: rgb(167, 173, 181);
 $color__texte__defaut: rgb(247, 247, 247);
 $color__colorbackground-recherche: rgb(95, 106, 117);
+
+/****************Cours Border*******/
+
+$color__cours-reussi: #1B5E20;
+$color__cours-aFaire: #FF8F00;
+$color__cours-enCours: #01579B;
+$color__cours-echoue: #D32F2F;
+$color__cours-choisi: #7E57C2;

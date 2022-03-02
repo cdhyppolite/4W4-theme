@@ -18,6 +18,7 @@ VARIABLES
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /****************Recherche*******/
+/****************Cours Border*******/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -371,7 +372,7 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #00ff6a;
+  color: #00bfff;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
@@ -486,27 +487,6 @@ COMPOSANTES
   font-weight: bold;
 }
 
-.a-faire {
-  border: 4px solid #FF8F00;
-}
-
-.en-cours {
-  border: 4px solid #01579B;
-}
-
-.reussi {
-  border: 4px solid #1B5E20;
-}
-
-.echoue {
-  border: 4px solid #D32F2F;
-}
-
-.propose,
-.choisi {
-  border: 4px solid #7E57C2;
-}
-
 .cours_etat {
   padding: 3px 5px;
   border-radius: 2px;
@@ -516,7 +496,12 @@ COMPOSANTES
   width: 100px;
 }
 
+.a-faire {
+  border: 4px solid #FF8F00;
+}
+
 .a-faire .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #FF8F00;
 }
 
@@ -524,7 +509,12 @@ COMPOSANTES
   content: "À faire";
 }
 
+.en-cours {
+  border: 4px solid #01579B;
+}
+
 .en-cours .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #01579B;
 }
 
@@ -532,7 +522,12 @@ COMPOSANTES
   content: "En cours";
 }
 
+.reussi {
+  border: 4px solid #1B5E20;
+}
+
 .reussi .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #1B5E20;
 }
 
@@ -540,7 +535,12 @@ COMPOSANTES
   content: "Réussi";
 }
 
+.echoue {
+  border: 4px solid #D32F2F;
+}
+
 .echoue .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #D32F2F;
 }
 
@@ -548,12 +548,15 @@ COMPOSANTES
   content: "Échoué";
 }
 
-.propose .cours_etat,
+.choisi {
+  border: 4px solid #7E57C2;
+}
+
 .choisi .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #7E57C2;
 }
 
-.propose .cours_etat::before,
 .choisi .cours_etat::before {
   content: "Choisi";
 }
