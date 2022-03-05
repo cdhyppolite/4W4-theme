@@ -1,0 +1,43 @@
+.site__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $largeur__media--tablette) {
+        flex-direction: row;
+    }
+    &__titre {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 5px 0;
+        color: #F7F1F0;
+        @media screen and (min-width: $largeur__media--tablette) {
+            margin: 0;
+        }
+        h1 {
+            text-align: right;
+            padding: 0 clamp(.5rem, 2vw, 7rem) 0 15%;
+            font-size: clamp(2.5rem, 4vw, 6rem);
+            font-family: 'Ubuntu';
+            color: #A15C38;
+            @media screen and (min-width: $largeur__media--tablette) {
+                margin-left: 20px;
+                text-align: left;
+                padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
+            }
+        }
+        h2 {
+            font-size: clamp(1.2rem, 2vw, 4rem);
+            padding: 0 15% 0 clamp(.5rem, 2vw, 7rem);
+            font-family: 'Ubuntu';
+            @media screen and (min-width: $largeur__media--tablette) {
+                padding: 0 1.5rem 0 0;
+            }
+            @media screen and (min-width:$largeur__media--desktop) {
+                padding: 0;
+            }
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}

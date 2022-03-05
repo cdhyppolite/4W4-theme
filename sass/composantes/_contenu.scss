@@ -1,0 +1,75 @@
+.principal {
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: $color__background-main;
+    border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+}
+
+.site__main {
+    padding: 10px 15px;
+    background-color: $color__background-main;
+    border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+}
+
+.formation {
+    display: flex;
+    flex-direction: column;
+    &__titre {
+        font-size: 2rem;
+        color: $color__cours-titre;
+        margin: 10px 0px;
+        font-family: $font__titre;
+        text-align: center;
+    }
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__cours {
+        background-position: center;
+        background-size: auto 100%;
+        background-color: $color__background-cours;
+        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
+        border-radius: 25px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width: $largeur__media--tablette) {
+            // width: 45%;
+        }
+        @media screen and (min-width: $largeur__media--desktop) {
+            width: 30%;
+        }
+        transition-duration: .5s;
+        padding: 10px;
+        &:hover {
+            background-color: #2622201f;
+            transform: scale(1.05);
+        }
+        * {
+            // background-color: #26222054;
+        }
+    }
+}
+
+.cours__titre {
+    font-size: 1.5rem;
+    font-family: $font__titre;
+    color: $color__font-main;
+    margin: 5px 0px;
+}
+
+.cours__description {
+    font-size: 1rem;
+}
+
+.cours__code {
+    font-size: 1.2rem;
+    margin: 0;
+    color: $color__background-link-hover;
+    font-weight: bold;
+}

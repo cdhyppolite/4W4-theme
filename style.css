@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*
-Theme name: EX1 - Carl-David Hyppolite
+Theme name: EX2 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
+Author URI: https://github.com/cdhyppolite/4W4-theme/tree/ex2
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -13,7 +14,12 @@ VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
+/* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/****************Recherche*******/
+/****************Cours Border*******/
+/* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
 --------------------------------------------------------- */
@@ -342,11 +348,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #001d61;
+  color: #477b5d;
 }
 
 a:visited {
-  color: crimson;
+  color: #335c44;
 }
 
 a:hover, a:focus, a:active {
@@ -361,13 +367,60 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__footer a {
+  color: black;
+}
+
+.site__footer a:visited {
+  color: #00bfff;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #15ff00;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.header__titre a {
+  color: #00ff91;
+}
+
+.header__titre a:visited {
+  color: #00ff6a;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #8be5b6;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
-COMPOSANTS
+COMPOSANTES
 --------------------------------------------------------- */
-.site__main {
+.principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eee;
+  background-color: #d5f1e1;
+  border-radius: 5px;
+  box-shadow: #39443e 1px -1px 10px;
+}
+
+.site__main {
+  padding: 10px 15px;
+  background-color: #d5f1e1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -379,77 +432,59 @@ COMPOSANTS
 
 .formation__titre {
   font-size: 2rem;
-  color: black;
+  color: #39a259;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  text-align: center;
 }
 
 .formation__liste {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .formation__cours {
-  background-color: #dbf2ff;
+  background-position: center;
+  background-size: auto 100%;
+  background-color: #d1ffe4;
   box-shadow: #394044 1px -1px 10px;
-  border-radius: 5px;
-  margin: 10px auto;
+  border-radius: 25px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
+  transition-duration: .5s;
   padding: 10px;
-  overflow: hidden;
-}
-
-@media screen and (min-width: 576px) {
-  .formation__cours {
-    width: 45%;
-  }
 }
 
 @media screen and (min-width: 992px) {
   .formation__cours {
-    width: 28%;
+    width: 30%;
   }
+}
+
+.formation__cours:hover {
+  background-color: #2622201f;
+  transform: scale(1.05);
 }
 
 .cours__titre {
   font-size: 1.5rem;
-  color: black;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  color: #443936;
   margin: 5px 0px;
-  border-bottom: 2px solid linear-gradient(70deg, #bd2a69, crimson);
-}
-
-.cours__code {
-  font-size: 1.2rem;
-  margin: 0;
-  color: crimson;
-  font-weight: bold;
 }
 
 .cours__description {
   font-size: 1rem;
 }
 
-.a-faire {
-  border: 4px solid #FF8F00;
-}
-
-.en-cours {
-  border: 4px solid #01579B;
-}
-
-.reussi {
-  border: 4px solid #1B5E20;
-}
-
-.echoue {
-  border: 4px solid #D32F2F;
-}
-
-.propose,
-.choisi {
-  border: 4px solid #7E57C2;
+.cours__code {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #28b864;
+  font-weight: bold;
 }
 
 .cours_etat {
@@ -458,10 +493,15 @@ COMPOSANTS
   color: white;
   text-transform: uppercase;
   text-align: center;
-  width: clamp(3.5rem, 5vw, 6rem);
+  width: 100px;
+}
+
+.a-faire {
+  border: 4px solid #FF8F00;
 }
 
 .a-faire .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #FF8F00;
 }
 
@@ -469,7 +509,12 @@ COMPOSANTS
   content: "À faire";
 }
 
+.en-cours {
+  border: 4px solid #01579B;
+}
+
 .en-cours .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #01579B;
 }
 
@@ -477,7 +522,12 @@ COMPOSANTS
   content: "En cours";
 }
 
+.reussi {
+  border: 4px solid #1B5E20;
+}
+
 .reussi .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #1B5E20;
 }
 
@@ -485,7 +535,12 @@ COMPOSANTS
   content: "Réussi";
 }
 
+.echoue {
+  border: 4px solid #D32F2F;
+}
+
 .echoue .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #D32F2F;
 }
 
@@ -493,135 +548,134 @@ COMPOSANTS
   content: "Échoué";
 }
 
-.propose .cours_etat,
+.choisi {
+  border: 4px solid #7E57C2;
+}
+
 .choisi .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #7E57C2;
 }
 
-.propose .cours_etat::before,
 .choisi .cours_etat::before {
   content: "Choisi";
 }
 
-/**************************************************/
 .site__header {
-  background-color: #17223d;
-  color: #b7fff9;
-  padding-left: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 576px) {
   .site__header {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
   }
 }
 
 .site__header__titre {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin: 15px 0 5px 0;
+  color: #F7F1F0;
+}
+
+@media screen and (min-width: 576px) {
+  .site__header__titre {
+    margin: 0;
+  }
 }
 
 .site__header__titre h1 {
-  font-size: clamp(0.1rem, 2vw, 16rem);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 5px 15px -20px 0;
+  text-align: right;
+  padding: 0 clamp(0.5rem, 2vw, 7rem) 0 15%;
+  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-family: 'Ubuntu';
+  color: #A15C38;
+}
+
+@media screen and (min-width: 576px) {
+  .site__header__titre h1 {
+    margin-left: 20px;
+    text-align: left;
+    padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
+  }
 }
 
 .site__header__titre h2 {
-  font-size: clamp(0.6rem, 5vw, 2rem);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-style: italic;
-  opacity: 60%;
-  margin-bottom: 5px;
-}
-
-.site__header__utile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icone {
-  background-color: crimson;
-  border-radius: 5px;
-  width: 280px;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.icone__lien {
-  padding: 1px;
-  background-color: crimson;
-  width: 55px;
-  display: flex;
-  justify-content: center;
-  transition-duration: 0.4s;
-}
-
-.icone__lien svg {
-  color: white;
-  text-align: center;
-}
-
-.icone__lien svg:hover {
-  color: #17223d;
-}
-
-.icone__lien:hover {
-  background-color: #d1e1ff;
-}
-
-.recherche {
-  width: 85%;
-  position: relative;
+  font-size: clamp(1.2rem, 2vw, 4rem);
+  padding: 0 15% 0 clamp(0.5rem, 2vw, 7rem);
+  font-family: 'Ubuntu';
 }
 
 @media screen and (min-width: 576px) {
-  .recherche {
-    width: 245px;
+  .site__header__titre h2 {
+    padding: 0 1.5rem 0 0;
   }
 }
 
-.recherche__input {
-  width: 75%;
-  border: 1px solid #bbb;
-  border-radius: 3px;
-  font-size: 0.85em;
-  margin-left: 20px;
-  height: 55px;
-}
-
-@media screen and (min-width: 576px) {
-  .recherche__input {
-    height: 30px;
+@media screen and (min-width: 992px) {
+  .site__header__titre h2 {
+    padding: 0;
   }
 }
 
-.recherche__button {
-  height: 55px;
-  position: absolute;
-  border: none;
-}
-
-@media screen and (min-width: 576px) {
-  .recherche__button {
-    height: auto;
-  }
+.site__header__titre a {
+  text-decoration: none;
 }
 
 #burger {
-  display: block;
   position: absolute;
-  transform: rotate(0deg);
   transition-duration: 0.4s;
+  transform: rotate(0);
+}
+
+#burger svg {
+  color: black;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+#chk-burger:checked ~ #burger svg {
+  color: white;
+}
+
+.menu-principal-container {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+#chk-burger {
+  display: none;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li:nth-child(2) {
+  margin-bottom: 1px;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #82e3aa;
+}
+
+.menu-item a:hover {
+  background-color: #28b864;
 }
 
 @media screen and (min-width: 576px) {
@@ -631,56 +685,237 @@ COMPOSANTS
 }
 
 @media screen and (max-width: 575px) {
-  #chk-burger:checked ~ .menu-principal-container .menu {
+  .menu-principal-container {
     height: 0px;
+    top: 35px;
+  }
+  #chk-burger:checked ~ .menu-principal-container {
+    height: 450px;
   }
 }
 
-#chk-burger {
-  display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-}
-
-.menu-principal-container {
-  padding: 30px 0 0 0;
-}
-
-.menu-principal-container .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.menu-principal-container .menu-item {
-  padding: 1rem;
-  background-color: #a3c3ff;
-}
-
-.menu-principal-container .menu-item:hover {
-  background-color: #d1e1ff;
-}
-
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background: linear-gradient(0deg, #001e62, crimson);
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  background-color: #073b1d;
   padding: 15px;
 }
 
-.site__footer a {
-  text-decoration: none;
-  cursor: pointer;
+.site__footer i {
+  opacity: 50%;
+}
+
+.site__footer__menu__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.site__footer__menu__ul .menu-item {
+  margin: 10px 5px;
+}
+
+.site__footer__menu__ul .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.site__footer__menu__ul .menu-item a svg {
+  color: black;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #15ff00;
 }
 
 .footer__titre,
-.footer__copyright {
-  color: #ffcabc;
+.footer__presentation,
+.footer__author {
+  color: #bdffd8;
   text-align: center;
 }
 
+.erreur404 {
+  height: 600px;
+  width: 600px;
+  position: relative;
+  color: #00ff91;
+  margin: 0 auto;
+}
+
+.erreur404 h1 {
+  font-size: 3rem;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  color: #073b1d;
+}
+
+.err {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-size: 11rem;
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+}
+
+.err2 {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+
+.msg {
+  color: #073b1d;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 16%;
+  top: 45%;
+  width: 75%;
+}
+
+.article__seul {
+  padding: 15px;
+  margin: 20px;
+  color: #073b1d;
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.article__seul__contenu {
+  font-weight: normal;
+  display: flex;
+  color: #052914;
+  font-size: 1rem;
+  padding: 20px 45px 20px 0px;
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  text-align: justify;
+}
+
+.site__main {
+  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+  .site__main {
+    background-size: 100% auto;
+  }
+}
+
+.util {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .util {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 44.4%;
+  }
+}
+
+.icone {
+  background-color: #daf1e4;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.icone a {
+  text-decoration: none;
+}
+
+.icone__lien {
+  background-color: #daf1e4;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.4s;
+}
+
+.icone__lien svg {
+  color: #6fe29f;
+  margin: 0px 2px;
+}
+
+@media screen and (min-width: 576px) {
+  .icone__lien svg {
+    margin: 1px;
+  }
+}
+
+.icone__lien svg:hover {
+  color: #d1ffe4;
+}
+
+.icone__lien:hover {
+  background-color: #28b864;
+}
+
+.recherche {
+  position: relative;
+  border: none;
+}
+
+.recherche__input {
+  width: 96vw;
+  font-family: 'Roboto';
+  height: 35px;
+  border: none;
+  outline: none;
+  background-color: #3f3936;
+  color: #000000;
+}
+
+@media screen and (min-width: 576px) {
+  .recherche__input {
+    width: 250px;
+  }
+}
+
+.recherche__bouton {
+  background-color: #3f3936;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recherche__bouton:hover {
+  cursor: pointer;
+}
+
+.mot_recherche {
+  color: #39a259;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -688,49 +923,41 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: crimson;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.site {
-  display: grid;
-  grid-template-columns: 350px auto;
-  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
-}
-
-@media screen and (min-width: 576px) {
-  .site {
-    grid-template-columns: 350px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
-  __barre {
-    display: block;
-  }
+  background-color: #daf1e4;
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 .site__header {
   grid-area: header;
-  background-color: #17223d;
+  background-color: #6fe29f;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background: linear-gradient(70deg, #bd2a69, crimson);
-}
-
-@media (max-width: 575px) {
-  .site__barre .site__barre {
-    display: none;
-  }
+  background-color: #052914;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eee;
+  background-color: #d5f1e1;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: linear-gradient(0deg, #001e62, crimson);
+  background-color: #073b1d;
+}
+
+.site {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 576px) {
+  .site {
+    grid-template-columns: auto 300px;
+    grid-template-areas: "header header" " main sidebar" "footer footer";
+  }
 }
 /*# sourceMappingURL=style.css.map */

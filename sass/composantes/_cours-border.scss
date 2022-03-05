@@ -1,0 +1,30 @@
+// etat
+.cours_etat {
+    padding: 3px 5px;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    // width: clamp(3.5rem, 5vw, 6rem);
+    width: 100px;
+}
+
+.a-faire {
+    @include etatCours($color__cours-aFaire, "À faire")
+}
+
+.en-cours {
+    @include etatCours($color__cours-enCours, "En cours")
+}
+
+.reussi {
+    @include etatCours($color__cours-reussi, "Réussi")
+}
+
+.echoue {
+    @include etatCours($color__cours-echoue, "Échoué")
+}
+
+.choisi {
+    @include etatCours($color__cours-choisi, "Choisi")
+}

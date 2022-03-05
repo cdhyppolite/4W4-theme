@@ -1,0 +1,46 @@
+.erreur404 {
+    height: 600px;
+    width: 600px;
+    position: relative;
+    color: $color__link__header;
+    margin: 0 auto;
+    h1 {
+        font-size: 3rem;
+        font-family: $font__titre;
+        color: $color__background-footer;
+    }
+}
+
+.err {
+    font-family: $font__titre;
+    font-size: 11rem;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+}
+
+.far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+}
+
+.err2 {
+    font-family: $font__titre;
+    font-size: 11rem;
+    position: absolute;
+    left: 68%;
+    top: 8%;
+}
+
+.msg {
+    color: $color__background-footer;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+}

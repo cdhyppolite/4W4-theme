@@ -1,0 +1,30 @@
+.article__seul {
+    padding: 15px;
+    margin: 20px;
+    color: $color__background-footer;
+    font-family: $font__titre;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    &__contenu {
+        font-weight: normal;
+        display: flex;
+        color: $color__background-barre;
+        font-size: 1rem;
+        padding: 20px 45px 20px 0px;
+        font-family: $font__main;
+        text-align: justify;
+    }
+}
+
+.site__main {
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    // @media screen and (min-width: $largeur__media--tablette) {
+    //     background-size: auto auto;
+    // }
+    @media screen and (min-width: $largeur__media--desktop) {
+        background-size: 100% auto;
+    }
+}

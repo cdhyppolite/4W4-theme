@@ -1,22 +1,42 @@
+@mixin links( $couleur, $couleur--visited, $couleur--hover) {
+    color: $couleur;
+    &:visited {
+        color: $couleur--visited;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        color: $couleur--hover;
+    }
+    &:focus {
+        outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+// Voir le ficher " _cours-border.scss "
+@mixin etatCours($couleurCours, $texteCours) {
+    border: 4px solid $couleurCours;
+    .cours_etat {
+        font-family: $font__titre;
+        background-color: $couleurCours;
+        &::before {
+            content: $texteCours;
+        }
+    }
+}
+
 a {
-	color: $color__link;
+    @include links( $color__link, $color__link-visited, $color__link-hover)
+}
 
-	&:visited {
-		color: $color__link-visited;
-	}
+.site__footer a {
+    @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
+}
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-
-	&:focus {
-		outline: thin dotted;
-	}
-
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+.header__titre a {
+    @include links( $color__link__header, $color__link__header-visited, $color__link__header-hover);
 }
