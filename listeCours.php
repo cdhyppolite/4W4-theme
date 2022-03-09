@@ -1,5 +1,5 @@
 <section class="formation">
-        <h2 class="formation__titre">Liste de cours - Technique d'intégration multimédia</h2>
+        <h2 class="formation__titre">Liste de cours - Techniques d'intégration multimédia</h2>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
@@ -17,6 +17,8 @@
                         $etat = "reussi";
                     } else if (in_array(substr($codeCours, 4,3), $encours)) { 
                         $etat = "en-cours";
+                    } else if ((substr($codeCours, 3,1))!='-') {
+                        $etat = "echoue";
                     }
                     //-----------------------------
                 ?>
@@ -25,7 +27,7 @@
                     <!-- <?php the_post_thumbnail('thumbnail'); ?> -->
                     <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
                     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                    <p class="cours__code"><?= $codeCours; ?> </p>
+                    <p class="cours__code"><?= $codeCours; ?>-MA </p>
                     <div class="cours_etat"></div>
                     <p class="cours__desc"> <?= $descCours; ?></p>
                 </article>
