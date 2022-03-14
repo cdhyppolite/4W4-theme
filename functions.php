@@ -30,7 +30,13 @@ function cidw_4w4_filtre_choix_menu($obj_menu){
 }
 add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
 /****************** - Add Thème support -***************** */
-add_theme_support('post-thumbnails');
+ function cidw_4w4_add_theme_support() {
+    add_theme_support('post-thumbnails');
+    add_theme_support('custom-logo', array(
+        'height' => 100,
+        'width' => 100,
+    ));
+ }
 
 // ------------------------------------ Enregistrement des side bar
 add_action( 'widgets_init', 'my_register_sidebars' );
@@ -52,6 +58,28 @@ function my_register_sidebars() {
         array(
             'id'            => 'pied_page_colonne_2',
             'name'          => __( 'Pied de page colonne 2' ),
+            'description'   => __( 'Colonne de pied de pageS' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_colonne_3',
+            'name'          => __( 'Pied de page colonne 3' ),
+            'description'   => __( 'Colonne de pied de pageS' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'id'            => 'pied_page_ligne_1',
+            'name'          => __( 'Pied de page ligne 1' ),
             'description'   => __( 'Colonne de pied de pageS' ),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>',

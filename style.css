@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme name: EX2 - Carl-David Hyppolite
+Theme name: TP1 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/tree/ex2
+Author URI: https://github.com/cdhyppolite/4W4-theme/tree/tp1
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -15,6 +15,8 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS DU MENU FOOTER*/
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /****************Recherche*******/
@@ -367,26 +369,9 @@ a:hover, a:active {
   outline: 0;
 }
 
-.site__footer a {
-  color: black;
-}
-
-.site__footer a:visited {
-  color: #00bfff;
-}
-
-.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #15ff00;
-}
-
-.site__footer a:focus {
-  outline: thin dotted;
-}
-
-.site__footer a:hover, .site__footer a:active {
-  outline: 0;
-}
-
+/*.site__footer a {
+    @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
+}*/
 .header__titre a {
   color: #00ff91;
 }
@@ -404,6 +389,76 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+.site__footer .menu-item a {
+  color: #fff;
+  background-color: #327aaa;
+}
+
+.site__footer .menu-item a svg {
+  color: #fff;
+}
+
+.site__footer .menu-item a:visited {
+  color: #bbb;
+  background-color: #7878ad;
+}
+
+.site__footer .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #0f0;
+  background-color: #a092c7;
+}
+
+.site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
+  color: #0f0;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.site__barre .menu-item a {
+  color: #fff;
+  background-color: rgba(140, 189, 223, 0.1);
+}
+
+.site__barre .menu-item a svg {
+  color: #fff;
+}
+
+.site__barre .menu-item a:visited {
+  color: #bbb;
+  background-color: #010113;
+}
+
+.site__barre .menu-item a:visited svg {
+  color: #bbb;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
+  color: #073b1d;
+  background-color: #daf1e4;
+}
+
+.site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
+  color: #073b1d;
+}
+
+.site__barre .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__barre .menu-item a:hover, .site__barre .menu-item a:active {
   outline: 0;
 }
 
@@ -565,6 +620,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 576px) {
@@ -956,24 +1012,37 @@ theme name: Lab 2 Lemieux Florence
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
+.home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(0 0, 20% 0, 60% 100%, 0 100%);
+  background-color: #57f9ff;
+  z-index: -1;
+}
+
 .site__header {
   grid-area: header;
-  background-color: #6fe29f;
+  background-color: rgba(111, 226, 159, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #052914;
+  background-color: rgba(5, 41, 20, 0.5);
 }
 
 .site__main {
   grid-area: main;
-  background-color: #d5f1e1;
+  background-color: rgba(213, 241, 225, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #073b1d;
+  background-color: rgba(7, 59, 29, 0.5);
 }
 
 .site {

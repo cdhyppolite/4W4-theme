@@ -1,6 +1,7 @@
 /* ---------------- BACKGROUND */
 
 $color__background-body: hsl(145, 45%, 90%);
+$color__background-body-clip: hsl(182, 100%, 67%);
 $color__background-main: hsl(145, 50%, 89%);
 $color__background-cours: hsl(145, 100%, 91%);
 $color__background-header: hsl(145, 66%, 66%);
@@ -21,6 +22,24 @@ $color__cours-titre: hsl(138, 48%, 43%);
 $color__link__footer: black; //hsl(34, 91%, 50%);
 $color__link__footer-hover: hsl(115, 100%, 50%);
 $color__link__footer-visited: #00bfff;
+
+/* ---------------- LIENS DU MENU FOOTER*/
+
+$color__link__footer__menu: #fff;
+$color__link__footer__menu-visited: #bbb;
+$color__link__footer__menu-hover:#0f0;
+$background__link__footer__menu: rgb(50, 122, 170);
+$background__link__footer__menu-visited: rgb(120, 120, 173);
+$background__link__footer__menu-hover: rgb(160, 146, 199);
+
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
+
+$color__link__principal__menu: #fff;
+$color__link__principal__menu-visited: #bbb;
+$color__link__principal__menu-hover:hsl(145, 79%, 13%);
+$background__link__principal__menu: rgba(rgb(140, 189, 223), .1);
+$background__link__principal__menu-visited: rgb(1, 1, 19);
+$background__link__principal__menu-hover: hsl(145, 45%, 90%);
 
 /* ---------------- LIENS HEADER titre principal du site */
 

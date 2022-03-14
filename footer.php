@@ -6,6 +6,7 @@
     </div>
     <div class="site__footer__ligne">
         <section class="footer__description">4w4-Conception d'interface et développement Web</section>
+        <section class="footer__sociaux"><?php get_sidebar('pied_page_ligne_1') ?></section>
         <section class="footer__copyright">&copy; Collège de Maisonneuve - Tous droit réservé</section>
         <section class="footer__menu">
             <?php

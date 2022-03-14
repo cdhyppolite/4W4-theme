@@ -15,6 +15,7 @@
 <body <?php body_class('site'); ?>>
 <header class="site__header">
     <section class="site__header__titre">
+        <?php get_custom_logo(); ?>
         <h1><a href="<?= esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo('name'); ?> </a></h1>
         <h2><?= get_bloginfo('description'); ?></h2>
     </section>
