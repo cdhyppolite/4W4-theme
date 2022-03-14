@@ -966,8 +966,19 @@ COMPOSANTES
   height: 35px;
   border: none;
   outline: none;
-  background-color: #3f3936;
-  color: #000000;
+  background-color: #fff;
+  color: #073b1d;
+  border-radius: 5px;
+}
+
+.recherche__input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.25s;
+  color: white;
+}
+
+.recherche__input:focus ~ .recherche__bouton {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media screen and (min-width: 576px) {
@@ -977,7 +988,7 @@ COMPOSANTES
 }
 
 .recherche__bouton {
-  background-color: #3f3936;
+  background-color: #fff;
   top: 0;
   right: 0;
   border: none;
@@ -988,10 +999,15 @@ COMPOSANTES
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0 5px 5px 0;
 }
 
 .recherche__bouton:hover {
   cursor: pointer;
+}
+
+.recherche__bouton svg {
+  color: #073b1d;
 }
 
 .mot_recherche {
@@ -1020,7 +1036,7 @@ theme name: Lab 2 Lemieux Florence
   top: 0;
   bottom: 0;
   right: 0;
-  clip-path: polygon(0 0, 20% 0, 60% 100%, 0 100%);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
   background-color: #57f9ff;
   z-index: -1;
 }

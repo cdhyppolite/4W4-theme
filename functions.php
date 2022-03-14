@@ -37,7 +37,7 @@ add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
         'width' => 100,
     ));
  }
-
+add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 // ------------------------------------ Enregistrement des side bar
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
