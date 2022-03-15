@@ -28,3 +28,7 @@
 .choisi {
     @include etatCours($color__cours-choisi, "Choisi")
 }
+
+.non-choisi {
+    @include etatCours(gray, "Non Choisi")
+}

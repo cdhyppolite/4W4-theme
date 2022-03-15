@@ -616,6 +616,19 @@ COMPOSANTES
   content: "Choisi";
 }
 
+.non-choisi {
+  border: 4px solid gray;
+}
+
+.non-choisi .cours_etat {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  background-color: gray;
+}
+
+.non-choisi .cours_etat::before {
+  content: "Non Choisi";
+}
+
 .site__header {
   display: flex;
   flex-direction: column;
