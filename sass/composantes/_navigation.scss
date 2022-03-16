@@ -13,6 +13,8 @@
     height: 25px;
     top: 6vh;
     left: 1vw;
+    z-index: 10;
+    overflow: hidden;
 }
 
 #chk-burger:checked~#burger {

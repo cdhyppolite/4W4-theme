@@ -594,6 +594,11 @@ COMPOSANTES
 
 .a-faire {
   border: 4px solid #FF8F00;
+  background-color: rgba(255, 143, 0, 0.3);
+}
+
+.a-faire .cours__code {
+  color: #FF8F00;
 }
 
 .a-faire .cours_etat {
@@ -607,6 +612,11 @@ COMPOSANTES
 
 .en-cours {
   border: 4px solid #01579B;
+  background-color: rgba(1, 87, 155, 0.3);
+}
+
+.en-cours .cours__code {
+  color: #01579B;
 }
 
 .en-cours .cours_etat {
@@ -620,6 +630,11 @@ COMPOSANTES
 
 .reussi {
   border: 4px solid #1B5E20;
+  background-color: rgba(27, 94, 32, 0.3);
+}
+
+.reussi .cours__code {
+  color: #1B5E20;
 }
 
 .reussi .cours_etat {
@@ -633,6 +648,11 @@ COMPOSANTES
 
 .echoue {
   border: 4px solid #D32F2F;
+  background-color: rgba(211, 47, 47, 0.3);
+}
+
+.echoue .cours__code {
+  color: #D32F2F;
 }
 
 .echoue .cours_etat {
@@ -646,6 +666,11 @@ COMPOSANTES
 
 .choisi {
   border: 4px solid #7E57C2;
+  background-color: rgba(126, 87, 194, 0.3);
+}
+
+.choisi .cours__code {
+  color: #7E57C2;
 }
 
 .choisi .cours_etat {
@@ -659,6 +684,11 @@ COMPOSANTES
 
 .non-choisi {
   border: 4px solid gray;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+
+.non-choisi .cours__code {
+  color: gray;
 }
 
 .non-choisi .cours_etat {
@@ -746,6 +776,8 @@ COMPOSANTES
   height: 25px;
   top: 6vh;
   left: 1vw;
+  z-index: 10;
+  overflow: hidden;
 }
 
 #burger svg {
