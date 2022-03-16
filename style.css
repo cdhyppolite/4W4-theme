@@ -21,6 +21,47 @@ VARIABLES
 /* ---------------- FONT */
 /****************Recherche*******/
 /****************Cours Border*******/
+/****************Animation*******/
+@keyframes text-arc-en-ciel {
+  100%,
+  0% {
+    color: red;
+  }
+  8% {
+    color: #ff7f00;
+  }
+  16% {
+    color: yellow;
+  }
+  25% {
+    color: chartreuse;
+  }
+  33% {
+    color: lime;
+  }
+  41% {
+    color: springgreen;
+  }
+  50% {
+    color: cyan;
+  }
+  58% {
+    color: #007fff;
+  }
+  66% {
+    color: blue;
+  }
+  75% {
+    color: #7f00ff;
+  }
+  83% {
+    color: magenta;
+  }
+  91% {
+    color: #ff007f;
+  }
+}
+
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -694,9 +735,17 @@ COMPOSANTES
 }
 
 #burger {
+  cursor: pointer;
   position: absolute;
   transition-duration: 0.4s;
-  transform: rotate(0);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  text-align: right;
+  width: 25px;
+  height: 25px;
+  top: 6vh;
+  left: 1vw;
 }
 
 #burger svg {
@@ -704,11 +753,23 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
+  height: 36px;
 }
 
 #chk-burger:checked ~ #burger svg {
   color: white;
+}
+
+#chk-burger:checked ~ #burger .ligne:first-child {
+  transform: rotate(45deg);
+}
+
+#chk-burger:checked ~ #burger .ligne:nth-child(2) {
+  width: 0px;
+}
+
+#chk-burger:checked ~ #burger .ligne:last-child {
+  transform: rotate(-45deg);
 }
 
 .menu-principal-container {
@@ -718,11 +779,31 @@ COMPOSANTES
 }
 
 .menu-principal-container li:nth-child(2) {
-  margin-bottom: 1px;
+  margin-bottom: 3px;
+}
+
+.menu-principal-container a:hover::before {
+  content: "\2771 ";
 }
 
 #chk-burger {
   display: none;
+}
+
+.ligne {
+  width: 44px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.ligne:nth-child(1) {
+  transform-origin: bottom left;
+}
+
+.ligne:nth-child(3) {
+  transform-origin: top left;
 }
 
 .menu {
@@ -741,6 +822,7 @@ COMPOSANTES
   text-decoration: none;
   padding: 4px;
   background-color: #82e3aa;
+  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .menu-item a:hover {
@@ -756,10 +838,10 @@ COMPOSANTES
 @media screen and (max-width: 575px) {
   .menu-principal-container {
     height: 0px;
-    top: 35px;
+    top: 5vh;
   }
   #chk-burger:checked ~ .menu-principal-container {
-    height: 450px;
+    height: 975px;
   }
 }
 

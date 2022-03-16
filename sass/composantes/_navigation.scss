@@ -1,48 +1,84 @@
 #burger {
+    cursor: pointer;
     position: absolute;
     transition-duration: 0.4s;
-    transform: rotate(0);
     svg {
         color: black;
     }
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    text-align: right;
+    width: 25px;
+    height: 25px;
+    top: 6vh;
+    left: 1vw;
 }
 
 #chk-burger:checked~#burger {
-    transform: rotate(90deg);
+    height: 36px;
     svg {
         color: white;
+    }
+    .ligne {
+        &:first-child {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+            width: 0px;
+        }
+        &:last-child {
+            transform: rotate(-45deg);
+        }
     }
 }
 
 .menu-principal-container {
     li:nth-child(2) {
-        margin-bottom: 1px;
+        margin-bottom: 3px;
     }
     position: relative;
     overflow: hidden;
     transition: .4s cubic-bezier(.5, 0, .5, 1.7);
+    a:hover::before {
+        content: "\2771 ";
+    }
 }
 
 #chk-burger {
     display: none;
 }
 
+.ligne {
+    width: 44px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: black;
+    transition: 0.4s;
+    &:nth-child(1) {
+        transform-origin: bottom left;
+    }
+    &:nth-child(3) {
+        transform-origin: top left;
+    }
+}
+
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.menu-item {
-    margin: 0;
-    padding: 0;
-    a {
-        display: block;
-        text-decoration: none;
-        padding: 4px;
-        background-color: $color__background-link;
-        &:hover {
-            background-color: $color__background-link-hover;
+    &-item {
+        margin: 0;
+        padding: 0;
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 4px;
+            background-color: $color__background-link;
+            transition: .1s cubic-bezier(.5, 0, .5, 1.7);
+            &:hover {
+                background-color: $color__background-link-hover;
+            }
         }
     }
 }
@@ -56,9 +92,11 @@
 @media screen and (max-width: $largeur__media--mobile) {
     .menu-principal-container {
         height: 0px;
-        top: 35px;
+        top: 5vh;
     }
     #chk-burger:checked~.menu-principal-container {
-        height: 450px;
+        // height: 450px;
+        // height: 970px;
+        height: 30*32.5px;
     }
 }
