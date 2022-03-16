@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +22,9 @@
         <h2><?= get_bloginfo('description'); ?></h2>
     </section>
     <section class="util">
+        <div class="util__menu">
+        <?php get_sidebar('entete_1') ?>
+        </div>
             <?php get_search_form(); ?>
     </section>
 </header>
