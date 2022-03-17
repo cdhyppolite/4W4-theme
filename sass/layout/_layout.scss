@@ -21,17 +21,17 @@
 
 .site__header {
     grid-area: header;
-    background-color: rgba($color__background-header, .5);
+    background-color: $color__background-header;
 }
 
 .site__barre {
     grid-area: sidebar;
-    background-color: rgba($color__background-barre, .5);
+    background-color: $color__background-barre;
 }
 
 .site__main {
     grid-area: main;
-    background-color: rgba($color__background-main, .5);
+    background-color: $color__background-main;
     padding: 10px 15px 10px 15px;
 }
 
@@ -74,5 +74,20 @@
 @media screen and (min-width: 783px) {
     .home #burger {
         top: 40px;
+    }
+}
+
+.home {
+    .site__header {
+        background-color: rgba($color__background-header, .5);
+    }
+    .site__barre {
+        background-color: rgba($color__background-barre, .5);
+    }
+    .site__main {
+        background-color: rgba($color__background-main, .5);
+    }
+    .site__footer {
+        background-color: rgba($color__background-footer, .5);
     }
 }

@@ -1179,17 +1179,17 @@ LAYOUT
 
 .site__header {
   grid-area: header;
-  background-color: rgba(111, 226, 159, 0.5);
+  background-color: #6fe29f;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: rgba(5, 41, 20, 0.5);
+  background-color: #052914;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(213, 241, 225, 0.5);
+  background-color: #d5f1e1;
   padding: 10px 15px 10px 15px;
 }
 
@@ -1233,5 +1233,21 @@ LAYOUT
   .home #burger {
     top: 40px;
   }
+}
+
+.home .site__header {
+  background-color: rgba(111, 226, 159, 0.5);
+}
+
+.home .site__barre {
+  background-color: rgba(5, 41, 20, 0.5);
+}
+
+.home .site__main {
+  background-color: rgba(213, 241, 225, 0.5);
+}
+
+.home .site__footer {
+  background-color: rgba(7, 59, 29, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
