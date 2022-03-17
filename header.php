@@ -18,10 +18,12 @@
         <h1>
             <?php the_custom_logo(); ?>
             <a class="titreComplet" href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
-                <?php  $nom = get_bloginfo('name');?>
+                <?php $nom = get_bloginfo('name'); $delayAnim = 1;?>
+
                 <!-- Séparer les lettres du titre -->
                     <?php while($nbLettre != strlen($nom)) : ?>
-                        <div class="lettre"><?= $nom[$nbLettre]; ?></div>
+                        <div style="animation-delay:<?= $delayAnim?>s;" class="lettre"><?= $nom[$nbLettre]; ?></div>
+                        <?php $delayAnim+=0.7 ?>
                         <?php $nbLettre++; ?>
                     <?php endwhile ?>
             </a>

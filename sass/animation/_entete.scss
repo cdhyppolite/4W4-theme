@@ -1,0 +1,19 @@
+// Animations des lettres du titre
+.lettre {
+    animation: animLettre 500ms forwards;
+    opacity: 0;
+}
+
+@keyframes animLettre {
+    from {
+        opacity: 0.5;
+        transform: scale(20) rotate(180deg);
+        animation-timing-function: cubic-bezier(.42, 0, .37, 1.47)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+// Animations des cercles
