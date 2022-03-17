@@ -9,6 +9,7 @@
                     $nbHeures = substr($titre, -6);
                     $codeCours = substr($titre, 0,7);
                     $descCours = get_the_excerpt();
+                    
                     //----Afficher Bordu cours-----
                     $etat = "a-faire";
                     $reussi = array("1J1", "2J2", "3J3", "1W1","2W2","3W3","1M1","1M2","2M3","2M4", "3M5","3C1");

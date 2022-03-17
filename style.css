@@ -1268,6 +1268,7 @@ LAYOUT
 
 .home .site__main {
   background-color: rgba(213, 241, 225, 0.5);
+  min-height: 600px;
 }
 
 .home .site__footer {
