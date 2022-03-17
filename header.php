@@ -30,16 +30,17 @@
 
         <h2 class="sousTitreComplet">
             <?php $sousTitre = get_bloginfo('description');?>
-            <?php $tableauSousTitre = explode(' ',$sousTitre); $mot=0; $delayAnim = 1.5; $anim2=""?>
-
+            <?php $tableauSousTitre = explode(' ',$sousTitre); $mot=0; $delayAnim = 0.75; $anim2=""?>
+            <!-- Séparer le sous-titre dans des div pour l'animer -->
             <?php while ($mot !=(substr_count($sousTitre, ' ')+1) ): ?>
                 <?php $delayAnim+=0.5 ?>
                 <?php if ($mot >= 3) {
-                    $anim2 = "animation-name :animSousTitre2";
+                    $anim2 = "animation-name :animSousTitre2, text-arc-en-ciel";
                 } ?>
                 <div style="animation-delay:<?= $delayAnim?>s; <?= $anim2; ?>" class="motSousTitre"><?= $tableauSousTitre[$mot]; ?></div>
                 <?php $mot++ ?>
             <?php endwhile ?>
+            
         </h2>
     </section>
     <section class="util">

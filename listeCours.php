@@ -29,7 +29,7 @@
                 ?>
                 
                 <article style="background-image: url('<?= get_the_post_thumbnail_url(); ?>');" class="formation__cours <?= $etat; ?>">
-                    <!-- <?php the_post_thumbnail('thumbnail'); ?> -->
+                <!-- <article class="formation__cours <?= $etat; ?>"> -->
                     <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
                     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                     <p class="cours__code"><?= $codeCours; ?>-MA </p>
