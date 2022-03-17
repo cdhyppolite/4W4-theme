@@ -19,7 +19,6 @@
             <?php the_custom_logo(); ?>
             <a class="titreComplet" href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php $nom = get_bloginfo('name'); $delayAnim = 1;?>
-
                 <!-- Séparer les lettres du titre -->
                     <?php while($nbLettre != strlen($nom)) : ?>
                         <div style="animation-delay:<?= $delayAnim?>s;" class="lettre"><?= $nom[$nbLettre]; ?></div>
@@ -28,7 +27,20 @@
                     <?php endwhile ?>
             </a>
         </h1>
-        <h2><?= get_bloginfo('description'); ?></h2>
+
+        <h2 class="sousTitreComplet">
+            <?php $sousTitre = get_bloginfo('description');?>
+            <?php $tableauSousTitre = explode(' ',$sousTitre); $mot=0; $delayAnim = 1.5; $anim2=""?>
+
+            <?php while ($mot !=(substr_count($sousTitre, ' ')+1) ): ?>
+                <?php $delayAnim+=0.5 ?>
+                <?php if ($mot >= 3) {
+                    $anim2 = "animation-name :animSousTitre2";
+                } ?>
+                <div style="animation-delay:<?= $delayAnim?>s; <?= $anim2; ?>" class="motSousTitre"><?= $tableauSousTitre[$mot]; ?></div>
+                <?php $mot++ ?>
+            <?php endwhile ?>
+        </h2>
     </section>
     <section class="util">
         <div class="util__menu">
