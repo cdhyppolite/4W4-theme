@@ -2,7 +2,7 @@
 /*
 Theme name: TP1 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/tree/tp1
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/tp1
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -746,6 +746,12 @@ COMPOSANTES
   }
 }
 
+.site__header__titre h1 .titreComplet {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1px;
+}
+
 .site__header__titre h2 {
   font-size: clamp(1.2rem, 2vw, 4rem);
   padding: 0 15% 0 clamp(0.5rem, 2vw, 7rem);
@@ -1173,7 +1179,7 @@ LAYOUT
   left: 0;
   right: 0;
   clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-  background-color: #57f9ff;
+  background-color: black;
   z-index: -1;
 }
 

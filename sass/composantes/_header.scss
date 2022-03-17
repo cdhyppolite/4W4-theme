@@ -25,6 +25,11 @@
                 text-align: left;
                 padding: 0 clamp(1.5rem, 2vw, 7rem) 0 0;
             }
+            .titreComplet {
+                display: flex;
+                flex-direction: row;
+                margin-top: -1px;
+            }
         }
         h2 {
             font-size: clamp(1.2rem, 2vw, 4rem);

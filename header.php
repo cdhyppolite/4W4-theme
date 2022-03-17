@@ -17,7 +17,14 @@
     <section class="site__header__titre">
         <h1>
             <?php the_custom_logo(); ?>
-            <a href="<?= esc_url( home_url( '/' ) ); ?>" rel="home"> <?php bloginfo('name'); ?> </a>
+            <a class="titreComplet" href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
+                <?php  $nom = get_bloginfo('name');?>
+                <!-- Séparer les lettres du titre -->
+                    <?php while($nbLettre != strlen($nom)) : ?>
+                        <div class="lettre"><?= $nom[$nbLettre]; ?></div>
+                        <?php $nbLettre++; ?>
+                    <?php endwhile ?>
+            </a>
         </h1>
         <h2><?= get_bloginfo('description'); ?></h2>
     </section>
