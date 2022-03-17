@@ -1,4 +1,6 @@
 #burger {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     position: absolute;
     transition-duration: 0.4s;
@@ -9,7 +11,7 @@
     flex-flow: column wrap;
     justify-content: space-between;
     text-align: right;
-    width: 25px;
+    width: 45px;
     height: 25px;
     top: 6vh;
     left: 1vw;
@@ -19,6 +21,7 @@
 
 #chk-burger:checked~#burger {
     height: 36px;
+    width: 36px;
     svg {
         color: white;
     }
@@ -59,6 +62,9 @@
     transition: 0.4s;
     &:nth-child(1) {
         transform-origin: bottom left;
+    }
+    &:nth-child(2) {
+        transform-origin: center;
     }
     &:nth-child(3) {
         transform-origin: top left;
