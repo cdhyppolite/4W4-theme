@@ -93,7 +93,7 @@
 
 @media screen and (min-width: $largeur__media--tablette) {
     #burger {
-        display: none;
+        width: 0;
     }
 }
 
@@ -103,7 +103,6 @@
         top: 5vh;
     }
     #chk-burger:checked~.menu-principal-container {
-        // height: 450px;
         // height: 970px;
         height: 30*32.5px;
     }

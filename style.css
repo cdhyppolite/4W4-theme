@@ -874,7 +874,7 @@ COMPOSANTES
 
 @media screen and (min-width: 576px) {
   #burger {
-    display: none;
+    width: 0;
   }
 }
 
@@ -1158,9 +1158,6 @@ ANIMATION
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
 .site {
   background-color: #daf1e4;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1173,6 +1170,7 @@ theme name: Lab 2 Lemieux Florence
   height: 100%;
   top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
   clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
   background-color: #57f9ff;
@@ -1192,11 +1190,12 @@ theme name: Lab 2 Lemieux Florence
 .site__main {
   grid-area: main;
   background-color: rgba(213, 241, 225, 0.5);
+  padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: rgba(7, 59, 29, 0.5);
+  background-color: #073b1d;
 }
 
 .site {
@@ -1210,6 +1209,29 @@ theme name: Lab 2 Lemieux Florence
   .site {
     grid-template-columns: auto 300px;
     grid-template-areas: "header header" " main sidebar" "footer footer";
+  }
+  .home {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
+  }
+  .home .menu-principal-container {
+    height: 0px;
+    top: 5vh;
+  }
+  .home #burger {
+    width: auto;
+    top: 53px;
+  }
+  .home #chk-burger:checked ~ .menu-principal-container {
+    height: 975px;
+  }
+}
+
+@media screen and (min-width: 783px) {
+  .home #burger {
+    top: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
