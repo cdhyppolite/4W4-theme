@@ -17,7 +17,20 @@
         }
         .footer__adresse {}
         .footer__article {}
-        .footer__lien {}
+        .footer__lien {
+            #sidebar-pied_page_colonne_ {
+                &2 .widget-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    @media screen and (min-width: $largeur__media--tablette) {
+                        text-align: center;
+                    }
+                }
+                &3 h2 {
+                    text-align: right;
+                }
+            }
+        }
     }
     &__ligne {
         display: flex;
@@ -29,27 +42,21 @@
         .footer__copyright {}
         .footer__menu {
             &__nav {
-                // .site__footer__menu
                 &__ul {
-                    // .site__footer__menu__ul
                     display: flex;
                     list-style-type: none;
                     justify-content: center;
                     .menu-item {
-                        // .site__footer__menu__ul .menu-item
                         margin: 10px 5px;
                         a {
-                            // .site__footer__menu__ul .menu-item a
                             display: flex;
                             align-items: center;
                             padding: 3px;
                             svg {
-                                // .site__footer__menu__ul .menu-item a svg
                                 color: $color__link__footer;
                             }
                             &:hover {
                                 svg {
-                                    // .site__footer__menu__ul .menu-item a svg
                                     color: $color__link__footer-hover;
                                 }
                             }

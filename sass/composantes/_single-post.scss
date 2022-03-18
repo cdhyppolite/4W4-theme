@@ -41,6 +41,9 @@
     }
 }
 
-.single-post .site__main {
-    animation: animHomeSiteMain 5s forwards;
+.single-post,
+.page-template-default {
+    .site__main {
+        animation: animHomeSiteMain 5s forwards;
+    }
 }

@@ -435,7 +435,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #327aaa;
+  background-color: #6fe29f;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +444,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #7878ad;
+  background-color: #39a259;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -453,7 +453,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
   color: #0f0;
-  background-color: #a092c7;
+  background-color: #335c44;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
@@ -998,6 +998,21 @@ COMPOSANTES
   flex: 0 0 30%;
 }
 
+.site__footer__colonne .footer__lien #sidebar-pied_page_colonne_2 .widget-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+  .site__footer__colonne .footer__lien #sidebar-pied_page_colonne_2 .widget-title {
+    text-align: center;
+  }
+}
+
+.site__footer__colonne .footer__lien #sidebar-pied_page_colonne_3 h2 {
+  text-align: right;
+}
+
 .site__footer__ligne {
   display: flex;
   flex-direction: column;
@@ -1124,7 +1139,8 @@ COMPOSANTES
   }
 }
 
-.single-post .site__main {
+.single-post .site__main,
+.page-template-default .site__main {
   animation: animHomeSiteMain 5s forwards;
 }
 
