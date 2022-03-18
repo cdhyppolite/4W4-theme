@@ -563,6 +563,8 @@ COMPOSANTES
 .formation__cours:hover {
   background-color: #2622201f;
   transform: scale(1.05);
+  background-image: url("") !important;
+  cursor: zoom-in;
 }
 
 .cours__titre {
@@ -1040,6 +1042,10 @@ COMPOSANTES
   text-align: justify;
 }
 
+.article__seul label {
+  cursor: pointer;
+}
+
 #chk-single {
   display: none;
 }
@@ -1119,14 +1125,18 @@ COMPOSANTES
   background-color: #28b864;
 }
 
-.recherche {
+.recherche,
+.searchform {
   position: relative;
   border: none;
 }
 
-.recherche__input {
+.recherche__input,
+.recherche #s,
+.searchform__input,
+.searchform #s {
   transition: 0.25s;
-  transform: rotateY(0deg) perspective(500px);
+  transform: rotateY(0deg) perspective(0);
   width: 96vw;
   font-family: 'Roboto';
   height: 35px;
@@ -1137,24 +1147,40 @@ COMPOSANTES
   border-radius: 5px;
 }
 
-.recherche__input:focus {
+.recherche__input:focus,
+.recherche #s:focus,
+.searchform__input:focus,
+.searchform #s:focus {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  transform: rotateY(360deg);
+  transform: rotateY(360deg) perspective(500px);
 }
 
-.recherche__input:focus ~ .recherche__bouton {
+.recherche__input:focus ~ .recherche__bouton,
+.recherche__input:focus ~ #searchsubmit,
+.recherche #s:focus ~ .recherche__bouton,
+.recherche #s:focus ~ #searchsubmit,
+.searchform__input:focus ~ .recherche__bouton,
+.searchform__input:focus ~ #searchsubmit,
+.searchform #s:focus ~ .recherche__bouton,
+.searchform #s:focus ~ #searchsubmit {
   background-color: rgba(0, 0, 0, 0);
   transform: rotateY(360deg);
 }
 
 @media screen and (min-width: 576px) {
-  .recherche__input {
+  .recherche__input,
+  .recherche #s,
+  .searchform__input,
+  .searchform #s {
     width: 250px;
   }
 }
 
-.recherche__bouton {
+.recherche__bouton,
+.recherche #searchsubmit,
+.searchform__bouton,
+.searchform #searchsubmit {
   background-color: #fff;
   top: 0;
   right: 0;
@@ -1169,11 +1195,17 @@ COMPOSANTES
   border-radius: 0 5px 5px 0;
 }
 
-.recherche__bouton:hover {
+.recherche__bouton:hover,
+.recherche #searchsubmit:hover,
+.searchform__bouton:hover,
+.searchform #searchsubmit:hover {
   cursor: pointer;
 }
 
-.recherche__bouton svg {
+.recherche__bouton svg,
+.recherche #searchsubmit svg,
+.searchform__bouton svg,
+.searchform #searchsubmit svg {
   color: #073b1d;
 }
 

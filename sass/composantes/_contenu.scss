@@ -51,6 +51,8 @@
         &:hover {
             background-color: #2622201f;
             transform: scale(1.05);
+            background-image: url('') !important;
+            cursor: zoom-in;
         }
     }
 }
