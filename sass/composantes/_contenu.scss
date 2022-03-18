@@ -34,8 +34,8 @@
         background-size: auto 100%;
         background-color: $color__background-cours;
         // background-repeat: no-repeat;
-        transform: translateX(-150vw);
-        animation: animHomeSiteMain 1s forwards;
+        opacity: 0;
+        animation: animCours 1s forwards;
         box-shadow: rgb(57, 64, 68) 1px -1px 10px;
         border-radius: 25px;
         margin: 10px;
@@ -52,7 +52,7 @@
         padding: 10px;
         &:hover {
             background-color: #2622201f;
-            transform: scale(1.05);
+            transform: scale(1.05) !important;
             background-image: url('') !important;
             cursor: zoom-in;
         }

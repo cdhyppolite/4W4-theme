@@ -80,4 +80,14 @@
     }
 }
 
+// Animation des cours
+@keyframes animCours {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 // Animations des cercles
