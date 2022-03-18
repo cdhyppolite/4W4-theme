@@ -1060,6 +1060,10 @@ COMPOSANTES
   }
 }
 
+.single-post .site__main {
+  animation: animHomeSiteMain 5s forwards;
+}
+
 .util {
   display: flex;
   flex-direction: column;
@@ -1121,6 +1125,8 @@ COMPOSANTES
 }
 
 .recherche__input {
+  transition: 0.25s;
+  transform: rotateY(0deg) perspective(500px);
   width: 96vw;
   font-family: 'Roboto';
   height: 35px;
@@ -1133,12 +1139,13 @@ COMPOSANTES
 
 .recherche__input:focus {
   background-color: rgba(0, 0, 0, 0.2);
-  transition: 0.25s;
   color: white;
+  transform: rotateY(360deg);
 }
 
 .recherche__input:focus ~ .recherche__bouton {
   background-color: rgba(0, 0, 0, 0);
+  transform: rotateY(360deg);
 }
 
 @media screen and (min-width: 576px) {
@@ -1243,6 +1250,15 @@ ANIMATION
   }
 }
 
+@keyframes animHomeSiteMain {
+  from {
+    transform: translateX(-150vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1334,6 +1350,7 @@ LAYOUT
 .home .site__main {
   background-color: rgba(213, 241, 225, 0.5);
   min-height: 600px;
+  animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {

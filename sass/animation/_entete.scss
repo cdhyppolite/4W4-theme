@@ -57,6 +57,7 @@
     }
 }
 
+// Animation clip-path
 @keyframes formeArriere {
     0%,
     100% {
@@ -66,6 +67,16 @@
     50% {
         // parallélogramme 2
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+}
+
+// Animation site main
+@keyframes animHomeSiteMain {
+    from {
+        transform: translateX(-150vw)
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
