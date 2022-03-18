@@ -14,9 +14,9 @@
 </head>
 <body <?php body_class('site'); ?>>
 <header class="site__header">
+            <?php the_custom_logo(); ?>
     <section class="site__header__titre">
         <h1>
-            <?php the_custom_logo(); ?>
             <a class="titreComplet" href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php $nom = get_bloginfo('name'); $delayAnim = 1;?>
                 <!-- Séparer les lettres du titre -->

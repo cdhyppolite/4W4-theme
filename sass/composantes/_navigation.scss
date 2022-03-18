@@ -76,6 +76,7 @@
     &-item {
         margin: 0;
         padding: 0;
+        // display: none;
         a {
             display: block;
             text-decoration: none;
@@ -86,6 +87,17 @@
                 background-color: $color__background-link-hover;
             }
         }
+    }
+}
+
+.wp-block-latest-posts li a {
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+    background-color: $color__background-link;
+    transition: .1s cubic-bezier(.5, 0, .5, 1.7);
+    &:hover {
+        background-color: $color__background-link-hover;
     }
 }
 

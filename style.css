@@ -713,13 +713,42 @@ COMPOSANTES
 .site__header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
 @media screen and (min-width: 576px) {
   .site__header {
     flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site__header .custom-logo {
+  margin: 80px 0 0 15px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 576px) {
+  .site__header .custom-logo {
+    margin: 15px 0 15px 15px;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .site__header .custom-logo {
+    margin: 15px 0 15px 15px;
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .site__header .custom-logo {
+    margin: 15px;
   }
 }
 
@@ -738,7 +767,7 @@ COMPOSANTES
 
 .site__header__titre h1 {
   text-align: right;
-  padding: 0 clamp(0.5rem, 2vw, 7rem) 0 15%;
+  margin-left: 15px;
   font-size: clamp(2.5rem, 4vw, 6rem);
   font-family: 'Ubuntu';
   color: #A15C38;
@@ -761,6 +790,7 @@ COMPOSANTES
 .site__header__titre h2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: clamp(1.2rem, 2vw, 4rem);
   padding: 0 15% 0 clamp(0.5rem, 2vw, 7rem);
   font-family: 'Ubuntu';
@@ -775,6 +805,7 @@ COMPOSANTES
 @media screen and (min-width: 992px) {
   .site__header__titre h2 {
     padding: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -888,6 +919,18 @@ COMPOSANTES
   background-color: #28b864;
 }
 
+.wp-block-latest-posts li a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #82e3aa;
+  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+.wp-block-latest-posts li a:hover {
+  background-color: #28b864;
+}
+
 @media screen and (min-width: 576px) {
   #burger {
     width: 0;
@@ -914,12 +957,18 @@ COMPOSANTES
 .site__footer__colonne {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+  .site__footer__colonne {
+    flex-direction: row;
+  }
 }
 
 .site__footer__colonne section {
   display: flex;
   flex-direction: column;
-  border: 1px solid #aaa;
   flex: 0 0 30%;
 }
 
@@ -957,23 +1006,6 @@ COMPOSANTES
   display: none;
 }
 
-/*
-  
-  .site__footer {
-      font-family: $font__titre;
-      background-color: $color__background-footer;
-      padding: 15px;
-  
-  
-    }
-  
-  .footer__titre,
-  .footer__presentation,
-  .footer__author {
-    color: $color__font-footer;
-    text-align: center;
-  }
-  */
 .erreur404 {
   height: 600px;
   width: 600px;
@@ -1387,5 +1419,9 @@ LAYOUT
 
 .home .site__footer {
   background-color: rgba(7, 59, 29, 0.5);
+}
+
+html {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=style.css.map */
