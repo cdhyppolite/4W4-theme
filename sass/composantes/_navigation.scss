@@ -3,14 +3,12 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    transition-duration: 0.4s;
+    transition: .4s cubic-bezier(.5, 0, .5, 1.7);
     svg {
         color: black;
     }
-    display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    text-align: right;
     width: 45px;
     height: 25px;
     top: 6vh;
@@ -40,6 +38,7 @@
             color: white;
         }
         .ligne {
+            background-color: $color__background-main;
             &:first-child {
                 transform: rotate(45deg);
             }

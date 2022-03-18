@@ -13,8 +13,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    // clip-path: polygon(0 0, 20% 0, 60% 100%, 0 100%);
-    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    animation: formeArriere 10s infinite;
     background-color: $color__background-body-clip;
     z-index: -1;
 }

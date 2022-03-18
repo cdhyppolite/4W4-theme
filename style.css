@@ -785,11 +785,9 @@ COMPOSANTES
   align-items: center;
   cursor: pointer;
   position: absolute;
-  transition-duration: 0.4s;
-  display: flex;
+  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
   flex-flow: column wrap;
   justify-content: space-between;
-  text-align: right;
   width: 45px;
   height: 25px;
   top: 6vh;
@@ -827,6 +825,10 @@ COMPOSANTES
 
 #chk-burger:checked ~ #burger svg {
   color: white;
+}
+
+#chk-burger:checked ~ #burger .ligne {
+  background-color: #d5f1e1;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -1180,6 +1182,10 @@ ANIMATION
   opacity: 0;
 }
 
+.lettre:nth-of-type(3) {
+  transform: scaleX(-1) !important;
+}
+
 @keyframes animLettre {
   from {
     opacity: 0.5;
@@ -1227,6 +1233,16 @@ ANIMATION
   }
 }
 
+@keyframes formeArriere {
+  0%,
+  100% {
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  }
+  50% {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1244,7 +1260,7 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+  animation: formeArriere 10s infinite;
   background-color: black;
   z-index: -1;
 }
