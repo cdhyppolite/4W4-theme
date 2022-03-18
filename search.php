@@ -6,8 +6,9 @@
 
     <article class="site__main__recherche">
         <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= the_title(); ?> </a></h3>
-        <p><?= wp_trim_words(get_the_content(),20) ?></p>
+        <p><?= wp_trim_words(get_the_content(),20, " ...") ?></p>
     </article>
+    <hr>
 
     <?php endwhile ?>
 

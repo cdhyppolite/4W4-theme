@@ -1,0 +1,93 @@
+// Animations des lettres du titre
+.lettre {
+    animation: animLettre 500ms forwards;
+    opacity: 0;
+    &:nth-of-type(3) {
+        transform: scaleX(-1) !important;
+    }
+}
+
+@keyframes animLettre {
+    from {
+        opacity: 0.5;
+        transform: scale(20) rotate(180deg);
+        animation-timing-function: cubic-bezier(.42, 0, .37, 1.47)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+// Animations des mots du sous-titre
+.motSousTitre {
+    animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
+    opacity: 0;
+    margin-right: 1vw;
+    text-shadow: 0 0 3px $color__background-barre, 0 0 5px #0000FF;
+    // margin-right: 3.5vw;
+}
+
+@keyframes animSousTitre {
+    0% {
+        transform: translateY(-500px) scale(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(5);
+    }
+    100% {
+        transform: translate(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animSousTitre2 {
+    0% {
+        transform: translateY(500px) scale(0) rotate(200deg);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(5) rotate(100deg);
+    }
+    100% {
+        transform: translate(0) scale(1) rotate(0deg);
+        ;
+        opacity: 1;
+    }
+}
+
+// Animation clip-path
+@keyframes formeArriere {
+    0%,
+    100% {
+        // parallélogramme 1
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    }
+    50% {
+        // parallélogramme 2
+        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+}
+
+// Animation site main
+@keyframes animHomeSiteMain {
+    from {
+        transform: translateX(-150vw)
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+// Animation des cours
+@keyframes animCours {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+// Animations des cercles

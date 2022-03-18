@@ -3,11 +3,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    &__menu {
+        @media screen and (min-width: $largeur__media--tablette) {
+            margin-right: 5px;
+        }
+    }
     @media screen and (min-width: $largeur__media--tablette) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-end;
         width: 44.4%;
+        align-items: center;
     }
 }
 
@@ -43,23 +49,42 @@
     }
 }
 
-.recherche {
+.recherche,
+.searchform {
     position: relative;
     border: none;
-    &__input {
+    @media screen and (min-width: $largeur__media--tablette) {
+        margin-right: 5px;
+    }
+    &__input,
+    #s {
+        transition: 0.25s;
+        transform: rotateY(0deg)perspective(0);
+        &:focus {
+            background-color: rgba($color: black, $alpha: 0.2);
+            color: $color__link-hover;
+            transform: rotateY(360deg) perspective(500px);
+            &~.recherche__bouton,
+            &~#searchsubmit {
+                background-color: rgba(0, 0, 0, 0);
+                transform: rotateY(360deg);
+            }
+        }
         width: 96vw;
         font-family: 'Roboto';
         height: 35px;
         border: none;
         outline: none;
-        background-color: #3f3936;
-        color: #000000;
+        background-color: $color__link__footer__menu;
+        color: $color__background-footer;
+        border-radius: 5px;
         @media screen and (min-width: $largeur__media--tablette) {
             width: 250px;
         }
-    } // .recherche__input {}
-    &__bouton {
-        background-color: #3f3936;
+    }
+    &__bouton,
+    #searchsubmit {
+        background-color: $color__link__footer__menu;
         top: 0;
         right: 0;
         border: none;
@@ -70,8 +95,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 0 5px 5px 0;
         &:hover {
             cursor: pointer;
+        }
+        svg {
+            color: $color__background-footer;
         }
     }
 }

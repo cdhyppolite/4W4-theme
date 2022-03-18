@@ -9,6 +9,26 @@
     width: 100px;
 }
 
+@mixin etatCours($couleurCours, $texteCours) {
+    border: 4px solid $couleurCours;
+    background-color: rgba($couleurCours, 0.3) !important;
+    .cours {
+        &__code {
+            color: $couleurCours;
+        }
+        &_etat {
+            font-family: $font__titre;
+            background-color: $couleurCours;
+            &::before {
+                content: $texteCours;
+            }
+        }
+        &__titre {
+            border-bottom: 2px solid $couleurCours;
+        }
+    }
+}
+
 .a-faire {
     @include etatCours($color__cours-aFaire, "À faire")
 }
@@ -27,4 +47,8 @@
 
 .choisi {
     @include etatCours($color__cours-choisi, "Choisi")
+}
+
+.non-choisi {
+    @include etatCours(gray, "Non Choisi")
 }

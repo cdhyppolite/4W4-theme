@@ -1,44 +1,74 @@
 .site__footer {
-    i {
-        opacity: 50%;
-    }
     font-family: $font__titre;
     background-color: $color__background-footer;
+    color: $color__font-footer;
     padding: 15px;
-    &__menu {
-        // .site__footer__menu
-        &__ul {
-            // .site__footer__menu__ul
+    &__colonne {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @media screen and (min-width: $largeur__media--tablette) {
+            flex-direction: row;
+        }
+        section {
             display: flex;
-            list-style-type: none;
-            justify-content: center;
-            .menu-item {
-                // .site__footer__menu__ul .menu-item
-                margin: 10px 5px;
-                a {
-                    // .site__footer__menu__ul .menu-item a
-                    display: flex;
-                    align-items: center;
-                    padding: 3px;
-                    svg {
-                        // .site__footer__menu__ul .menu-item a svg
-                        color: $color__link__footer;
+            flex-direction: column;
+            flex: 0 0 30%;
+        }
+        .footer__adresse {}
+        .footer__article {}
+        .footer__lien {
+            #sidebar-pied_page_colonne_ {
+                &2 .widget-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    @media screen and (min-width: $largeur__media--tablette) {
+                        text-align: center;
                     }
-                    &:hover {
-                        svg {
-                            // .site__footer__menu__ul .menu-item a svg
-                            color: $color__link__footer-hover;
+                }
+                &3 h2 {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    &__ligne {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        section {}
+        .footer__description {}
+        .footer__auteur {}
+        .footer__copyright {}
+        .footer__menu {
+            &__nav {
+                &__ul {
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: center;
+                    .menu-item {
+                        margin: 10px 5px;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            padding: 3px;
+                            svg {
+                                color: $color__link__footer;
+                            }
+                            &:hover {
+                                svg {
+                                    color: $color__link__footer-hover;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+        .footer__recherche {
+            .icone {
+                display: none;
+            }
+        }
     }
-}
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-    color: $color__font-footer;
-    text-align: center;
 }

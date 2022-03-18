@@ -15,6 +15,18 @@
         font-family: $font__main;
         text-align: justify;
     }
+    label {
+        cursor: pointer;
+    }
+}
+
+#chk-single {
+    display: none;
+    &:checked~ {
+        .site__main {
+            background-image: url('') !important;
+        }
+    }
 }
 
 .site__main {
@@ -26,5 +38,12 @@
     // }
     @media screen and (min-width: $largeur__media--desktop) {
         background-size: 100% auto;
+    }
+}
+
+.single-post,
+.page-template-default {
+    .site__main {
+        animation: animHomeSiteMain 5s forwards;
     }
 }
