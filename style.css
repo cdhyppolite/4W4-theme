@@ -544,6 +544,8 @@ COMPOSANTES
   background-position: center;
   background-size: auto 100%;
   background-color: #d1ffe4;
+  transform: translateX(-150vw);
+  animation: animHomeSiteMain 1s forwards;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 25px;
   margin: 10px;

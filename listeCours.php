@@ -1,6 +1,7 @@
 <section class="formation">
         <h2 class="formation__titre">Liste de cours - Techniques d'intégration multimédia</h2>
         <div class="formation__liste">
+            <?php $delayAnim=1; ?>
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
                 <?php
@@ -26,9 +27,10 @@
                         $etat = "echoue";
                     }
                     //-----------------------------
+                    $delayAnim+=0.05;
                 ?>
                 
-                <article style="background-image: url('<?= get_the_post_thumbnail_url(); ?>');" class="formation__cours <?= $etat; ?>">
+                <article style="animation-delay:<?= $delayAnim?>s; background-image: url('<?= get_the_post_thumbnail_url(); ?>');" class="formation__cours <?= $etat; ?>">
                 <!-- <article class="formation__cours <?= $etat; ?>"> -->
                     <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
                     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
