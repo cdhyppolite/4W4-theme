@@ -19,25 +19,6 @@
     overflow: hidden;
 }
 
-#chk-burger:checked~#burger {
-    height: 36px;
-    width: 36px;
-    svg {
-        color: white;
-    }
-    .ligne {
-        &:first-child {
-            transform: rotate(45deg);
-        }
-        &:nth-child(2) {
-            width: 0px;
-        }
-        &:last-child {
-            transform: rotate(-45deg);
-        }
-    }
-}
-
 .menu-principal-container {
     li:nth-child(2) {
         margin-bottom: 3px;
@@ -52,6 +33,24 @@
 
 #chk-burger {
     display: none;
+    &:checked~#burger {
+        height: 36px;
+        width: 36px;
+        svg {
+            color: white;
+        }
+        .ligne {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                width: 0px;
+            }
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
 }
 
 .ligne {

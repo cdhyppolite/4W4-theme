@@ -17,6 +17,15 @@
     }
 }
 
+#chk-single {
+    display: none;
+    &:checked~ {
+        .site__main {
+            background-image: url('') !important;
+        }
+    }
+}
+
 .site__main {
     background-position: center;
     background-size: auto 100%;

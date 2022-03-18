@@ -602,7 +602,7 @@ COMPOSANTES
 
 .a-faire {
   border: 4px solid #FF8F00;
-  background-color: rgba(255, 143, 0, 0.3);
+  background-color: rgba(255, 143, 0, 0.3) !important;
 }
 
 .a-faire .cours__code {
@@ -620,7 +620,7 @@ COMPOSANTES
 
 .en-cours {
   border: 4px solid #01579B;
-  background-color: rgba(1, 87, 155, 0.3);
+  background-color: rgba(1, 87, 155, 0.3) !important;
 }
 
 .en-cours .cours__code {
@@ -638,7 +638,7 @@ COMPOSANTES
 
 .reussi {
   border: 4px solid #1B5E20;
-  background-color: rgba(27, 94, 32, 0.3);
+  background-color: rgba(27, 94, 32, 0.3) !important;
 }
 
 .reussi .cours__code {
@@ -656,7 +656,7 @@ COMPOSANTES
 
 .echoue {
   border: 4px solid #D32F2F;
-  background-color: rgba(211, 47, 47, 0.3);
+  background-color: rgba(211, 47, 47, 0.3) !important;
 }
 
 .echoue .cours__code {
@@ -674,7 +674,7 @@ COMPOSANTES
 
 .choisi {
   border: 4px solid #7E57C2;
-  background-color: rgba(126, 87, 194, 0.3);
+  background-color: rgba(126, 87, 194, 0.3) !important;
 }
 
 .choisi .cours__code {
@@ -692,7 +692,7 @@ COMPOSANTES
 
 .non-choisi {
   border: 4px solid gray;
-  background-color: rgba(128, 128, 128, 0.3);
+  background-color: rgba(128, 128, 128, 0.3) !important;
 }
 
 .non-choisi .cours__code {
@@ -802,6 +802,24 @@ COMPOSANTES
   color: black;
 }
 
+.menu-principal-container {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+.menu-principal-container li:nth-child(2) {
+  margin-bottom: 3px;
+}
+
+.menu-principal-container a:hover::before {
+  content: "\2771 ";
+}
+
+#chk-burger {
+  display: none;
+}
+
 #chk-burger:checked ~ #burger {
   height: 36px;
   width: 36px;
@@ -821,24 +839,6 @@ COMPOSANTES
 
 #chk-burger:checked ~ #burger .ligne:last-child {
   transform: rotate(-45deg);
-}
-
-.menu-principal-container {
-  position: relative;
-  overflow: hidden;
-  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
-}
-
-.menu-principal-container li:nth-child(2) {
-  margin-bottom: 3px;
-}
-
-.menu-principal-container a:hover::before {
-  content: "\2771 ";
-}
-
-#chk-burger {
-  display: none;
 }
 
 .ligne {
@@ -1036,6 +1036,14 @@ COMPOSANTES
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
   text-align: justify;
+}
+
+#chk-single {
+  display: none;
+}
+
+#chk-single:checked ~ .site__main {
+  background-image: url("") !important;
 }
 
 .site__main {
