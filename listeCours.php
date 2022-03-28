@@ -1,4 +1,5 @@
 <section class="formation">
+        <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
         <h2 class="formation__titre">Liste de cours - Techniques d'intégration multimédia</h2>
         <div class="formation__liste">
             <?php $delayAnim=1; ?>

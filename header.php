@@ -49,6 +49,7 @@
         </div>
             <?php get_search_form(); ?>
     </section>
+    
 </header>
 <section class="site__barre">
     <input type="checkbox" id="chk-burger">

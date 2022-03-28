@@ -1,0 +1,24 @@
+    .menu-categorie_cours-container {
+        // text-align: center;
+        .menu {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            .menu-item {
+                display: block;
+                // margin: 0 4px;
+                column-gap: 4px;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .current-menu-item {
+        a {
+            // color: $color__link__footer__menu-;
+            color: white;
+            background-color: $color__background-link-hover;
+        }
+    }
