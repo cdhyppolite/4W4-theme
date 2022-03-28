@@ -27,6 +27,24 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        .web {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold') !important;
+        }
+        .jeu {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games') !important;
+        }
+        .utilitaire {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold') !important;
+        }
+        .creation-3d {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar') !important;
+        }
+        .video {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video') !important;
+        }
+        .design {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens') !important;
+        }
     }
     &__cours {
         // filter: blur(8px);

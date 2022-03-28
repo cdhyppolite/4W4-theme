@@ -540,6 +540,30 @@ COMPOSANTES
   justify-content: center;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold") !important;
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games") !important;
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold") !important;
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar") !important;
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video") !important;
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens") !important;
+}
+
 .formation__cours {
   background-position: center;
   background-size: auto 100%;
@@ -871,6 +895,10 @@ COMPOSANTES
 
 .menu-principal-container a:hover::before {
   content: "\2771 ";
+}
+
+.menu-principal-container .current-menu-item a {
+  background-color: white;
 }
 
 #chk-burger {
