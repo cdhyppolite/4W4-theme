@@ -1,15 +1,17 @@
 <section class="formation">
         <?php
-            $idCategorie = get_queried_object() -> term_id;
-            $cat = get_the_category();
+            $idCategorie = get_queried_object() -> slug;
+            $nomCategorie = get_queried_object() -> name;
+            // echo $idCategorie;
         ?>
-        <!-- <?= $idCategorie; ?> -->
+        
         <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
-        <h2 class="formation__titre">Liste de cours - <?php if ($idCategorie ==5) { echo "Techniques d'intégration multimédia"; } else { echo $cat[1]->cat_name; } ?></h2>
-        <?php if ($idCategorie!=5) :?>
-            <!-- <h1><?= $cat[1]->cat_name; ?></h1> -->
+        <h2 class="formation__titre">Liste de cours - <?php if ($idCategorie =="cours") { echo "Techniques d'intégration multimédia"; } else { echo $nomCategorie; } ?></h2>
+        
+        <?php if ($idCategorie!="cours") :?>
             <p><?= category_description(); ?></p>
         <?php endif; ?>
+
         <div class="formation__liste">
             <?php $delayAnim=1; ?>
             <?php if (have_posts()):
