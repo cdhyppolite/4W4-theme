@@ -31,4 +31,5 @@
                     <p class="cours__code"><?= $codeCours; ?>-MA </p>
                     <div class="cours_etat"></div>
                     <p class="cours__desc"> <?= $descCours; ?></p>
+                    <div class="logoFiltre"></div>
                 </article>

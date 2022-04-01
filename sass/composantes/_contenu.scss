@@ -27,27 +27,28 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        .web {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold') !important;
+        .web .logoFiltre {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
         }
-        .jeu {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games') !important;
+        .jeu .logoFiltre {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
         }
-        .utilitaire {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold') !important;
+        .utilitaire .logoFiltre {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
         }
-        .creation-3d {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar') !important;
+        .creation-3d .logoFiltre {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
         }
-        .video {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video') !important;
+        .video .logoFiltre {
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
         }
-        .design {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens') !important;
+        .design .logoFiltre {
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
         }
     }
     &__cours {
         // filter: blur(8px);
+        position: relative;
         background-position: center;
         background-size: auto 100%;
         background-color: $color__background-cours;
@@ -73,6 +74,16 @@
             transform: scale(1.05) !important;
             background-image: url('') !important;
             cursor: zoom-in;
+        }
+        .logoFiltre {
+            position: absolute;
+            bottom: 13px;
+            right: 13px;
+            padding: 10px 14px 7px;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: scale(2);
         }
     }
 }

@@ -540,31 +540,32 @@ COMPOSANTES
   justify-content: center;
 }
 
-.formation__liste .web {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold") !important;
+.formation__liste .web .logoFiltre {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
 }
 
-.formation__liste .jeu {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games") !important;
+.formation__liste .jeu .logoFiltre {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
 }
 
-.formation__liste .utilitaire {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold") !important;
+.formation__liste .utilitaire .logoFiltre {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
 }
 
-.formation__liste .creation-3d {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar") !important;
+.formation__liste .creation-3d .logoFiltre {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
-.formation__liste .video {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video") !important;
+.formation__liste .video .logoFiltre {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
 }
 
-.formation__liste .design {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens") !important;
+.formation__liste .design .logoFiltre {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
 }
 
 .formation__cours {
+  position: relative;
   background-position: center;
   background-size: auto 100%;
   background-color: #d1ffe4;
@@ -591,6 +592,17 @@ COMPOSANTES
   transform: scale(1.05) !important;
   background-image: url("") !important;
   cursor: zoom-in;
+}
+
+.formation__cours .logoFiltre {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  padding: 10px 14px 7px;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(2);
 }
 
 .cours__titre {
