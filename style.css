@@ -2,7 +2,7 @@
 /*
 Theme name: LAB5 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/tp1
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/lab5
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -501,6 +501,53 @@ a:hover, a:active {
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:active {
   outline: 0;
+}
+
+h1,
+h2 {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+h3,
+h4 {
+  font-family: "Anybody", "cursive";
+}
+
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 /* ---------------------------------------------------------
