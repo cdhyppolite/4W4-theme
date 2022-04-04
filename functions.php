@@ -113,9 +113,37 @@ function prefix_nav_description( $item_output, $item,  $args ) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( $args->link_after . '</a>',
         $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+        // <div class="menu-item-icone"></div>
               $item_output );
     }
     return $item_output;
 }
 // add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
+
+/**
+ * @param : WP_Query $query
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+    if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
+    {
+    // $ordre = get_query_var('ordre');
+        //$query->set('posts_per_page', -1);
+    // $query->set('orderby', $cle);
+    $query->set('orderby', 'title');
+    // $query->set('order',  $ordre);
+    $query->set('order',  'ASC');
+    // var_dump($query);
+    // die();
+   }
+}
+function cidw_4w4_query_vars($params){
+    $params[] = "cletri";
+    $params[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 ?>

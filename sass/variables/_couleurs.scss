@@ -1,58 +1,60 @@
 /* ---------------- BACKGROUND */
 
-$color__background-body: hsl(145, 45%, 90%);
+$chiffreCouleur:326;
+$chiffreTest :hsl(326, 100%, 50%);
+$color__background-body: hsl($chiffreCouleur, 45%, 90%);
 $color__background-body-clip: hsl(0, 0%, 0%);
-$color__background-main: hsl(145, 50%, 89%);
-$color__background-cours: hsl(145, 100%, 91%);
-$color__background-header: hsl(145, 66%, 66%);
-$color__background-barre: hsl(145, 78%, 9%);
-$color__background-footer: hsl(145, 79%, 13%);
-$color__background-link: hsl(145, 63%, 70%);
-$color__background-link-hover: hsl(145, 64%, 44%);
+$color__background-main: hsl($chiffreCouleur, 50%, 89%);
+$color__background-cours: hsl($chiffreCouleur, 100%, 91%);
+$color__background-header: hsl($chiffreCouleur, 66%, 66%);
+$color__background-barre: hsl($chiffreCouleur, 78%, 9%);
+$color__background-footer: hsl($chiffreCouleur, 79%, 13%);
+$color__background-link: hsl($chiffreCouleur, 63%, 70%);
+$color__background-link-hover: hsl($chiffreCouleur, 64%, 44%);
 
 /* ---------------- LIENS */
 
-$color__link: hsl(145, 27%, 38%);
+$color__link: hsl($chiffreCouleur, 27%, 38%);
 $color__link-hover: hsl(0, 0%, 100%);
-$color__link-visited: hsl(145, 29%, 28%);
-$color__cours-titre: hsl(138, 48%, 43%);
+$color__link-visited: hsl($chiffreCouleur, 29%, 28%);
+$color__cours-titre: hsl($chiffreCouleur, 48%, 43%);
 
 /* ---------------- LIENS FOOTER */
 
 $color__link__footer: black; //hsl(34, 91%, 50%);
-$color__link__footer-hover: hsl(115, 100%, 50%);
+$color__link__footer-hover: hsl($chiffreCouleur - 30, 100%, 50%);
 $color__link__footer-visited: #00bfff;
 
 /* ---------------- LIENS DU MENU FOOTER*/
 
 $color__link__footer__menu: #fff;
 $color__link__footer__menu-visited: #bbb;
-$color__link__footer__menu-hover:#0f0;
-$background__link__footer__menu: hsl(145, 66%, 66%);
-$background__link__footer__menu-visited: hsl(138, 48%, 43%);
-$background__link__footer__menu-hover: hsl(145, 29%, 28%);
+$color__link__footer__menu-hover:hsl($chiffreCouleur, 100%, 50%);
+$background__link__footer__menu: hsl($chiffreCouleur, 66%, 66%);
+$background__link__footer__menu-visited: hsl($chiffreCouleur - 7, 48%, 43%);
+$background__link__footer__menu-hover: hsl($chiffreCouleur, 29%, 28%);
 
 /* ---------------- LIENS  DU MENU PRINCIPAL*/
 
 $color__link__principal__menu: #fff;
 $color__link__principal__menu-visited: #bbb;
-$color__link__principal__menu-hover:hsl(145, 79%, 13%);
+$color__link__principal__menu-hover:hsl($chiffreCouleur, 79%, 13%);
 $background__link__principal__menu: rgba(rgb(140, 189, 223), .1);
 $background__link__principal__menu-visited: rgb(1, 1, 19);
-$background__link__principal__menu-hover: hsl(145, 45%, 90%);
+$background__link__principal__menu-hover: hsl($chiffreCouleur, 45%, 90%);
 
 /* ---------------- LIENS HEADER titre principal du site */
 
-$color__link__header: hsl(154, 100%, 50%);
-$color__link__header-hover: hsl(149, 63%, 72%);
-$color__link__header-visited: hsl(145, 100%, 50%);
+$color__link__header: hsl($chiffreCouleur + 14, 100%, 50%);
+$color__link__header-hover: hsl( $chiffreCouleur + 4, 63%, 72%);
+$color__link__header-visited: hsl($chiffreCouleur, 100%, 50%);
 
 /* ---------------- FONT */
 
-$color__font-header: hsl(149, 91%, 78%);
+$color__font-header: hsl($chiffreCouleur +4, 91%, 78%);
 $color__font-main :rgb(68, 57, 54);
 $color__font-barre: hsl(0, 0%, 100%);
-$color__font-footer: hsl(145, 100%, 87%);
+$color__font-footer: hsl($chiffreCouleur, 100%, 87%);
 
 /****************Recherche*******/
 
