@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme name: LAB5 - Carl-David Hyppolite
+Theme name: EX3 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/lab5
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex3
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -391,11 +391,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b4764;
+  color: #477b77;
 }
 
 a:visited {
-  color: #5c334a;
+  color: #335c59;
 }
 
 a:hover, a:focus, a:active {
@@ -414,15 +414,15 @@ a:hover, a:active {
     @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }*/
 .header__titre a {
-  color: #ff0055;
+  color: #00d9ff;
 }
 
 .header__titre a:visited {
-  color: #ff0091;
+  color: #00ffea;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #e58bb8;
+  color: #8be5e3;
 }
 
 .header__titre a:focus {
@@ -435,7 +435,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #e26fb0;
+  background-color: #6fe2d8;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +444,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #a23981;
+  background-color: #39a28d;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -452,12 +452,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #ff0091;
-  background-color: #5c334a;
+  color: #00ffea;
+  background-color: #335c59;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #ff0091;
+  color: #00ffea;
 }
 
 .site__footer .menu-item a:focus {
@@ -487,12 +487,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #3b0725;
-  background-color: #f1dae7;
+  color: #073b37;
+  background-color: #daf1ef;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #3b0725;
+  color: #073b37;
 }
 
 .site__barre .menu-item a:focus {
@@ -556,14 +556,14 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #f1d5e5;
+  background-color: #d5f1ef;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #f1d5e5;
+  background-color: #d5f1ef;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -575,7 +575,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #a23975;
+  color: #39a29a;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -615,7 +615,7 @@ COMPOSANTES
   position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #ffd1eb;
+  background-color: #d1fffb;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
@@ -674,7 +674,7 @@ COMPOSANTES
 .cours__code {
   font-size: 1.2rem;
   margin: 0;
-  color: #b8287a;
+  color: #28b8ac;
   font-weight: bold;
 }
 
@@ -974,7 +974,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger .ligne {
-  background-color: #f1d5e5;
+  background-color: #d5f1ef;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -1024,24 +1024,24 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #e382b9;
+  background-color: #82e3db;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .menu-item a:hover {
-  background-color: #b8287a;
+  background-color: #28b8ac;
 }
 
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #e382b9;
+  background-color: #82e3db;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .wp-block-latest-posts li a:hover {
-  background-color: #b8287a;
+  background-color: #28b8ac;
 }
 
 @media screen and (min-width: 576px) {
@@ -1062,8 +1062,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #3b0725;
-  color: #ffbde2;
+  background-color: #073b37;
+  color: #bdfff9;
   padding: 15px;
 }
 
@@ -1127,7 +1127,7 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #ee00ff;
+  color: #00ff6a;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1138,14 +1138,14 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #ff0055;
+  color: #00d9ff;
   margin: 0 auto;
 }
 
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #3b0725;
+  color: #073b37;
 }
 
 .err {
@@ -1172,7 +1172,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #3b0725;
+  color: #073b37;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -1185,7 +1185,7 @@ COMPOSANTES
 .article__seul {
   padding: 15px;
   margin: 20px;
-  color: #3b0725;
+  color: #073b37;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -1195,7 +1195,7 @@ COMPOSANTES
 .article__seul__contenu {
   font-weight: normal;
   display: flex;
-  color: #290519;
+  color: #052926;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1254,7 +1254,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #f1dae7;
+  background-color: #daf1ef;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -1268,14 +1268,14 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #f1dae7;
+  background-color: #daf1ef;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
 }
 
 .icone__lien svg {
-  color: #e26fb0;
+  color: #6fe2d8;
   margin: 0px 2px;
 }
 
@@ -1286,11 +1286,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #ffd1eb;
+  color: #d1fffb;
 }
 
 .icone__lien:hover {
-  background-color: #b8287a;
+  background-color: #28b8ac;
 }
 
 .recherche,
@@ -1318,7 +1318,7 @@ COMPOSANTES
   border: none;
   outline: none;
   background-color: #fff;
-  color: #3b0725;
+  color: #073b37;
   border-radius: 5px;
 }
 
@@ -1381,11 +1381,11 @@ COMPOSANTES
 .recherche #searchsubmit svg,
 .searchform__bouton svg,
 .searchform #searchsubmit svg {
-  color: #3b0725;
+  color: #073b37;
 }
 
 .mot_recherche {
-  color: #a23975;
+  color: #39a29a;
 }
 
 .menu-categorie_cours-container .menu {
@@ -1405,7 +1405,48 @@ COMPOSANTES
 
 .current-menu-item a {
   color: white;
-  background-color: #b8287a;
+  background-color: #28b8ac;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+  height: 175px;
+  border: 1px solid #aaa;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #aaa;
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* ---------------------------------------------------------
@@ -1436,7 +1477,7 @@ ANIMATION
   animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
   opacity: 0;
   margin-right: 1vw;
-  text-shadow: 0 0 3px #290519, 0 0 5px #0000FF;
+  text-shadow: 0 0 3px #052926, 0 0 5px #0000FF;
 }
 
 @keyframes animSousTitre {
@@ -1499,7 +1540,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #f1dae7;
+  background-color: #daf1ef;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
@@ -1519,23 +1560,23 @@ LAYOUT
 
 .site__header {
   grid-area: header;
-  background-color: #e26fb0;
+  background-color: #6fe2d8;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #290519;
+  background-color: #052926;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #f1d5e5;
+  background-color: #d5f1ef;
   padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #3b0725;
+  background-color: #073b37;
 }
 
 .site {
@@ -1576,21 +1617,21 @@ LAYOUT
 }
 
 .home .site__header {
-  background-color: rgba(226, 111, 176, 0.5);
+  background-color: rgba(111, 226, 216, 0.5);
 }
 
 .home .site__barre {
-  background-color: rgba(41, 5, 25, 0.5);
+  background-color: rgba(5, 41, 38, 0.5);
 }
 
 .home .site__main {
-  background-color: rgba(241, 213, 229, 0.5);
+  background-color: rgba(213, 241, 239, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {
-  background-color: rgba(59, 7, 37, 0.5);
+  background-color: rgba(7, 59, 55, 0.5);
 }
 
 /*                       ___

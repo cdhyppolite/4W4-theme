@@ -1,7 +1,7 @@
 /*
-Theme name: LAB5 - Carl-David Hyppolite
+Theme name: EX3 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/lab5
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex3
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -45,6 +45,7 @@ COMPOSANTES
 @import "composantes/single-post";
 @import "composantes/recherche";
 @import "composantes/navigation_categorie_cours";
+@import "composantes/navigation_accueil";
 
 /* ---------------------------------------------------------
 ANIMATION

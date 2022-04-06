@@ -110,32 +110,33 @@ function trouve_la_categorie($tableau){
 /* ----------------------------------------------------------- Ajout de la description dans menu */
 
 function prefix_nav_description( $item_output, $item,  $args ) {
-    if ( !empty( $item->description ) ) {
-        $item_output = str_replace( $args->link_after . '</a>',
-        $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
-        // <div class="menu-item-icone"></div>
-              $item_output );
+    if (is_front_page()) {
+        if ( !empty( $item->description ) ) {
+            $item_output = str_replace( $args->link_after . '</a>',
+            $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+            // <div class="menu-item-icone"></div>
+                  $item_output );
+    
+        }
     }
     return $item_output;
 }
-// add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
 
 /**
  * @param : WP_Query $query
  */
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
-    if (!is_admin() && is_main_query() && is_category(array('web','cours','design','video','utilitaire','creation-3d','jeu'))) 
-    {
-    // $ordre = get_query_var('ordre');
-        //$query->set('posts_per_page', -1);
-    // $query->set('orderby', $cle);
-    $query->set('orderby', 'title');
-    // $query->set('order',  $ordre);
-    $query->set('order',  'ASC');
-    // var_dump($query);
-    // die();
-   }
+   if (!is_admin() && is_main_query() && is_category(array("cours","web","jeu","creation-3d","utilitaire", "design" )))  {
+    $ordre = get_query_var('ordre');
+    $cle = get_query_var('cletri');
+
+    // $query->set('posts_per_page', -1);
+    $query->set('orderby', $cle);
+    $query->set('order', $ordre);
+
+   } 
 }
 function cidw_4w4_query_vars($params){
     $params[] = "cletri";
