@@ -129,6 +129,8 @@ add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
 function cidw_4w4_pre_get_posts(WP_Query $query)
 {
    if (!is_admin() && is_main_query() && is_category(array("cours","web","jeu","creation-3d","utilitaire", "design" )))  {
+    $query->set('order', 'ASC');
+    
     $ordre = get_query_var('ordre');
     $cle = get_query_var('cletri');
 
