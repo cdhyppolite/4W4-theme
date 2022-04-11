@@ -1,3 +1,4 @@
+<!-- Permet d'importer la cours des cours dans d'autres pages (ex: Index.php) -->
 <section class="formation">
     <?php
             $idCategorie = get_queried_object() -> slug;
