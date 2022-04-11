@@ -28,22 +28,22 @@
         flex-wrap: wrap;
         justify-content: center;
         .web .logoFiltre {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
+            -webkit-mask-image: url('https://s2.svgbox.net/octicons.svg?ic=globe-bold');
         }
         .jeu .logoFiltre {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+            -webkit-mask-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
         }
         .utilitaire .logoFiltre {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
+            -webkit-mask-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
         }
         .creation-3d .logoFiltre {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+            -webkit-mask-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
         }
         .video .logoFiltre {
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+            -webkit-mask-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
         }
         .design .logoFiltre {
-            background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+            -webkit-mask-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
         }
     }
     &__cours {
@@ -81,9 +81,11 @@
             right: 13px;
             padding: 10px 14px 7px;
             z-index: 1;
-            background-repeat: no-repeat;
-            background-position: center;
+            // background-repeat: no-repeat;
+            // background-position: center;
             transform: scale(2);
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-position: center;
         }
     }
 }
@@ -110,4 +112,21 @@
     margin: 0;
     color: $color__background-link-hover;
     font-weight: bold;
+}
+
+.cours__nbre-heure {
+    position: relative;
+    .horloge {
+        // Position
+        position: absolute;
+        top: -2px;
+        left: 25px;
+        // Taille
+        width: 20px;
+        height: 20px;
+        // Image SVG
+        -webkit-mask-image: url('https://s2.svgbox.net/hero-solid.svg?ic=clock');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

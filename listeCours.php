@@ -35,10 +35,7 @@
         <?php $delayAnim=1; ?>
         <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-        <?php
-                    $nombre_dheures = get_field('nombre_dheures');
-                    echo $nombre_dheures;
-                ?>
+        
         <?php get_template_part("gabarits/content", "cours"); ?>
         <?php endwhile ?>
         <?php endif ?>

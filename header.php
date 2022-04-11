@@ -15,7 +15,7 @@
     <!-- Script pour l'erreur 404 -->
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
 
-    <title>Carl-David Hyppolite</title>
+    <title><?= get_bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class('site'); ?>>

@@ -1,10 +1,11 @@
 <?php
                     $titre = get_the_title();
                     $titreFiltreCours = substr($titre, 4, -6);
-                    $nbHeures = substr($titre, -6);
+                    //$nbHeures = substr($titre, -6);
                     $codeCours = substr($titre, 0,3);
                     $descCours = get_the_excerpt();
                     $categorie = get_the_category();
+                    $nombre_dheures = get_field('nombre_dheures');
                     
                     //----Afficher Bordu cours-----
                     $etat = "a-faire";
@@ -24,12 +25,15 @@
                     //-----------------------------
                     $delayAnim+=0.05;
                 ?>
-                
-                <article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>" style="animation-delay:<?= $delayAnim?>s; background-image: url('<?= get_the_post_thumbnail_url(); ?>');">
-                    <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
-                    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                    <p class="cours__code"><?= $codeCours; ?></p>
-                    <div class="cours_etat"></div>
-                    <p class="cours__desc"> <?= $descCours; ?></p>
-                    <div class="logoFiltre"></div>
-                </article>
+
+<article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>"
+    style="animation-delay:<?= $delayAnim?>s; background-image: url('<?= get_the_post_thumbnail_url(); ?>');">
+    <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
+    <div class="cours__nbre-heure"><?= $nombre_dheures; ?>
+        <div class="horloge"></div>
+    </div>
+    <p class="cours__code"><?= $codeCours; ?></p>
+    <div class="cours_etat"></div>
+    <p class="cours__desc"> <?= $descCours; ?></p>
+    <div class="logoFiltre"></div>
+</article>

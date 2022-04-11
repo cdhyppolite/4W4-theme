@@ -588,27 +588,27 @@ COMPOSANTES
 }
 
 .formation__liste .web .logoFiltre {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
 }
 
 .formation__liste .jeu .logoFiltre {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
 }
 
 .formation__liste .utilitaire .logoFiltre {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
 }
 
 .formation__liste .creation-3d .logoFiltre {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .formation__liste .video .logoFiltre {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
 }
 
 .formation__liste .design .logoFiltre {
-  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
 }
 
 .formation__cours {
@@ -647,9 +647,9 @@ COMPOSANTES
   right: 13px;
   padding: 10px 14px 7px;
   z-index: 1;
-  background-repeat: no-repeat;
-  background-position: center;
   transform: scale(2);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 .cours__titre {
@@ -676,6 +676,21 @@ COMPOSANTES
   margin: 0;
   color: #28b8ac;
   font-weight: bold;
+}
+
+.cours__nbre-heure {
+  position: relative;
+}
+
+.cours__nbre-heure .horloge {
+  position: absolute;
+  top: -2px;
+  left: 25px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("https://s2.svgbox.net/hero-solid.svg?ic=clock");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cours_etat {
@@ -709,6 +724,14 @@ COMPOSANTES
   border-bottom: 2px solid #FF8F00;
 }
 
+.a-faire .cours__nbre-heure .horloge {
+  background-color: #FF8F00;
+}
+
+.a-faire .logoFiltre {
+  background-color: #FF8F00;
+}
+
 .en-cours {
   border: 4px solid #01579B;
   background-color: rgba(1, 87, 155, 0.3) !important;
@@ -729,6 +752,14 @@ COMPOSANTES
 
 .en-cours .cours__titre {
   border-bottom: 2px solid #01579B;
+}
+
+.en-cours .cours__nbre-heure .horloge {
+  background-color: #01579B;
+}
+
+.en-cours .logoFiltre {
+  background-color: #01579B;
 }
 
 .reussi {
@@ -753,6 +784,14 @@ COMPOSANTES
   border-bottom: 2px solid #1B5E20;
 }
 
+.reussi .cours__nbre-heure .horloge {
+  background-color: #1B5E20;
+}
+
+.reussi .logoFiltre {
+  background-color: #1B5E20;
+}
+
 .echoue {
   border: 4px solid #D32F2F;
   background-color: rgba(211, 47, 47, 0.3) !important;
@@ -773,6 +812,14 @@ COMPOSANTES
 
 .echoue .cours__titre {
   border-bottom: 2px solid #D32F2F;
+}
+
+.echoue .cours__nbre-heure .horloge {
+  background-color: #D32F2F;
+}
+
+.echoue .logoFiltre {
+  background-color: #D32F2F;
 }
 
 .choisi {
@@ -797,6 +844,14 @@ COMPOSANTES
   border-bottom: 2px solid #7E57C2;
 }
 
+.choisi .cours__nbre-heure .horloge {
+  background-color: #7E57C2;
+}
+
+.choisi .logoFiltre {
+  background-color: #7E57C2;
+}
+
 .non-choisi {
   border: 4px solid gray;
   background-color: rgba(128, 128, 128, 0.3) !important;
@@ -817,6 +872,14 @@ COMPOSANTES
 
 .non-choisi .cours__titre {
   border-bottom: 2px solid gray;
+}
+
+.non-choisi .cours__nbre-heure .horloge {
+  background-color: gray;
+}
+
+.non-choisi .logoFiltre {
+  background-color: gray;
 }
 
 .site__header {

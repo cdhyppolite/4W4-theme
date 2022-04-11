@@ -26,6 +26,12 @@
         &__titre {
             border-bottom: 2px solid $couleurCours;
         }
+        &__nbre-heure .horloge {
+            background-color: $couleurCours;
+        }
+    }
+    .logoFiltre {
+        background-color: $couleurCours;
     }
 }
 
