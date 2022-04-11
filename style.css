@@ -693,6 +693,17 @@ COMPOSANTES
   background-position: center;
 }
 
+.boutonTri a {
+  text-decoration: none;
+  padding: 4px;
+  background-color: #82e3db;
+  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+.boutonTri a:hover {
+  background-color: #28b8ac;
+}
+
 .cours_etat {
   padding: 3px 5px;
   border-radius: 2px;

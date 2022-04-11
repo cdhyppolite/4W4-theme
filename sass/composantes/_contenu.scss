@@ -130,3 +130,15 @@
         background-position: center;
     }
 }
+
+.boutonTri {
+    a {
+        text-decoration: none;
+        padding: 4px;
+        background-color: $color__background-link;
+        transition: .1s cubic-bezier(.5, 0, .5, 1.7);
+        &:hover {
+            background-color: $color__background-link-hover;
+        }
+    }
+}
