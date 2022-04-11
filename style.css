@@ -1536,9 +1536,12 @@ ANIMATION
   }
 }
 
-.motSousTitre {
+.home .motSousTitre {
   animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
   opacity: 0;
+}
+
+.motSousTitre {
   margin-right: 1vw;
   text-shadow: 0 0 3px #052926, 0 0 5px #0000FF;
 }

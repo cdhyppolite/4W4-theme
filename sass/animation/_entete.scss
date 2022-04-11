@@ -20,12 +20,14 @@
 }
 
 // Animations des mots du sous-titre
-.motSousTitre {
+.home .motSousTitre {
     animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
     opacity: 0;
+}
+
+.motSousTitre {
     margin-right: 1vw;
     text-shadow: 0 0 3px $color__background-barre, 0 0 5px #0000FF;
-    // margin-right: 3.5vw;
 }
 
 @keyframes animSousTitre {
