@@ -2,7 +2,15 @@
         <?php
             $idCategorie = get_queried_object() -> slug;
             $nomCategorie = get_queried_object() -> name;
+
+            /*$ficher = $_SERVER['DOCUMENT_ROOT']."/4w4/wp-content/themes/HyppoliteC/data/test.txt";
+            echo $ficher;
+            
             // echo $idCategorie;
+            file_put_contents($ficher,$nomCategorie);
+            // echo $filename;
+            // print_r($_SERVER)
+            */
         ?>
         
         <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
@@ -20,6 +28,10 @@
             <?php $delayAnim=1; ?>
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
+                <?php
+                    $nombre_dheures = get_field('nombre_dheures');
+                    echo $nombre_dheures;
+                ?>
                 <?php get_template_part("gabarits/content", "cours"); ?>
                 <?php endwhile ?>
                 <?php endif ?>
