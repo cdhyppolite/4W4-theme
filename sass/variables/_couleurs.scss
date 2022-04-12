@@ -1,9 +1,8 @@
 /* ---------------- BACKGROUND */
 
-$chiffreCouleur:175;
-$chiffreTest :hsl(175, 100%, 50%);
+$chiffreCouleur:330;
+$chiffreTest :hsl(328, 100%, 50%);
 $color__background-body: hsl($chiffreCouleur, 45%, 90%);
-$color__background-body-clip: hsl(0, 0%, 0%);
 $color__background-main: hsl($chiffreCouleur, 50%, 89%);
 $color__background-cours: hsl($chiffreCouleur, 100%, 91%);
 $color__background-header: hsl($chiffreCouleur, 66%, 66%);
@@ -11,6 +10,8 @@ $color__background-barre: hsl($chiffreCouleur, 78%, 9%);
 $color__background-footer: hsl($chiffreCouleur, 79%, 13%);
 $color__background-link: hsl($chiffreCouleur, 63%, 70%);
 $color__background-link-hover: hsl($chiffreCouleur, 64%, 44%);
+// Forme à l'arrière
+$color__background-body-clip: $color__background-footer;
 
 /* ---------------- LIENS */
 

@@ -109,19 +109,17 @@ function trouve_la_categorie($tableau){
 }
 /* ----------------------------------------------------------- Ajout de la description dans menu */
 
-function prefix_nav_description( $item_output, $item,  $args ) {
+function prefix_nav_description( $item_output, $item) {
     if (is_front_page()) {
         if ( !empty( $item->description ) ) {
-            $item_output = str_replace( $args->link_after . '</a>',
-            $args->link_after .'<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
-            // <div class="menu-item-icone"></div>
+            $item_output = str_replace( '</a>',
+            '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
                   $item_output );
-    
         }
     }
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 
 /**
  * @param : WP_Query $query

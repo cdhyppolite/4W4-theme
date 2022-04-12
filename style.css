@@ -391,11 +391,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #477b77;
+  color: #7b4761;
 }
 
 a:visited {
-  color: #335c59;
+  color: #5c3347;
 }
 
 a:hover, a:focus, a:active {
@@ -414,15 +414,15 @@ a:hover, a:active {
     @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }*/
 .header__titre a {
-  color: #00d9ff;
+  color: #ff0044;
 }
 
 .header__titre a:visited {
-  color: #00ffea;
+  color: #ff0080;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be5e3;
+  color: #e58bb2;
 }
 
 .header__titre a:focus {
@@ -435,7 +435,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #6fe2d8;
+  background-color: #e26fa8;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +444,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #39a28d;
+  background-color: #a2397a;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -452,12 +452,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #00ffea;
-  background-color: #335c59;
+  color: #ff0080;
+  background-color: #5c3347;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #00ffea;
+  color: #ff0080;
 }
 
 .site__footer .menu-item a:focus {
@@ -487,12 +487,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #073b37;
-  background-color: #daf1ef;
+  color: #3b0721;
+  background-color: #f1dae6;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #073b37;
+  color: #3b0721;
 }
 
 .site__barre .menu-item a:focus {
@@ -556,14 +556,14 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #d5f1ef;
+  background-color: #f1d5e3;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #d5f1ef;
+  background-color: #f1d5e3;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -575,7 +575,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #39a29a;
+  color: #a2396e;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -592,7 +592,7 @@ COMPOSANTES
 }
 
 .formation__liste .jeu .logoFiltre {
-  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=gamepad");
 }
 
 .formation__liste .utilitaire .logoFiltre {
@@ -615,7 +615,7 @@ COMPOSANTES
   position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #d1fffb;
+  background-color: #ffd1e8;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
@@ -638,7 +638,6 @@ COMPOSANTES
   background-color: #2622201f;
   transform: scale(1.05) !important;
   background-image: url("") !important;
-  cursor: zoom-in;
 }
 
 .formation__cours .logoFiltre {
@@ -674,7 +673,7 @@ COMPOSANTES
 .cours__code {
   font-size: 1.2rem;
   margin: 0;
-  color: #28b8ac;
+  color: #b82870;
   font-weight: bold;
 }
 
@@ -696,12 +695,12 @@ COMPOSANTES
 .boutonTri a {
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3db;
+  background-color: #e382b3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .boutonTri a:hover {
-  background-color: #28b8ac;
+  background-color: #b82870;
 }
 
 .cours_etat {
@@ -716,6 +715,10 @@ COMPOSANTES
 .a-faire {
   border: 4px solid #FF8F00;
   background-color: rgba(255, 143, 0, 0.3) !important;
+}
+
+.a-faire .cours__titre {
+  text-shadow: 0 0 5px #FF8F00;
 }
 
 .a-faire .cours__code {
@@ -748,6 +751,10 @@ COMPOSANTES
   background-color: rgba(1, 87, 155, 0.3) !important;
 }
 
+.en-cours .cours__titre {
+  text-shadow: 0 0 5px #01579B;
+}
+
 .en-cours .cours__code {
   color: #01579B;
 }
@@ -776,6 +783,10 @@ COMPOSANTES
 .reussi {
   border: 4px solid #1B5E20;
   background-color: rgba(27, 94, 32, 0.3) !important;
+}
+
+.reussi .cours__titre {
+  text-shadow: 0 0 5px #1B5E20;
 }
 
 .reussi .cours__code {
@@ -808,6 +819,10 @@ COMPOSANTES
   background-color: rgba(211, 47, 47, 0.3) !important;
 }
 
+.echoue .cours__titre {
+  text-shadow: 0 0 5px #D32F2F;
+}
+
 .echoue .cours__code {
   color: #D32F2F;
 }
@@ -838,6 +853,10 @@ COMPOSANTES
   background-color: rgba(126, 87, 194, 0.3) !important;
 }
 
+.choisi .cours__titre {
+  text-shadow: 0 0 5px #7E57C2;
+}
+
 .choisi .cours__code {
   color: #7E57C2;
 }
@@ -866,6 +885,10 @@ COMPOSANTES
 .non-choisi {
   border: 4px solid gray;
   background-color: rgba(128, 128, 128, 0.3) !important;
+}
+
+.non-choisi .cours__titre {
+  text-shadow: 0 0 5px gray;
 }
 
 .non-choisi .cours__code {
@@ -1048,7 +1071,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger .ligne {
-  background-color: #d5f1ef;
+  background-color: #f1d5e3;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -1098,24 +1121,24 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3db;
+  background-color: #e382b3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .menu-item a:hover {
-  background-color: #28b8ac;
+  background-color: #b82870;
 }
 
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3db;
+  background-color: #e382b3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .wp-block-latest-posts li a:hover {
-  background-color: #28b8ac;
+  background-color: #b82870;
 }
 
 @media screen and (min-width: 576px) {
@@ -1136,8 +1159,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #073b37;
-  color: #bdfff9;
+  background-color: #3b0721;
+  color: #ffbdde;
   padding: 15px;
 }
 
@@ -1201,7 +1224,7 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #00ff6a;
+  color: magenta;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1212,14 +1235,14 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #00d9ff;
+  color: #ff0044;
   margin: 0 auto;
 }
 
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #073b37;
+  color: #3b0721;
 }
 
 .err {
@@ -1246,7 +1269,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #073b37;
+  color: #3b0721;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -1259,7 +1282,7 @@ COMPOSANTES
 .article__seul {
   padding: 15px;
   margin: 20px;
-  color: #073b37;
+  color: #3b0721;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -1269,7 +1292,7 @@ COMPOSANTES
 .article__seul__contenu {
   font-weight: normal;
   display: flex;
-  color: #052926;
+  color: #290517;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1278,6 +1301,10 @@ COMPOSANTES
 
 .article__seul label {
   cursor: pointer;
+}
+
+.single-post .cours_etat {
+  font-size: 20px;
 }
 
 #chk-single {
@@ -1328,7 +1355,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #daf1ef;
+  background-color: #f1dae6;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -1342,14 +1369,14 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #daf1ef;
+  background-color: #f1dae6;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
 }
 
 .icone__lien svg {
-  color: #6fe2d8;
+  color: #e26fa8;
   margin: 0px 2px;
 }
 
@@ -1360,11 +1387,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #d1fffb;
+  color: #ffd1e8;
 }
 
 .icone__lien:hover {
-  background-color: #28b8ac;
+  background-color: #b82870;
 }
 
 .recherche,
@@ -1392,7 +1419,7 @@ COMPOSANTES
   border: none;
   outline: none;
   background-color: #fff;
-  color: #073b37;
+  color: #3b0721;
   border-radius: 5px;
 }
 
@@ -1455,11 +1482,11 @@ COMPOSANTES
 .recherche #searchsubmit svg,
 .searchform__bouton svg,
 .searchform #searchsubmit svg {
-  color: #073b37;
+  color: #3b0721;
 }
 
 .mot_recherche {
-  color: #39a29a;
+  color: #a2396e;
 }
 
 .menu-categorie_cours-container .menu {
@@ -1479,7 +1506,7 @@ COMPOSANTES
 
 .current-menu-item a {
   color: white;
-  background-color: #28b8ac;
+  background-color: #b82870;
 }
 
 .menu-accueil-container .menu {
@@ -1489,6 +1516,18 @@ COMPOSANTES
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
 .menu-accueil-container .menu .menu-item {
@@ -1516,7 +1555,6 @@ COMPOSANTES
 .menu-accueil-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
-  border: 1px solid #aaa;
   margin-top: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -1554,7 +1592,7 @@ ANIMATION
 
 .motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #052926, 0 0 5px #0000FF;
+  text-shadow: 0 0 3px #290517, 0 0 5px #5c3347;
 }
 
 @keyframes animSousTitre {
@@ -1617,7 +1655,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #daf1ef;
+  background-color: #f1dae6;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
@@ -1631,29 +1669,29 @@ LAYOUT
   left: 0;
   right: 0;
   animation: formeArriere 10s infinite;
-  background-color: black;
+  background-color: #3b0721;
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6fe2d8;
+  background-color: #e26fa8;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #052926;
+  background-color: #290517;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #d5f1ef;
+  background-color: #f1d5e3;
   padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #073b37;
+  background-color: #3b0721;
 }
 
 .site {
@@ -1694,21 +1732,21 @@ LAYOUT
 }
 
 .home .site__header {
-  background-color: rgba(111, 226, 216, 0.5);
+  background-color: rgba(226, 111, 168, 0.5);
 }
 
 .home .site__barre {
-  background-color: rgba(5, 41, 38, 0.5);
+  background-color: rgba(41, 5, 23, 0.5);
 }
 
 .home .site__main {
-  background-color: rgba(213, 241, 239, 0.5);
+  background-color: rgba(241, 213, 227, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {
-  background-color: rgba(7, 59, 55, 0.5);
+  background-color: rgba(59, 7, 33, 0.5);
 }
 
 /*                       ___

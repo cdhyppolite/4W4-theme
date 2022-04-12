@@ -20,6 +20,11 @@
     }
 }
 
+.single-post .cours_etat {
+    // font-size: 27px;
+    font-size: 20px;
+}
+
 #chk-single {
     display: none;
     &:checked~ {
