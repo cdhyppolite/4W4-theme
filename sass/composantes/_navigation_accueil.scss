@@ -8,22 +8,30 @@
         justify-content: space-around;
         .accueil {
             &__cours .menu-item-icone {
-                background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
             }
             &__prof .menu-item-icone {
-                background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
             }
             &__aide .menu-item-icone {
-                background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
             }
             &__etudiant .menu-item-icone {
                 background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
             }
             // Événements
-            &__journee {}
-            &__porte1 {}
-            &__porte2 {}
-            &__project {}
+            &__journee .menu-item-icone {
+                background-image: url("");
+            }
+            &__porte1 .menu-item-icone {
+                background-image: url("");
+            }
+            &__porte2 .menu-item-icone {
+                background-image: url("");
+            }
+            &__project .menu-item-icone {
+                background-image: url("");
+            }
         }
         .menu-item {
             //li

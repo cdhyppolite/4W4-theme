@@ -1534,22 +1534,42 @@ COMPOSANTES
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone,
 .menu-evenement-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
 }
 
 .menu-accueil-container .menu .accueil__prof .menu-item-icone,
 .menu-evenement-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
 }
 
 .menu-accueil-container .menu .accueil__aide .menu-item-icone,
 .menu-evenement-container .menu .accueil__aide .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
 }
 
 .menu-accueil-container .menu .accueil__etudiant .menu-item-icone,
 .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.menu-accueil-container .menu .accueil__journee .menu-item-icone,
+.menu-evenement-container .menu .accueil__journee .menu-item-icone {
+  background-image: url("");
+}
+
+.menu-accueil-container .menu .accueil__porte1 .menu-item-icone,
+.menu-evenement-container .menu .accueil__porte1 .menu-item-icone {
+  background-image: url("");
+}
+
+.menu-accueil-container .menu .accueil__porte2 .menu-item-icone,
+.menu-evenement-container .menu .accueil__porte2 .menu-item-icone {
+  background-image: url("");
+}
+
+.menu-accueil-container .menu .accueil__project .menu-item-icone,
+.menu-evenement-container .menu .accueil__project .menu-item-icone {
+  background-image: url("");
 }
 
 .menu-accueil-container .menu .menu-item,
@@ -1768,10 +1788,6 @@ LAYOUT
   background-color: rgba(242, 242, 242, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
-}
-
-.home .site__footer {
-  background-color: rgba(39, 40, 39, 0.5);
 }
 
 /*                       ___
