@@ -12,7 +12,6 @@ Text Domain: cidw-4w4
 /* ---------------------------------------------------------
 VARIABLES
 --------------------------------------------------------- */
-/* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS DU MENU FOOTER*/
@@ -391,11 +390,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #477b7b;
+  color: #7b476a;
 }
 
 a:visited {
-  color: #335c5c;
+  color: #5c334e;
 }
 
 a:hover, a:focus, a:active {
@@ -414,15 +413,15 @@ a:hover, a:active {
     @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }*/
 .header__titre a {
-  color: #00c4ff;
+  color: #ff006f;
 }
 
 .header__titre a:visited {
-  color: cyan;
+  color: #ff00aa;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8bdfe5;
+  color: #e58bc1;
 }
 
 .header__titre a:focus {
@@ -435,7 +434,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #6fe2e2;
+  background-color: #e26fbb;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +443,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #39a296;
+  background-color: #a2398b;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -452,12 +451,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: cyan;
-  background-color: #335c5c;
+  color: #ff00aa;
+  background-color: #5c334e;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: cyan;
+  color: #ff00aa;
 }
 
 .site__footer .menu-item a:focus {
@@ -487,12 +486,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #073b3b;
-  background-color: #daf1f1;
+  color: #3b072a;
+  background-color: #f1dae9;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #073b3b;
+  color: #3b072a;
 }
 
 .site__barre .menu-item a:focus {
@@ -574,7 +573,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #39a2a2;
+  color: #272827;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -1053,7 +1052,8 @@ COMPOSANTES
 }
 
 .menu-principal-container .current-menu-item a {
-  background-color: white;
+  color: crimson;
+  background-color: #FFCC00;
 }
 
 #chk-burger {
@@ -1159,7 +1159,7 @@ COMPOSANTES
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #272827;
-  color: #bdffff;
+  color: #ffbde9;
   padding: 15px;
 }
 
@@ -1223,7 +1223,7 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #00ff80;
+  color: #d500ff;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1234,7 +1234,7 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #00c4ff;
+  color: #ff006f;
   margin: 0 auto;
 }
 
@@ -1485,7 +1485,7 @@ COMPOSANTES
 }
 
 .mot_recherche {
-  color: #39a2a2;
+  color: #272827;
 }
 
 .menu-categorie_cours-container .menu {
@@ -1505,7 +1505,7 @@ COMPOSANTES
 
 .current-menu-item a {
   transition: .3s;
-  color: white;
+  color: crimson;
   background-color: #FFCC00;
 }
 
@@ -1595,7 +1595,7 @@ ANIMATION
 
 .motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #272827, 0 0 5px #335c5c;
+  text-shadow: 0 0 3px #272827, 0 0 5px #5c334e;
 }
 
 @keyframes animSousTitre {

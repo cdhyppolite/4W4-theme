@@ -18,7 +18,7 @@
     .current-menu-item {
         a {
             transition: .3s;
-            color: white;
-            background-color: $color__background-link-hover;
+            color: $couleur1;
+            background-color: $color__link__menu-current;
         }
     }
