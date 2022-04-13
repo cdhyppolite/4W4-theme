@@ -12,7 +12,7 @@
 <main class="site__main">
     <h1>------ template evenements ------</h1>
     <?php if (have_posts()): the_post(); ?>
-    <?php the_post_thumbnail()?>
+    <?php the_post_thumbnail('thumbnail'); ?>
         <?php the_title(); ?>
         <?php the_content(); ?>
     <?php endif; ?>
