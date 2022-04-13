@@ -394,7 +394,7 @@ a {
 }
 
 a:visited {
-  color: #5c334e;
+  color: #FFCC00;
 }
 
 a:hover, a:focus, a:active {
@@ -1163,7 +1163,7 @@ COMPOSANTES
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   background-color: #272827;
-  color: #ffbde9;
+  color: #FFCC00;
   padding: 15px;
 }
 
@@ -1492,6 +1492,10 @@ COMPOSANTES
   color: #272827;
 }
 
+.wp-social-link {
+  background-color: crimson !important;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
@@ -1613,7 +1617,7 @@ ANIMATION
 
 .motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #272827, 0 0 5px #5c334e;
+  text-shadow: 0 0 3px #272827, 0 0 5px #FFCC00;
 }
 
 @keyframes animSousTitre {

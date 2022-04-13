@@ -20,7 +20,7 @@ $color__background-link-hover: $couleur3;
 
 $color__link: $couleur4;
 $color__link-hover: $couleur1;
-$color__link-visited: hsl($chiffreCouleur, 29%, 28%);
+$color__link-visited: $couleur3;
 
 /* ---------------- LIENS FOOTER */
 
@@ -58,7 +58,7 @@ $color__link__header-visited: hsl($chiffreCouleur, 100%, 50%);
 $color__font-header: hsl($chiffreCouleur +4, 91%, 78%);
 $color__font-main :rgb(68, 57, 54);
 $color__font-barre: hsl(0, 0%, 100%);
-$color__font-footer: hsl($chiffreCouleur, 100%, 87%);
+$color__font-footer: $couleur3;
 
 /****************Recherche*******/
 
