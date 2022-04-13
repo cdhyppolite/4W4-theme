@@ -1,4 +1,5 @@
 .menu-accueil-container {
+    margin-bottom: 15px;
     // nav
     .menu {
         //ul
@@ -22,7 +23,7 @@
             flex-direction: column;
             flex: 0 0 20%;
             height: 175px;
-            border: 1px solid #aaa;
+            // border: 1px solid #aaa;
             a {
                 display: flex;
                 flex-direction: column;

@@ -1509,6 +1509,10 @@ COMPOSANTES
   background-color: #b82870;
 }
 
+.menu-accueil-container {
+  margin-bottom: 15px;
+}
+
 .menu-accueil-container .menu {
   display: flex;
   justify-content: space-around;
@@ -1535,7 +1539,6 @@ COMPOSANTES
   flex-direction: column;
   flex: 0 0 20%;
   height: 175px;
-  border: 1px solid #aaa;
 }
 
 .menu-accueil-container .menu .menu-item a {
