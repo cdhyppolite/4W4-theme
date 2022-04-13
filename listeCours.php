@@ -1,44 +1,43 @@
+<!-- Permet d'importer la cours des cours dans d'autres pages (ex: Index.php) -->
 <section class="formation">
-        <h2 class="formation__titre">Liste de cours - Techniques d'intégration multimédia</h2>
-        <div class="formation__liste">
-            <?php $delayAnim=1; ?>
-            <?php if (have_posts()):
+    <?php
+            $idCategorie = get_queried_object() -> slug;
+            $nomCategorie = get_queried_object() -> name;
+
+            /*$ficher = $_SERVER['DOCUMENT_ROOT']."/4w4/wp-content/themes/HyppoliteC/data/test.txt";
+            echo $ficher;
+            file_put_contents($ficher,$nomCategorie);
+            
+            // echo $idCategorie;
+            // echo $filename;
+            // print_r($_SERVER)
+            */
+            $flecheAsc = '<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"> <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path> </svg>';
+            $flecheDesc = '<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path> </svg>';
+        ?>
+
+    <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
+
+    <nav class="boutonTri">
+        <a href="?cletri=title&ordre=asc"><?= $flecheAsc; ?>Ascendant</a>
+        <a href="?cletri=title&ordre=desc"><?= $flecheDesc; ?>Désendant</a>
+    </nav>
+
+    <h2 class="formation__titre">Liste de cours -
+        <?php if ($idCategorie =="cours") { echo "Techniques d'intégration multimédia"; } else { echo $nomCategorie; } ?>
+    </h2>
+
+    <?php if ($idCategorie!="cours") :?>
+    <p><?= category_description(); ?></p>
+    <?php endif; ?>
+
+    <div class="formation__liste">
+        <?php $delayAnim=1; ?>
+        <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php
-                    $titre = get_the_title();
-                    $titreFiltreCours = substr($titre, 7, -6);
-                    $nbHeures = substr($titre, -6);
-                    $codeCours = substr($titre, 0,7);
-                    $descCours = get_the_excerpt();
-                    
-                    //----Afficher Bordu cours-----
-                    $etat = "a-faire";
-                    $reussi = array("1J1", "2J2", "3J3", "1W1","2W2","3W3","1M1","1M2","2M3","2M4", "3M5","3C1");
-                    $encours = array("4J4","4PA","4W4","4C2");
-                    $choisi = array("5E1","5N1","5JA","5W5","5PA","6N3","6N2");
-                    $nonchoisi = array("5MB","5JB","4MB");
-                    if (in_array(substr($codeCours, 4,3), $reussi)) { 
-                        $etat = "reussi";
-                    } else if (in_array(substr($codeCours, 4,3), $encours)) { 
-                        $etat = "en-cours";
-                    } else if (in_array(substr($codeCours, 4,3), $choisi)) { 
-                        $etat = "choisi";
-                    } else if ((substr($codeCours, 3,1))!='-') {
-                        $etat = "echoue";
-                    }
-                    //-----------------------------
-                    $delayAnim+=0.05;
-                ?>
-                
-                <article style="animation-delay:<?= $delayAnim?>s; background-image: url('<?= get_the_post_thumbnail_url(); ?>');" class="formation__cours <?= $etat; ?>">
-                <!-- <article class="formation__cours <?= $etat; ?>"> -->
-                    <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
-                    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                    <p class="cours__code"><?= $codeCours; ?>-MA </p>
-                    <div class="cours_etat"></div>
-                    <p class="cours__desc"> <?= $descCours; ?></p>
-                </article>
-                <?php endwhile ?>
-                <?php endif ?>
-        </div>
-    </section>
+        
+        <?php get_template_part("gabarits/content", "cours"); ?>
+        <?php endwhile ?>
+        <?php endif ?>
+    </div>
+</section>

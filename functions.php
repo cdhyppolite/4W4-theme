@@ -13,6 +13,9 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'lien_externe'  => __( 'liens externes', 'cidw_4w4' ),
+        'menu_categorie_cours'  => __( 'menu cours', 'cidw_4w4' ),
+        'menu_accueil'  => __( 'menu accueil', 'cidw_4w4' ),
+        'menu_event'  => __( 'menu evenement', 'cidw_4w4' ),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
@@ -99,4 +102,50 @@ function my_register_sidebars() {
         )
     );
 }
+
+function trouve_la_categorie($tableau){
+    foreach($tableau as $cle){
+        if(is_category($cle)) return($cle);
+    }
+}
+/* ----------------------------------------------------------- Ajout de la description dans menu */
+
+function prefix_nav_description( $item_output, $item) {
+    if (is_front_page()) {
+        if ( !empty( $item->description ) ) {
+            $item_output = str_replace( '</a>',
+            '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
+                  $item_output );
+        }
+    }
+    return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+
+/**
+ * @param : WP_Query $query
+ */
+function cidw_4w4_pre_get_posts(WP_Query $query)
+{
+   if (!is_admin() && is_main_query() && is_category(array("cours","web","jeu","creation-3d","utilitaire", "design" )))  {
+    $query->set('order', 'ASC');
+    
+    $ordre = get_query_var('ordre');
+    $cle = get_query_var('cletri');
+
+    // $query->set('posts_per_page', -1);
+    $query->set('orderby', $cle);
+    $query->set('order', $ordre);
+
+   } 
+}
+function cidw_4w4_query_vars($params){
+    $params[] = "cletri";
+    $params[] = "ordre";
+    //$params["cletri"] = "title";
+    //var_dump($params); die();
+    return $params;
+}
+add_action('pre_get_posts', 'cidw_4w4_pre_get_posts');
+add_filter('query_vars', 'cidw_4w4_query_vars' );
 ?>

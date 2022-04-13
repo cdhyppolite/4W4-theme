@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme name: TP1 - Carl-David Hyppolite
+Theme name: EX3 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/tp1
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex3
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -391,11 +391,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #477b5d;
+  color: #477b7b;
 }
 
 a:visited {
-  color: #335c44;
+  color: #335c5c;
 }
 
 a:hover, a:focus, a:active {
@@ -414,15 +414,15 @@ a:hover, a:active {
     @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }*/
 .header__titre a {
-  color: #00ff91;
+  color: #00c4ff;
 }
 
 .header__titre a:visited {
-  color: #00ff6a;
+  color: cyan;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be5b6;
+  color: #8bdfe5;
 }
 
 .header__titre a:focus {
@@ -435,7 +435,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #6fe29f;
+  background-color: #6fe2e2;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +444,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #39a259;
+  background-color: #39a296;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -452,12 +452,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #0f0;
-  background-color: #335c44;
+  color: cyan;
+  background-color: #335c5c;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #0f0;
+  color: cyan;
 }
 
 .site__footer .menu-item a:focus {
@@ -487,12 +487,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #073b1d;
-  background-color: #daf1e4;
+  color: #073b3b;
+  background-color: #daf1f1;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #073b1d;
+  color: #073b3b;
 }
 
 .site__barre .menu-item a:focus {
@@ -503,20 +503,67 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1,
+h2 {
+  font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+h3,
+h4 {
+  font-family: "Anybody", "cursive";
+}
+
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #d5f1e1;
+  background-color: #d5f1f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #d5f1e1;
+  background-color: #d5f1f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -528,7 +575,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #39a259;
+  color: #39a2a2;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -540,10 +587,35 @@ COMPOSANTES
   justify-content: center;
 }
 
+.formation__liste .web .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=gamepad");
+}
+
+.formation__liste .utilitaire .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .creation-3d .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.formation__liste .video .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__liste .design .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
 .formation__cours {
+  position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #d1ffe4;
+  background-color: #d1ffff;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
@@ -566,7 +638,17 @@ COMPOSANTES
   background-color: #2622201f;
   transform: scale(1.05) !important;
   background-image: url("") !important;
-  cursor: zoom-in;
+}
+
+.formation__cours .logoFiltre {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  padding: 10px 14px 7px;
+  z-index: 1;
+  transform: scale(2);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
 }
 
 .cours__titre {
@@ -591,8 +673,34 @@ COMPOSANTES
 .cours__code {
   font-size: 1.2rem;
   margin: 0;
-  color: #28b864;
+  color: #28b8b8;
   font-weight: bold;
+}
+
+.cours__nbre-heure {
+  position: relative;
+}
+
+.cours__nbre-heure .horloge {
+  position: absolute;
+  top: -2px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("https://s2.svgbox.net/hero-solid.svg?ic=clock");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boutonTri a {
+  text-decoration: none;
+  padding: 4px;
+  background-color: #82e3e3;
+  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+.boutonTri a:hover {
+  background-color: #28b8b8;
 }
 
 .cours_etat {
@@ -607,6 +715,10 @@ COMPOSANTES
 .a-faire {
   border: 4px solid #FF8F00;
   background-color: rgba(255, 143, 0, 0.3) !important;
+}
+
+.a-faire .cours__titre {
+  text-shadow: 0 0 5px #FF8F00;
 }
 
 .a-faire .cours__code {
@@ -626,9 +738,21 @@ COMPOSANTES
   border-bottom: 2px solid #FF8F00;
 }
 
+.a-faire .cours__nbre-heure .horloge {
+  background-color: #FF8F00;
+}
+
+.a-faire .logoFiltre {
+  background-color: #FF8F00;
+}
+
 .en-cours {
   border: 4px solid #01579B;
   background-color: rgba(1, 87, 155, 0.3) !important;
+}
+
+.en-cours .cours__titre {
+  text-shadow: 0 0 5px #01579B;
 }
 
 .en-cours .cours__code {
@@ -648,9 +772,21 @@ COMPOSANTES
   border-bottom: 2px solid #01579B;
 }
 
+.en-cours .cours__nbre-heure .horloge {
+  background-color: #01579B;
+}
+
+.en-cours .logoFiltre {
+  background-color: #01579B;
+}
+
 .reussi {
   border: 4px solid #1B5E20;
   background-color: rgba(27, 94, 32, 0.3) !important;
+}
+
+.reussi .cours__titre {
+  text-shadow: 0 0 5px #1B5E20;
 }
 
 .reussi .cours__code {
@@ -670,9 +806,21 @@ COMPOSANTES
   border-bottom: 2px solid #1B5E20;
 }
 
+.reussi .cours__nbre-heure .horloge {
+  background-color: #1B5E20;
+}
+
+.reussi .logoFiltre {
+  background-color: #1B5E20;
+}
+
 .echoue {
   border: 4px solid #D32F2F;
   background-color: rgba(211, 47, 47, 0.3) !important;
+}
+
+.echoue .cours__titre {
+  text-shadow: 0 0 5px #D32F2F;
 }
 
 .echoue .cours__code {
@@ -692,9 +840,21 @@ COMPOSANTES
   border-bottom: 2px solid #D32F2F;
 }
 
+.echoue .cours__nbre-heure .horloge {
+  background-color: #D32F2F;
+}
+
+.echoue .logoFiltre {
+  background-color: #D32F2F;
+}
+
 .choisi {
   border: 4px solid #7E57C2;
   background-color: rgba(126, 87, 194, 0.3) !important;
+}
+
+.choisi .cours__titre {
+  text-shadow: 0 0 5px #7E57C2;
 }
 
 .choisi .cours__code {
@@ -714,9 +874,21 @@ COMPOSANTES
   border-bottom: 2px solid #7E57C2;
 }
 
+.choisi .cours__nbre-heure .horloge {
+  background-color: #7E57C2;
+}
+
+.choisi .logoFiltre {
+  background-color: #7E57C2;
+}
+
 .non-choisi {
   border: 4px solid gray;
   background-color: rgba(128, 128, 128, 0.3) !important;
+}
+
+.non-choisi .cours__titre {
+  text-shadow: 0 0 5px gray;
 }
 
 .non-choisi .cours__code {
@@ -734,6 +906,14 @@ COMPOSANTES
 
 .non-choisi .cours__titre {
   border-bottom: 2px solid gray;
+}
+
+.non-choisi .cours__nbre-heure .horloge {
+  background-color: gray;
+}
+
+.non-choisi .logoFiltre {
+  background-color: gray;
 }
 
 .site__header {
@@ -873,6 +1053,10 @@ COMPOSANTES
   content: "\2771 ";
 }
 
+.menu-principal-container .current-menu-item a {
+  background-color: white;
+}
+
 #chk-burger {
   display: none;
 }
@@ -887,7 +1071,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger .ligne {
-  background-color: #d5f1e1;
+  background-color: #d5f1f1;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -937,24 +1121,24 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3aa;
-  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+  background-color: #82e3e3;
+  transition: .3s;
 }
 
 .menu-item a:hover {
-  background-color: #28b864;
+  background-color: #28b8b8;
 }
 
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3aa;
+  background-color: #82e3e3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .wp-block-latest-posts li a:hover {
-  background-color: #28b864;
+  background-color: #28b8b8;
 }
 
 @media screen and (min-width: 576px) {
@@ -975,8 +1159,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #073b1d;
-  color: #bdffd8;
+  background-color: #073b3b;
+  color: #bdffff;
   padding: 15px;
 }
 
@@ -1040,7 +1224,7 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #15ff00;
+  color: #00ff80;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1051,14 +1235,14 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #00ff91;
+  color: #00c4ff;
   margin: 0 auto;
 }
 
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #073b1d;
+  color: #073b3b;
 }
 
 .err {
@@ -1085,7 +1269,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #073b1d;
+  color: #073b3b;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -1098,7 +1282,7 @@ COMPOSANTES
 .article__seul {
   padding: 15px;
   margin: 20px;
-  color: #073b1d;
+  color: #073b3b;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -1108,7 +1292,7 @@ COMPOSANTES
 .article__seul__contenu {
   font-weight: normal;
   display: flex;
-  color: #052914;
+  color: #052929;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1117,6 +1301,10 @@ COMPOSANTES
 
 .article__seul label {
   cursor: pointer;
+}
+
+.single-post .cours_etat {
+  font-size: 20px;
 }
 
 #chk-single {
@@ -1167,7 +1355,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #daf1e4;
+  background-color: #daf1f1;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -1181,14 +1369,14 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #daf1e4;
+  background-color: #daf1f1;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
 }
 
 .icone__lien svg {
-  color: #6fe29f;
+  color: #6fe2e2;
   margin: 0px 2px;
 }
 
@@ -1199,11 +1387,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #d1ffe4;
+  color: #d1ffff;
 }
 
 .icone__lien:hover {
-  background-color: #28b864;
+  background-color: #28b8b8;
 }
 
 .recherche,
@@ -1231,7 +1419,7 @@ COMPOSANTES
   border: none;
   outline: none;
   background-color: #fff;
-  color: #073b1d;
+  color: #073b3b;
   border-radius: 5px;
 }
 
@@ -1294,11 +1482,87 @@ COMPOSANTES
 .recherche #searchsubmit svg,
 .searchform__bouton svg,
 .searchform #searchsubmit svg {
-  color: #073b1d;
+  color: #073b3b;
 }
 
 .mot_recherche {
-  color: #39a259;
+  color: #39a2a2;
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  display: block;
+  column-gap: 4px;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  text-decoration: none;
+}
+
+.current-menu-item a {
+  transition: .3s;
+  color: white;
+  background-color: #28b8b8;
+}
+
+.menu-accueil-container {
+  margin-bottom: 15px;
+}
+
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.menu-accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+  height: 175px;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* ---------------------------------------------------------
@@ -1325,11 +1589,14 @@ ANIMATION
   }
 }
 
-.motSousTitre {
+.home .motSousTitre {
   animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
   opacity: 0;
+}
+
+.motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #052914, 0 0 5px #0000FF;
+  text-shadow: 0 0 3px #052929, 0 0 5px #335c5c;
 }
 
 @keyframes animSousTitre {
@@ -1392,7 +1659,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #daf1e4;
+  background-color: #daf1f1;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
@@ -1405,30 +1672,30 @@ LAYOUT
   bottom: 0;
   left: 0;
   right: 0;
-  animation: formeArriere 10s infinite;
-  background-color: black;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  background-color: #073b3b;
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6fe29f;
+  background-color: #6fe2e2;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #052914;
+  background-color: #052929;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #d5f1e1;
+  background-color: #d5f1f1;
   padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #073b1d;
+  background-color: #073b3b;
 }
 
 .site {
@@ -1469,24 +1736,39 @@ LAYOUT
 }
 
 .home .site__header {
-  background-color: rgba(111, 226, 159, 0.5);
+  background-color: rgba(111, 226, 226, 0.5);
 }
 
 .home .site__barre {
-  background-color: rgba(5, 41, 20, 0.5);
+  background-color: rgba(5, 41, 41, 0.5);
 }
 
 .home .site__main {
-  background-color: rgba(213, 241, 225, 0.5);
+  background-color: rgba(213, 241, 241, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {
-  background-color: rgba(7, 59, 29, 0.5);
+  background-color: rgba(7, 59, 59, 0.5);
 }
 
-html {
-  overflow-x: hidden;
-}
+/*                       ___
+                      .-'   `'.
+                     /         \
+                     |         ;
+                     |         |           ___.--,
+            _.._     |0) = (0) |    _.---'`__.-( (_.
+     __.--'`_.. '.__.\    '--. \_.-' ,.--'`     `""`
+    ( ,.--'`   ',__ /./;   ;, '.__.'`    __
+    _`) )  .---.__.' / |   |\   \__..--""  """--.,_
+   `---' .'.''-._.-'`_./  /\ '.  \ _.--''````'''--._`-.__.'
+         | |  .' _.-' |  |  \  \  '.               `----`
+          \ \/ .'     \  \   '. '-._)
+           \/ /        \  \    `=.__`'-.
+           / /\         `) )    / / `"".`\
+     , _.-'.'\ \        / /    ( (     / /
+      `--'`   ) )    .-'.'      '.'.  | (
+             ( /    ( (`          ) )  \ \
+    */
 /*# sourceMappingURL=style.css.map */

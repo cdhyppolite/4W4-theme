@@ -6,3 +6,10 @@ $font__titre: 'Ubuntu',
 'Gill Sans MT',
 'Arial',
 'sans-serif';
+// Les variables font_main et font_titre seron remplacés prochainement
+$police__h1:$font__titre;
+$police__p:$font__main;
+$police__h3: 'Anybody',
+'cursive';
+$police__h5: 'Oswald',
+sans-serif;
