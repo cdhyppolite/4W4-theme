@@ -391,11 +391,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b4761;
+  color: #477b7b;
 }
 
 a:visited {
-  color: #5c3347;
+  color: #335c5c;
 }
 
 a:hover, a:focus, a:active {
@@ -414,15 +414,15 @@ a:hover, a:active {
     @include links( $color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
 }*/
 .header__titre a {
-  color: #ff0044;
+  color: #00c4ff;
 }
 
 .header__titre a:visited {
-  color: #ff0080;
+  color: cyan;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #e58bb2;
+  color: #8bdfe5;
 }
 
 .header__titre a:focus {
@@ -435,7 +435,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a {
   color: #fff;
-  background-color: #e26fa8;
+  background-color: #6fe2e2;
 }
 
 .site__footer .menu-item a svg {
@@ -444,7 +444,7 @@ a:hover, a:active {
 
 .site__footer .menu-item a:visited {
   color: #bbb;
-  background-color: #a2397a;
+  background-color: #39a296;
 }
 
 .site__footer .menu-item a:visited svg {
@@ -452,12 +452,12 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #ff0080;
-  background-color: #5c3347;
+  color: cyan;
+  background-color: #335c5c;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #ff0080;
+  color: cyan;
 }
 
 .site__footer .menu-item a:focus {
@@ -487,12 +487,12 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #3b0721;
-  background-color: #f1dae6;
+  color: #073b3b;
+  background-color: #daf1f1;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #3b0721;
+  color: #073b3b;
 }
 
 .site__barre .menu-item a:focus {
@@ -556,14 +556,14 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #f1d5e3;
+  background-color: #d5f1f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #f1d5e3;
+  background-color: #d5f1f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -575,7 +575,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #a2396e;
+  color: #39a2a2;
   margin: 10px 0px;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   text-align: center;
@@ -615,7 +615,7 @@ COMPOSANTES
   position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #ffd1e8;
+  background-color: #d1ffff;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
@@ -673,7 +673,7 @@ COMPOSANTES
 .cours__code {
   font-size: 1.2rem;
   margin: 0;
-  color: #b82870;
+  color: #28b8b8;
   font-weight: bold;
 }
 
@@ -695,12 +695,12 @@ COMPOSANTES
 .boutonTri a {
   text-decoration: none;
   padding: 4px;
-  background-color: #e382b3;
+  background-color: #82e3e3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .boutonTri a:hover {
-  background-color: #b82870;
+  background-color: #28b8b8;
 }
 
 .cours_etat {
@@ -1071,7 +1071,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger .ligne {
-  background-color: #f1d5e3;
+  background-color: #d5f1f1;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -1121,24 +1121,24 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #e382b3;
-  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+  background-color: #82e3e3;
+  transition: .3s;
 }
 
 .menu-item a:hover {
-  background-color: #b82870;
+  background-color: #28b8b8;
 }
 
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #e382b3;
+  background-color: #82e3e3;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .wp-block-latest-posts li a:hover {
-  background-color: #b82870;
+  background-color: #28b8b8;
 }
 
 @media screen and (min-width: 576px) {
@@ -1159,8 +1159,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #3b0721;
-  color: #ffbdde;
+  background-color: #073b3b;
+  color: #bdffff;
   padding: 15px;
 }
 
@@ -1224,7 +1224,7 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: magenta;
+  color: #00ff80;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1235,14 +1235,14 @@ COMPOSANTES
   height: 600px;
   width: 600px;
   position: relative;
-  color: #ff0044;
+  color: #00c4ff;
   margin: 0 auto;
 }
 
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #3b0721;
+  color: #073b3b;
 }
 
 .err {
@@ -1269,7 +1269,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #3b0721;
+  color: #073b3b;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -1282,7 +1282,7 @@ COMPOSANTES
 .article__seul {
   padding: 15px;
   margin: 20px;
-  color: #3b0721;
+  color: #073b3b;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -1292,7 +1292,7 @@ COMPOSANTES
 .article__seul__contenu {
   font-weight: normal;
   display: flex;
-  color: #290517;
+  color: #052929;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1355,7 +1355,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #f1dae6;
+  background-color: #daf1f1;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -1369,14 +1369,14 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #f1dae6;
+  background-color: #daf1f1;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
 }
 
 .icone__lien svg {
-  color: #e26fa8;
+  color: #6fe2e2;
   margin: 0px 2px;
 }
 
@@ -1387,11 +1387,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #ffd1e8;
+  color: #d1ffff;
 }
 
 .icone__lien:hover {
-  background-color: #b82870;
+  background-color: #28b8b8;
 }
 
 .recherche,
@@ -1419,7 +1419,7 @@ COMPOSANTES
   border: none;
   outline: none;
   background-color: #fff;
-  color: #3b0721;
+  color: #073b3b;
   border-radius: 5px;
 }
 
@@ -1482,11 +1482,11 @@ COMPOSANTES
 .recherche #searchsubmit svg,
 .searchform__bouton svg,
 .searchform #searchsubmit svg {
-  color: #3b0721;
+  color: #073b3b;
 }
 
 .mot_recherche {
-  color: #a2396e;
+  color: #39a2a2;
 }
 
 .menu-categorie_cours-container .menu {
@@ -1505,8 +1505,9 @@ COMPOSANTES
 }
 
 .current-menu-item a {
+  transition: .3s;
   color: white;
-  background-color: #b82870;
+  background-color: #28b8b8;
 }
 
 .menu-accueil-container {
@@ -1595,7 +1596,7 @@ ANIMATION
 
 .motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #290517, 0 0 5px #5c3347;
+  text-shadow: 0 0 3px #052929, 0 0 5px #335c5c;
 }
 
 @keyframes animSousTitre {
@@ -1658,7 +1659,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #f1dae6;
+  background-color: #daf1f1;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
@@ -1672,29 +1673,29 @@ LAYOUT
   left: 0;
   right: 0;
   animation: formeArriere 10s infinite;
-  background-color: #3b0721;
+  background-color: #073b3b;
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #e26fa8;
+  background-color: #6fe2e2;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #290517;
+  background-color: #052929;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #f1d5e3;
+  background-color: #d5f1f1;
   padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #3b0721;
+  background-color: #073b3b;
 }
 
 .site {
@@ -1735,21 +1736,21 @@ LAYOUT
 }
 
 .home .site__header {
-  background-color: rgba(226, 111, 168, 0.5);
+  background-color: rgba(111, 226, 226, 0.5);
 }
 
 .home .site__barre {
-  background-color: rgba(41, 5, 23, 0.5);
+  background-color: rgba(5, 41, 41, 0.5);
 }
 
 .home .site__main {
-  background-color: rgba(241, 213, 227, 0.5);
+  background-color: rgba(213, 241, 241, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {
-  background-color: rgba(59, 7, 33, 0.5);
+  background-color: rgba(7, 59, 59, 0.5);
 }
 
 /*                       ___

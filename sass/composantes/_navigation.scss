@@ -85,7 +85,7 @@
             text-decoration: none;
             padding: 4px;
             background-color: $color__background-link;
-            transition: .1s cubic-bezier(.5, 0, .5, 1.7);
+            transition: .3s;
             &:hover {
                 background-color: $color__background-link-hover;
             }

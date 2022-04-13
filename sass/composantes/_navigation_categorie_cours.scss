@@ -17,7 +17,7 @@
     
     .current-menu-item {
         a {
-            // color: $color__link__footer__menu-;
+            transition: .3s;
             color: white;
             background-color: $color__background-link-hover;
         }
