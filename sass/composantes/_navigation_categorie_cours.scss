@@ -20,5 +20,8 @@
             transition: .3s;
             color: $couleur1;
             background-color: $color__link__menu-current;
+            svg {
+                color: $couleur1;
+            }
         }
     }

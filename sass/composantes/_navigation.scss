@@ -28,8 +28,11 @@
         content: "\2771 ";
     }
     .current-menu-item a {
-        color: $couleur1;
+        color: $couleur1 !important;
         background-color: $color__link__menu-current;
+        svg {
+            color: $couleur1;
+        }
     }
 }
 

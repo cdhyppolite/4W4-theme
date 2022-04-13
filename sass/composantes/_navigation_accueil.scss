@@ -1,21 +1,29 @@
-.menu-accueil-container {
+.menu-accueil-container,
+.menu-evenement-container {
     margin-bottom: 15px;
     // nav
     .menu {
         //ul
         display: flex;
         justify-content: space-around;
-        .accueil__cours .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
-        }
-        .accueil__prof .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-        }
-        .accueil__aide .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
-        }
-        .accueil__etudiant .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        .accueil {
+            &__cours .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+            }
+            &__prof .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
+            }
+            &__aide .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+            }
+            &__etudiant .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+            }
+            // Événements
+            &__journee {}
+            &__porte1 {}
+            &__porte2 {}
+            &__project {}
         }
         .menu-item {
             //li

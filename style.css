@@ -451,7 +451,7 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: crimson;
+  color: crimson !important;
   background-color: #FFCC00;
 }
 
@@ -486,7 +486,7 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #272827;
+  color: #272827 !important;
   background-color: crimson;
 }
 
@@ -1052,8 +1052,12 @@ COMPOSANTES
 }
 
 .menu-principal-container .current-menu-item a {
-  color: crimson;
+  color: crimson !important;
   background-color: #FFCC00;
+}
+
+.menu-principal-container .current-menu-item a svg {
+  color: crimson;
 }
 
 #chk-burger {
@@ -1509,39 +1513,51 @@ COMPOSANTES
   background-color: #FFCC00;
 }
 
-.menu-accueil-container {
+.current-menu-item a svg {
+  color: crimson;
+}
+
+.menu-accueil-container,
+.menu-evenement-container {
   margin-bottom: 15px;
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu,
+.menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone,
+.menu-evenement-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone {
+.menu-accueil-container .menu .accueil__prof .menu-item-icone,
+.menu-evenement-container .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide .menu-item-icone,
+.menu-evenement-container .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone,
+.menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item,
+.menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   flex: 0 0 20%;
   height: 175px;
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a,
+.menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1550,12 +1566,14 @@ COMPOSANTES
   font-size: 2rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description,
+.menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
   text-align: center;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone,
+.menu-evenement-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   margin-top: auto;
