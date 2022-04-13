@@ -18,10 +18,9 @@ $color__background-link-hover: $couleur3;
 
 /* ---------------- LIENS */
 
-$color__link: hsl($chiffreCouleur, 27%, 38%);
-$color__link-hover: hsl(0, 0%, 100%);
+$color__link: $couleur4;
+$color__link-hover: $couleur1;
 $color__link-visited: hsl($chiffreCouleur, 29%, 28%);
-$color__cours-titre: $couleur2;
 
 /* ---------------- LIENS FOOTER */
 
@@ -31,21 +30,21 @@ $color__link__footer-visited: #00bfff;
 
 /* ---------------- LIENS DU MENU FOOTER*/
 
-$color__link__footer__menu: #fff;
-$color__link__footer__menu-visited: #bbb;
-$color__link__footer__menu-hover:hsl($chiffreCouleur, 100%, 50%);
-$background__link__footer__menu: hsl($chiffreCouleur, 66%, 66%);
-$background__link__footer__menu-visited: hsl($chiffreCouleur - 7, 48%, 43%);
-$background__link__footer__menu-hover: hsl($chiffreCouleur, 29%, 28%);
+$color__link__footer__menu: $couleur4;
+$color__link__footer__menu-hover:$couleur1;
+$color__link__footer__menu-visited: $couleur2;
+$background__link__footer__menu: $couleur1;
+$background__link__footer__menu-hover: $couleur3;
+$background__link__footer__menu-visited: #bbb;
 
 /* ---------------- LIENS  DU MENU PRINCIPAL*/
 
-$color__link__principal__menu: #fff;
-$color__link__principal__menu-visited: #bbb;
-$color__link__principal__menu-hover:hsl($chiffreCouleur, 79%, 13%);
+$color__link__principal__menu: $couleur1;
+$color__link__principal__menu-visited: $couleur3;
+$color__link__principal__menu-hover: $couleur2;
 $background__link__principal__menu: rgba(rgb(140, 189, 223), .1);
-$background__link__principal__menu-visited: rgb(1, 1, 19);
-$background__link__principal__menu-hover: hsl($chiffreCouleur, 45%, 90%);
+$background__link__principal__menu-visited: $couleur3;
+$background__link__principal__menu-hover: $couleur1;
 $color__link__menu-current: $couleur3;
 
 /* ---------------- LIENS HEADER titre principal du site */
@@ -68,13 +67,14 @@ $color__texte__icones: rgb(167, 173, 181);
 $color__texte__defaut: rgb(247, 247, 247);
 $color__colorbackground-recherche: rgb(95, 106, 117);
 
-/****************Cours Border*******/
+/****************Cours *******/
 
 $color__cours-reussi: #1B5E20;
 $color__cours-aFaire: #FF8F00;
 $color__cours-enCours: #01579B;
 $color__cours-echoue: #D32F2F;
 $color__cours-choisi: #7E57C2;
+$color__cours-titre: $couleur2;
 
 /****************Animation*******/
 

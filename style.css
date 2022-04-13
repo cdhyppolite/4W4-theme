@@ -19,7 +19,7 @@ VARIABLES
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /****************Recherche*******/
-/****************Cours Border*******/
+/****************Cours *******/
 /****************Animation*******/
 @keyframes text-arc-en-ciel {
   100%,
@@ -390,7 +390,7 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b476a;
+  color: #F2F2F2;
 }
 
 a:visited {
@@ -398,7 +398,7 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: crimson;
 }
 
 a:focus {
@@ -433,30 +433,30 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #fff;
-  background-color: #e26fbb;
+  color: #F2F2F2;
+  background-color: crimson;
 }
 
 .site__footer .menu-item a svg {
-  color: #fff;
+  color: #F2F2F2;
 }
 
 .site__footer .menu-item a:visited {
-  color: #bbb;
-  background-color: #a2398b;
+  color: #272827;
+  background-color: #bbb;
 }
 
 .site__footer .menu-item a:visited svg {
-  color: #bbb;
+  color: #272827;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #ff00aa;
-  background-color: #5c334e;
+  color: crimson;
+  background-color: #FFCC00;
 }
 
 .site__footer .menu-item a:hover svg, .site__footer .menu-item a:focus svg, .site__footer .menu-item a:active svg {
-  color: #ff00aa;
+  color: crimson;
 }
 
 .site__footer .menu-item a:focus {
@@ -468,30 +468,30 @@ a:hover, a:active {
 }
 
 .site__barre .menu-item a {
-  color: #fff;
+  color: crimson;
   background-color: rgba(140, 189, 223, 0.1);
 }
 
 .site__barre .menu-item a svg {
-  color: #fff;
+  color: crimson;
 }
 
 .site__barre .menu-item a:visited {
-  color: #bbb;
-  background-color: #010113;
+  color: #FFCC00;
+  background-color: #FFCC00;
 }
 
 .site__barre .menu-item a:visited svg {
-  color: #bbb;
+  color: #FFCC00;
 }
 
 .site__barre .menu-item a:hover, .site__barre .menu-item a:focus, .site__barre .menu-item a:active {
-  color: #3b072a;
-  background-color: #f1dae9;
+  color: #272827;
+  background-color: crimson;
 }
 
 .site__barre .menu-item a:hover svg, .site__barre .menu-item a:focus svg, .site__barre .menu-item a:active svg {
-  color: #3b072a;
+  color: #272827;
 }
 
 .site__barre .menu-item a:focus {
@@ -1417,7 +1417,7 @@ COMPOSANTES
   height: 35px;
   border: none;
   outline: none;
-  background-color: #fff;
+  background-color: #F2F2F2;
   color: #272827;
   border-radius: 5px;
 }
@@ -1427,7 +1427,7 @@ COMPOSANTES
 .searchform__input:focus,
 .searchform #s:focus {
   background-color: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: crimson;
   transform: rotateY(360deg) perspective(500px);
 }
 
@@ -1456,7 +1456,7 @@ COMPOSANTES
 .recherche #searchsubmit,
 .searchform__bouton,
 .searchform #searchsubmit {
-  background-color: #fff;
+  background-color: #F2F2F2;
   top: 0;
   right: 0;
   border: none;
