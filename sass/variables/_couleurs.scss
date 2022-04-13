@@ -2,29 +2,34 @@
 
 $chiffreCouleur:180;
 $chiffreTest :hsl(185, 100%, 50%);
-$color__background-body: hsl($chiffreCouleur, 45%, 90%);
-$color__background-main: hsl($chiffreCouleur, 50%, 89%);
-$color__background-cours: hsl($chiffreCouleur, 100%, 91%);
-$color__background-header: hsl($chiffreCouleur, 66%, 66%);
-$color__background-barre: hsl($chiffreCouleur, 78%, 9%);
-$color__background-footer: hsl($chiffreCouleur, 79%, 13%);
-$color__background-link: hsl($chiffreCouleur, 63%, 70%);
-$color__background-link-hover: hsl($chiffreCouleur, 64%, 44%);
-// Forme à l'arrière
-$color__background-body-clip: $color__background-footer;
+$couleur1: crimson;
+$couleur2: #272827;
+$couleur3: #FFCC00;
+$couleur4: #F2F2F2;
+$couleur5: deeppink;
+// --------------------------------
+$color__background-body: $couleur4;
+$color__background-body-clip: $couleur1;
+$color__background-main: $couleur4;
+$color__background-cours: $couleur4; // N'est pas affiché
+$color__background-header: $couleur2;
+$color__background-barre: $couleur2;
+$color__background-footer: $couleur2;
+$color__background-link: $couleur1;
+$color__background-link-hover: $couleur3;
 
 /* ---------------- LIENS */
 
-$color__link: hsl($chiffreCouleur, 27%, 38%);
-$color__link-hover: hsl(0, 0%, 100%);
-$color__link-visited: hsl($chiffreCouleur, 29%, 28%);
-$color__cours-titre: hsl($chiffreCouleur, 48%, 43%);
+$color__link: #FFCC00;
+$color__link-hover: #f23dad;
+$color__link-visited: #EE0404;
+$color__link-recherche: #F2F2F2;
 
 /* ---------------- LIENS FOOTER */
 
-$color__link__footer: black; //hsl(34, 91%, 50%);
-$color__link__footer-hover: hsl($chiffreCouleur - 30, 100%, 50%);
-$color__link__footer-visited: #00bfff;
+$color__link__footer: #FFCC00;
+$color__link__footer-hover: #F2F2F2;
+$color__link__footer-visited: #EE0404;
 
 /* ---------------- LIENS DU MENU FOOTER*/
 

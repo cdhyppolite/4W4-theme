@@ -9,8 +9,8 @@
     <!----------------------------- Ajout du menu des évenements ----------------------------->
     <!------------------------------------ Menu evenement ------------------------------------>
     <h1 class="formation__titre">Ne manquez pas nos activités</h1>
-    <?php wp_nav_menu(array("menu"=>"menu_event",
-                            "container"=>"nav")); ?>
+    <?php wp_nav_menu(array("menu"=>"menu_evenement",
+            "container"=>"nav")); ?>
 
      <h4>Voici le dernier cours de la liste:</h4>
      

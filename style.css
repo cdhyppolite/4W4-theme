@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme name: EX3 - Carl-David Hyppolite
+Theme name: EX4 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex3
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex4
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -522,48 +522,47 @@ p {
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
-h1 {
-  font-size: clamp(2rem, 3vw, 5rem);
+/*h1 {
+    font-size: clamp(2rem, 3vw, 5rem);
 }
 
 h2 {
-  font-size: clamp(1.5rem, 2.2vw, 3rem);
+    font-size: clamp(1.5rem, 2.2vw, 3rem);
 }
 
 h3 {
-  font-size: clamp(1.2rem, 2vw, 2.6rem);
+    font-size: clamp(1.2rem, 2vw, 2.6rem);
 }
 
 h4 {
-  font-size: clamp(1.1rem, 2vw, 2.5rem);
+    font-size: clamp(1.1rem, 2vw, 2.5rem);
 }
 
 h5 {
-  font-size: clamp(1rem, 2vw, 2.2rem);
+    font-size: clamp(1rem, 2vw, 2.2rem);
 }
 
 h6 {
-  font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-}
-
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}*/
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #d5f1f1;
+  background-color: #F2F2F2;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .site__main {
   padding: 10px 15px;
-  background-color: #d5f1f1;
+  background-color: #F2F2F2;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -615,7 +614,7 @@ COMPOSANTES
   position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #d1ffff;
+  background-color: #F2F2F2;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
@@ -673,7 +672,7 @@ COMPOSANTES
 .cours__code {
   font-size: 1.2rem;
   margin: 0;
-  color: #28b8b8;
+  color: #FFCC00;
   font-weight: bold;
 }
 
@@ -695,12 +694,12 @@ COMPOSANTES
 .boutonTri a {
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3e3;
+  background-color: crimson;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .boutonTri a:hover {
-  background-color: #28b8b8;
+  background-color: #FFCC00;
 }
 
 .cours_etat {
@@ -1071,7 +1070,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ #burger .ligne {
-  background-color: #d5f1f1;
+  background-color: #F2F2F2;
 }
 
 #chk-burger:checked ~ #burger .ligne:first-child {
@@ -1121,24 +1120,24 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3e3;
+  background-color: crimson;
   transition: .3s;
 }
 
 .menu-item a:hover {
-  background-color: #28b8b8;
+  background-color: #FFCC00;
 }
 
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #82e3e3;
+  background-color: crimson;
   transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
 }
 
 .wp-block-latest-posts li a:hover {
-  background-color: #28b8b8;
+  background-color: #FFCC00;
 }
 
 @media screen and (min-width: 576px) {
@@ -1159,7 +1158,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  background-color: #073b3b;
+  background-color: #272827;
   color: #bdffff;
   padding: 15px;
 }
@@ -1242,7 +1241,7 @@ COMPOSANTES
 .erreur404 h1 {
   font-size: 3rem;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
-  color: #073b3b;
+  color: #272827;
 }
 
 .err {
@@ -1269,7 +1268,7 @@ COMPOSANTES
 }
 
 .msg {
-  color: #073b3b;
+  color: #272827;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.6rem;
@@ -1282,7 +1281,7 @@ COMPOSANTES
 .article__seul {
   padding: 15px;
   margin: 20px;
-  color: #073b3b;
+  color: #272827;
   font-family: "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   font-size: 1.2rem;
   font-weight: bold;
@@ -1292,7 +1291,7 @@ COMPOSANTES
 .article__seul__contenu {
   font-weight: normal;
   display: flex;
-  color: #052929;
+  color: #272827;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
@@ -1355,7 +1354,7 @@ COMPOSANTES
 }
 
 .icone {
-  background-color: #daf1f1;
+  background-color: #F2F2F2;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -1369,14 +1368,14 @@ COMPOSANTES
 }
 
 .icone__lien {
-  background-color: #daf1f1;
+  background-color: #F2F2F2;
   display: flex;
   justify-content: center;
   transition-duration: 0.4s;
 }
 
 .icone__lien svg {
-  color: #6fe2e2;
+  color: #272827;
   margin: 0px 2px;
 }
 
@@ -1387,11 +1386,11 @@ COMPOSANTES
 }
 
 .icone__lien svg:hover {
-  color: #d1ffff;
+  color: #F2F2F2;
 }
 
 .icone__lien:hover {
-  background-color: #28b8b8;
+  background-color: #FFCC00;
 }
 
 .recherche,
@@ -1419,7 +1418,7 @@ COMPOSANTES
   border: none;
   outline: none;
   background-color: #fff;
-  color: #073b3b;
+  color: #272827;
   border-radius: 5px;
 }
 
@@ -1482,7 +1481,7 @@ COMPOSANTES
 .recherche #searchsubmit svg,
 .searchform__bouton svg,
 .searchform #searchsubmit svg {
-  color: #073b3b;
+  color: #272827;
 }
 
 .mot_recherche {
@@ -1507,7 +1506,7 @@ COMPOSANTES
 .current-menu-item a {
   transition: .3s;
   color: white;
-  background-color: #28b8b8;
+  background-color: #FFCC00;
 }
 
 .menu-accueil-container {
@@ -1596,7 +1595,7 @@ ANIMATION
 
 .motSousTitre {
   margin-right: 1vw;
-  text-shadow: 0 0 3px #052929, 0 0 5px #335c5c;
+  text-shadow: 0 0 3px #272827, 0 0 5px #335c5c;
 }
 
 @keyframes animSousTitre {
@@ -1659,7 +1658,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 .site {
-  background-color: #daf1f1;
+  background-color: #F2F2F2;
   font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
@@ -1673,29 +1672,29 @@ LAYOUT
   left: 0;
   right: 0;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  background-color: #073b3b;
+  background-color: crimson;
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6fe2e2;
+  background-color: #272827;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #052929;
+  background-color: #272827;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #d5f1f1;
+  background-color: #F2F2F2;
   padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #073b3b;
+  background-color: #272827;
 }
 
 .site {
@@ -1736,21 +1735,21 @@ LAYOUT
 }
 
 .home .site__header {
-  background-color: rgba(111, 226, 226, 0.5);
+  background-color: rgba(39, 40, 39, 0.5);
 }
 
 .home .site__barre {
-  background-color: rgba(5, 41, 41, 0.5);
+  background-color: rgba(39, 40, 39, 0.5);
 }
 
 .home .site__main {
-  background-color: rgba(213, 241, 241, 0.5);
+  background-color: rgba(242, 242, 242, 0.5);
   min-height: 600px;
   animation: animHomeSiteMain 6s forwards;
 }
 
 .home .site__footer {
-  background-color: rgba(7, 59, 59, 0.5);
+  background-color: rgba(39, 40, 39, 0.5);
 }
 
 /*                       ___
