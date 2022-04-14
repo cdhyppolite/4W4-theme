@@ -21,7 +21,11 @@
         <?php endif; ?>
 
         <?php the_title(); ?>
-        <?php the_content(); ?>
+        <?php the_field('description'); ?>
+        <p><?php the_field('organisateur'); ?></p>
+        <p><?php the_field('endroit'); ?></p>
+        <p><?php the_content(); ?></p>
+        
     <?php endif; ?>
 </main>
 

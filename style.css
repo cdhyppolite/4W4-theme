@@ -1223,11 +1223,11 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
-  color: black;
+  color: #FFCC00;
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #d500ff;
+  color: #F2F2F2;
 }
 
 .site__footer__ligne .footer__recherche .icone {
@@ -1554,17 +1554,17 @@ COMPOSANTES
 
 .menu-accueil-container .menu .accueil__journee .menu-item-icone,
 .menu-evenement-container .menu .accueil__journee .menu-item-icone {
-  background-image: url("");
+  background-image: url("https://s2.svgbox.net/weather-icons.svg?ic=day-sunny");
 }
 
 .menu-accueil-container .menu .accueil__porte1 .menu-item-icone,
 .menu-evenement-container .menu .accueil__porte1 .menu-item-icone {
-  background-image: url("");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
 .menu-accueil-container .menu .accueil__porte2 .menu-item-icone,
 .menu-evenement-container .menu .accueil__porte2 .menu-item-icone {
-  background-image: url("");
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
 .menu-accueil-container .menu .accueil__project .menu-item-icone,

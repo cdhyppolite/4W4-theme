@@ -24,8 +24,8 @@ $color__link-visited: $couleur3;
 
 /* ---------------- LIENS FOOTER */
 
-$color__link__footer: black; //hsl(34, 91%, 50%);
-$color__link__footer-hover: hsl($chiffreCouleur - 30, 100%, 50%);
+$color__link__footer: $couleur3; //hsl(34, 91%, 50%);
+$color__link__footer-hover: $couleur4;
 $color__link__footer-visited: #00bfff;
 
 /* ---------------- LIENS DU MENU FOOTER*/
