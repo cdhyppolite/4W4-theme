@@ -973,7 +973,7 @@ COMPOSANTES
   text-align: right;
   margin-left: 15px;
   font-size: clamp(2.5rem, 4vw, 6rem);
-  font-family: 'Ubuntu';
+  font-family: "Super Mario 256", "sans-serif";
   color: #A15C38;
 }
 
@@ -1612,6 +1612,7 @@ ANIMATION
 .lettre {
   animation: animLettre 500ms forwards;
   opacity: 0;
+  margin-right: -3px;
 }
 
 .lettre:nth-of-type(3) {
