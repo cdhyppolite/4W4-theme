@@ -1790,7 +1790,7 @@ html {
 
 @media screen and (min-width: 576px) {
   .site {
-    grid-template-columns: auto 300px;
+    grid-template-columns: auto clamp(180px, max-content, 350px);
     grid-template-areas: "header header" " main sidebar" "footer footer";
   }
   .home {

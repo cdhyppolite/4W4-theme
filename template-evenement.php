@@ -17,9 +17,9 @@
      <?php the_title() ?>
      <p class='evenement__resume'><?php the_field('resume'); ?></p>
      <p class='evenement__endroit'><?php the_field('endroit'); ?></p> 
-     <p><?php the_field('organisateur'); ?></p>
-     <p><?php the_field('date'); ?></p>
-     <p><?php the_field('heure'); ?></p>
+     <p>Organisé par: <?php the_field('organisateur'); ?></p>
+     <p>Date: <?php the_field('date'); ?></p>
+     <p>Heure: <?php the_field('heure'); ?></p>
      
      <?php 
         $image = get_field('image');
