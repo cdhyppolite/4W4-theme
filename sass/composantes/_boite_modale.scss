@@ -1,0 +1,21 @@
+.boite__modale {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    // ---
+    left: 25%;
+    top: 25%;
+    margin: 0 auto;
+    background-color: aqua;
+    z-index: 10;
+    // ---
+    transition-duration: .4s;
+    &:hover,
+    &:active {
+        transform: scale(1);
+    }
+    transform: scale(.1);
+    @media screen and (min-width: $largeur__media--tablette) {
+        // left: 40%;
+    }
+}

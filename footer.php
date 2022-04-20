@@ -25,6 +25,11 @@
         <section class="footer__copyright"><i>&copy; <?php echo date("Y"); ?> - TIM Maisonneuve - Tous droits réservés</i></section>
     </div>
 </footer>
+<div class="boite__modale">
+    <p class="boite__modale__texte">
+        TestBoite
+    </p>
+</div>
 <?php wp_footer() ?>
 </body>
 
