@@ -4,6 +4,7 @@
             $idCategorie = get_queried_object() -> slug;
             $nomCategorie = get_queried_object() -> name;
 
+            //  echo get_bloginfo('template_directory');
             /*$ficher = $_SERVER['DOCUMENT_ROOT']."/4w4/wp-content/themes/HyppoliteC/data/test.txt";
             echo $ficher;
             file_put_contents($ficher,$nomCategorie);
@@ -16,11 +17,9 @@
             $flecheDesc = '<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path> </svg>';
             
             $nouvelleOrdreTri; $nouvelleiconeTri; $texteBoutonTri;
-            if ($_GET['ordre']) {
-                if ($_GET['ordre']=='desc') { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri= $flecheAsc; $texteBoutonTri= 'Ascendant'; }
-                else { $nouvelleOrdreTri= 'desc'; $nouvelleiconeTri = $flecheDesc; $texteBoutonTri= 'Désendant'; }
-            } else { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri = $flecheAsc; $texteBoutonTri= 'Ascendant';
-            }
+
+            if ((!$_GET['ordre']) || ($_GET['ordre']=='desc')) { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri= $flecheAsc; $texteBoutonTri= 'Ascendant';
+            } else { $nouvelleOrdreTri= 'desc'; $nouvelleiconeTri = $flecheDesc; $texteBoutonTri= 'Désendant'; }
         ?>
 
     <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
@@ -40,10 +39,11 @@
     <div class="formation__liste">
         <?php $delayAnim=1; ?>
         <?php if (have_posts()):
-                while (have_posts()): the_post(); ?>
         
+                while (have_posts()): the_post(); ?>
         <?php get_template_part("gabarits/content", "cours"); ?>
         <?php endwhile ?>
+
         <?php endif ?>
     </div>
 </section>

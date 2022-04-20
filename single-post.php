@@ -17,9 +17,10 @@
             $etat = "echoue";
         }
     //-----------------------------
+    $imageBlank = get_bloginfo('template_directory')."/images/blank.jpg";
 ?>
         <input type="checkbox" id="chk-single">
-        <main class="site__main <?= $etat; ?>" style="background-image: url('<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo "https://media.sciencephoto.com/image/f0244454/800wm"; } ?>');">
+        <main class="site__main <?= $etat; ?>" style="background-image: url('<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>');">
             <?php if (have_posts()): the_post(); ?>
             
             <article class="article__seul">

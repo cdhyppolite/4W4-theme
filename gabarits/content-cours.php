@@ -1,4 +1,4 @@
-<?php
+<?php 
                     $titre = get_the_title();
                     $titreFiltreCours = substr($titre, 4, -6);
                     //$nbHeures = substr($titre, -6);
@@ -24,16 +24,55 @@
                     }
                     //-----------------------------
                     $delayAnim+=0.05;
+                    $imageBlank = get_bloginfo('template_directory')."/images/blank.jpg";
                 ?>
+                <?php /*if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } */?>
 
 <article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>"
-    style="animation-delay:<?= $delayAnim?>s; background-image: url('<?= get_the_post_thumbnail_url(); ?>');">
-    <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a></h3>
+    style="animation-delay:<?= $delayAnim?>s;">
+
+    <div class="cours__img">
+        <a href="<?php the_permalink(); ?>">
+        <img src="<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>" alt="">
+    </a>
+    </div>
+
+    <h3 class="cours__titre">
+        <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a>
+    </h3>
+
     <div class="cours__nbre-heure"><?= $nombre_dheures; ?>
         <div class="horloge"></div>
     </div>
+
     <p class="cours__code"><?= $codeCours; ?></p>
     <div class="cours_etat"></div>
     <p class="cours__desc"> <?= $descCours; ?></p>
     <div class="logoFiltre"></div>
 </article>
+
+<?php $oui =false;
+if ($oui==true) : ?>
+<div class="">
+    <div class="post_image">
+        <!--CALL TO POST IMAGE-->
+        
+        <?php if ( has_post_thumbnail() != '' ) : ?>
+        <div class=" imgwrap">
+            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+        </div>
+        <?php else: ?>
+        <div class=" imgwrap">
+            <a href="<?php the_permalink(); ?>"><img src="<?= $imageBlank; ?>" alt=""></a>
+        </div>
+        <?php endif ?>
+
+    </div><!-- post image -->
+    <div class=" post_content2">
+        <div class=" post_content3">
+            <?php the_title( sprintf( '<h2 class="postitle_lay"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+            <p><?php the_excerpt(); ?></p>
+        </div> <!-- .post_content2 -->
+    </div><!-- post_content3 -->
+</div>
+<?php endif ?>

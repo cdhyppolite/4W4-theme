@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/super-mario-256" rel="stylesheet">
+    <style> @import url('http://fonts.cdnfonts.com/css/super-mario-256'); </style>
     <!-- Script pour l'erreur 404 -->
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
 
