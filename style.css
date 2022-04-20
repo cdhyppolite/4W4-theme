@@ -1649,7 +1649,8 @@ COMPOSANTES
   left: 25%;
   top: 25%;
   margin: 0 auto;
-  background-color: aqua;
+  background-color: #FFCC00;
+  color: crimson;
   z-index: 10;
   transition-duration: .4s;
   transform: scale(0.1);
