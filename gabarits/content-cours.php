@@ -33,7 +33,7 @@
     <div class="cours__img">
         <a href="<?php the_permalink(); ?>"> <img src="<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>" alt=""> </a>
     </div>
-    <div>
+    <div class="cours__texte">
         <h3 class="cours__titre">
             <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a>
         </h3>

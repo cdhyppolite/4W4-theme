@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/super-mario-256" rel="stylesheet">
-    <style> @import url('http://fonts.cdnfonts.com/css/super-mario-256'); </style>
+    <link href="https://fonts.cdnfonts.com/css/super-mario-256" rel="stylesheet">
+    <link rel="preload" href="<?php echo (get_bloginfo('template_directory')."/fonts/moon_get-Heavy.woff2") ?>" as="font" type="font/woff2" crossorigin>
+
     <!-- Script pour l'erreur 404 -->
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
 

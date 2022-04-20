@@ -45,6 +45,12 @@
         .design .logoFiltre {
             -webkit-mask-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
         }
+        .non-classe,
+        .uncategorized {
+            .logoFiltre {
+                -webkit-mask-image: url('https://s2.svgbox.net/hero-outline.svg?ic=emoji-sad');
+            }
+        }
     }
     &__cours {
         // filter: blur(8px);
@@ -64,10 +70,9 @@
             // width: 45%;
         }
         @media screen and (min-width: $largeur__media--desktop) {
-            width: 30%;
+            width: 20%;
         }
         transition-duration: .5s;
-        padding: 10px;
         &:hover {
             background-color: #f9f9f9 !important;
             transform: scale(1.05) !important;
@@ -137,6 +142,9 @@
     }
     &__desc {
         text-align: justify;
+    }
+    &__texte {
+        padding: 10px;
     }
 }
 

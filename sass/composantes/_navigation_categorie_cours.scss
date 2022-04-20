@@ -10,6 +10,8 @@
                 column-gap: 4px;
                 a {
                     text-decoration: none;
+                    max-height: 26px;
+                    overflow: hidden;
                 }
             }
         }

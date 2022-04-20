@@ -385,6 +385,14 @@ VARIABLES
   }
 }
 
+@font-face {
+  font-family: 'MOON GET!';
+  src: url("fonts/moon_get-Heavy.woff2") format("woff2"), url("fonts/moon_get-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 ÉLÉMENTS
@@ -609,6 +617,11 @@ COMPOSANTES
   -webkit-mask-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
 }
 
+.formation__liste .non-classe .logoFiltre,
+.formation__liste .uncategorized .logoFiltre {
+  -webkit-mask-image: url("https://s2.svgbox.net/hero-outline.svg?ic=emoji-sad");
+}
+
 .formation__cours {
   position: relative;
   background-position: center;
@@ -621,12 +634,11 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   transition-duration: .5s;
-  padding: 10px;
 }
 
 @media screen and (min-width: 992px) {
   .formation__cours {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -701,6 +713,10 @@ COMPOSANTES
 
 .cours__desc {
   text-align: justify;
+}
+
+.cours__texte {
+  padding: 10px;
 }
 
 .boutonTri {
@@ -991,7 +1007,7 @@ COMPOSANTES
   text-align: right;
   margin-left: 15px;
   font-size: clamp(2.5rem, 4vw, 6rem);
-  font-family: "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
   color: #A15C38;
 }
 
@@ -1527,6 +1543,8 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item a {
   text-decoration: none;
+  max-height: 26px;
+  overflow: hidden;
 }
 
 .current-menu-item a {

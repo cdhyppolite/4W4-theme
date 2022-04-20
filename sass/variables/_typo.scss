@@ -6,7 +6,8 @@ $font__titre: 'Ubuntu',
 'Gill Sans MT',
 'Arial',
 'sans-serif';
-$font__titre2: 'Super Mario 256',
+$font__titre2: 'MOON GET!',
+'Super Mario 256',
 $font__titre;
 // Les variables font_main et font_titre seron remplacés prochainement
 $police__h1:$font__titre;
@@ -15,3 +16,11 @@ $police__h3: 'Anybody',
 'cursive';
 $police__h5: 'Oswald',
 sans-serif;
+// Test custom font
+@font-face {
+    font-family: 'MOON GET!';
+    src: url('fonts/moon_get-Heavy.woff2') format('woff2'), url('fonts/moon_get-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
