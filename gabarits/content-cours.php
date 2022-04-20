@@ -3,7 +3,7 @@
                     $titreFiltreCours = substr($titre, 4, -6);
                     //$nbHeures = substr($titre, -6);
                     $codeCours = substr($titre, 0,3);
-                    $descCours = get_the_excerpt();
+                    $descCours = get_the_content();
                     $categorie = get_the_category();
                     $nombre_dheures = get_field('nombre_dheures');
                     
@@ -44,7 +44,9 @@
 
         <p class="cours__code"><?= $codeCours; ?></p>
         <div class="cours_etat"></div>
-        <p class="cours__desc"> <?= $descCours; ?></p>
+        <p class="cours__desc"> <?=wp_trim_words($descCours,20);?>
+            <button class="cours__desc__bouton" onclick="">Lire la suite</button>
+        </p>
         <div class="logoFiltre"></div>
     </div>
 </article>

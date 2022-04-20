@@ -8,14 +8,14 @@
     margin: 0 auto;
     background-color: $couleur3;
     color: $couleur1;
+    border: 8px double $couleur2;
     z-index: 10;
     // ---
     transition-duration: .4s;
-    &:hover,
-    &:active {
+    transform: scale(0);
+    &--ouvrir {
         transform: scale(1);
     }
-    transform: scale(.1);
     @media screen and (min-width: $largeur__media--tablette) {
         // left: 40%;
     }
