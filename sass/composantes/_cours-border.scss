@@ -10,8 +10,8 @@
 }
 
 @mixin etatCours($couleurCours, $texteCours) {
+    background-color: rgba($couleurCours, 0.3);
     border: 4px solid $couleurCours;
-    background-color: rgba($couleurCours, 0.3) !important;
     .cours {
         &__titre {
             text-shadow: 0 0 5px $couleurCours;

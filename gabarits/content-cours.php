@@ -26,29 +26,27 @@
                     $delayAnim+=0.05;
                     $imageBlank = get_bloginfo('template_directory')."/images/blank.jpg";
                 ?>
-                <?php /*if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } */?>
 
 <article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>"
     style="animation-delay:<?= $delayAnim?>s;">
 
     <div class="cours__img">
-        <a href="<?php the_permalink(); ?>">
-        <img src="<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>" alt="">
-    </a>
+        <a href="<?php the_permalink(); ?>"> <img src="<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>" alt=""> </a>
     </div>
+    <div>
+        <h3 class="cours__titre">
+            <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a>
+        </h3>
 
-    <h3 class="cours__titre">
-        <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a>
-    </h3>
+        <div class="cours__nbre-heure"><?= $nombre_dheures; ?>
+            <div class="horloge"></div>
+        </div>
 
-    <div class="cours__nbre-heure"><?= $nombre_dheures; ?>
-        <div class="horloge"></div>
+        <p class="cours__code"><?= $codeCours; ?></p>
+        <div class="cours_etat"></div>
+        <p class="cours__desc"> <?= $descCours; ?></p>
+        <div class="logoFiltre"></div>
     </div>
-
-    <p class="cours__code"><?= $codeCours; ?></p>
-    <div class="cours_etat"></div>
-    <p class="cours__desc"> <?= $descCours; ?></p>
-    <div class="logoFiltre"></div>
 </article>
 
 <?php $oui =false;

@@ -613,11 +613,9 @@ COMPOSANTES
   position: relative;
   background-position: center;
   background-size: auto 100%;
-  background-color: #F2F2F2;
   opacity: 0;
   animation: animCours 1s forwards;
   box-shadow: #394044 1px -1px 10px;
-  border-radius: 25px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -633,7 +631,7 @@ COMPOSANTES
 }
 
 .formation__cours:hover {
-  background-color: #2622201f;
+  background-color: #f9f9f9 !important;
   transform: scale(1.05) !important;
   background-image: url("") !important;
 }
@@ -701,6 +699,10 @@ COMPOSANTES
   background-position: center;
 }
 
+.cours__desc {
+  text-align: justify;
+}
+
 .boutonTri a {
   text-decoration: none;
   padding: 4px;
@@ -722,8 +724,8 @@ COMPOSANTES
 }
 
 .a-faire {
+  background-color: rgba(255, 143, 0, 0.3);
   border: 4px solid #FF8F00;
-  background-color: rgba(255, 143, 0, 0.3) !important;
 }
 
 .a-faire .cours__titre {
@@ -756,8 +758,8 @@ COMPOSANTES
 }
 
 .en-cours {
+  background-color: rgba(1, 87, 155, 0.3);
   border: 4px solid #01579B;
-  background-color: rgba(1, 87, 155, 0.3) !important;
 }
 
 .en-cours .cours__titre {
@@ -790,8 +792,8 @@ COMPOSANTES
 }
 
 .reussi {
+  background-color: rgba(27, 94, 32, 0.3);
   border: 4px solid #1B5E20;
-  background-color: rgba(27, 94, 32, 0.3) !important;
 }
 
 .reussi .cours__titre {
@@ -824,8 +826,8 @@ COMPOSANTES
 }
 
 .echoue {
+  background-color: rgba(211, 47, 47, 0.3);
   border: 4px solid #D32F2F;
-  background-color: rgba(211, 47, 47, 0.3) !important;
 }
 
 .echoue .cours__titre {
@@ -858,8 +860,8 @@ COMPOSANTES
 }
 
 .choisi {
+  background-color: rgba(126, 87, 194, 0.3);
   border: 4px solid #7E57C2;
-  background-color: rgba(126, 87, 194, 0.3) !important;
 }
 
 .choisi .cours__titre {
@@ -892,8 +894,8 @@ COMPOSANTES
 }
 
 .non-choisi {
+  background-color: rgba(128, 128, 128, 0.3);
   border: 4px solid gray;
-  background-color: rgba(128, 128, 128, 0.3) !important;
 }
 
 .non-choisi .cours__titre {
