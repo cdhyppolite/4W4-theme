@@ -11,19 +11,19 @@ Text Domain: cidw-4w4
 
 
 /* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
 VARIABLES
 --------------------------------------------------------- */
 
 @import "variables/couleurs";
 @import "variables/typo";
 @import "variables/structure";
-
-/* ---------------------------------------------------------
-INITIALISATION
---------------------------------------------------------- */
-
-@import "initialisation/normalize";
-@import "initialisation/box-sizing";
 
 /* ---------------------------------------------------------
 ÉLÉMENTS

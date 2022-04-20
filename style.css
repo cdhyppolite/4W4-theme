@@ -10,59 +10,6 @@ License: GNU General Public License v2 or later
 Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
-VARIABLES
---------------------------------------------------------- */
-/* ---------------- LIENS */
-/* ---------------- LIENS FOOTER */
-/* ---------------- LIENS DU MENU FOOTER*/
-/* ---------------- LIENS  DU MENU PRINCIPAL*/
-/* ---------------- LIENS HEADER titre principal du site */
-/* ---------------- FONT */
-/****************Recherche*******/
-/****************Cours *******/
-/****************Animation*******/
-@keyframes text-arc-en-ciel {
-  100%,
-  0% {
-    color: red;
-  }
-  8% {
-    color: #ff7f00;
-  }
-  16% {
-    color: yellow;
-  }
-  25% {
-    color: chartreuse;
-  }
-  33% {
-    color: lime;
-  }
-  41% {
-    color: springgreen;
-  }
-  50% {
-    color: cyan;
-  }
-  58% {
-    color: #007fff;
-  }
-  66% {
-    color: blue;
-  }
-  75% {
-    color: #7f00ff;
-  }
-  83% {
-    color: magenta;
-  }
-  91% {
-    color: #ff007f;
-  }
-}
-
-/* ------------------------------------- points de rupture des media queries */
-/* ---------------------------------------------------------
 INITIALISATION
 --------------------------------------------------------- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -387,6 +334,59 @@ html {
 }
 
 /* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+/* ---------------- LIENS */
+/* ---------------- LIENS FOOTER */
+/* ---------------- LIENS DU MENU FOOTER*/
+/* ---------------- LIENS  DU MENU PRINCIPAL*/
+/* ---------------- LIENS HEADER titre principal du site */
+/* ---------------- FONT */
+/****************Recherche*******/
+/****************Cours *******/
+/****************Animation*******/
+@keyframes text-arc-en-ciel {
+  100%,
+  0% {
+    color: red;
+  }
+  8% {
+    color: #ff7f00;
+  }
+  16% {
+    color: yellow;
+  }
+  25% {
+    color: chartreuse;
+  }
+  33% {
+    color: lime;
+  }
+  41% {
+    color: springgreen;
+  }
+  50% {
+    color: cyan;
+  }
+  58% {
+    color: #007fff;
+  }
+  66% {
+    color: blue;
+  }
+  75% {
+    color: #7f00ff;
+  }
+  83% {
+    color: magenta;
+  }
+  91% {
+    color: #ff007f;
+  }
+}
+
+/* ------------------------------------- points de rupture des media queries */
+/* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
@@ -701,6 +701,11 @@ COMPOSANTES
 
 .cours__desc {
   text-align: justify;
+}
+
+.boutonTri {
+  margin: 0 auto;
+  margin-top: 15px;
 }
 
 .boutonTri a {
