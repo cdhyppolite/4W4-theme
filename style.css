@@ -1667,6 +1667,8 @@ COMPOSANTES
 
 .boite__modale__titre__cours {
   font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  margin-left: 10px;
+  display: flex;
 }
 
 .boite__modale--ouvrir {
@@ -1701,7 +1703,9 @@ COMPOSANTES
 .boite__modale__footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .boite__modale__info {

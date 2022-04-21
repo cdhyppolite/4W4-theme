@@ -1,8 +1,9 @@
 <?php 
                     $titre = get_the_title();
                     $titreFiltreCours = substr($titre, 4, -6);
+                    $departement = get_field('departement');
                     //$nbHeures = substr($titre, -6);
-                    $codeCours = substr($titre, 0,3);
+                    $codeCours = substr($departement, 0,3). '-'. substr($titre, 0,3);
                     $descCours = get_the_content();
                     $categorie = get_the_category();
                     $nombre_dheures = get_field('nombre_dheures');
@@ -50,34 +51,9 @@
         <div class="cours_etat"></div>
         <p class="cours__desc"> <?=wp_trim_words($descCours,20);?>
         <p class="cours__desc__complet" style="display: none;"> <?=$descCours;?>
+        <p>Département: <?= substr($departement, 3); ?></p>
             
         </p><button class="cours__desc__bouton" onclick="">Lire la suite</button>
         <div class="logoFiltre"></div>
     </div>
 </article>
-
-<?php $oui =false;
-if ($oui==true) : ?>
-<div class="">
-    <div class="post_image">
-        <!--CALL TO POST IMAGE-->
-        
-        <?php if ( has_post_thumbnail() != '' ) : ?>
-        <div class=" imgwrap">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-        </div>
-        <?php else: ?>
-        <div class=" imgwrap">
-            <a href="<?php the_permalink(); ?>"><img src="<?= $imageBlank; ?>" alt=""></a>
-        </div>
-        <?php endif ?>
-
-    </div><!-- post image -->
-    <div class=" post_content2">
-        <div class=" post_content3">
-            <?php the_title( sprintf( '<h2 class="postitle_lay"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-            <p><?php the_excerpt(); ?></p>
-        </div> <!-- .post_content2 -->
-    </div><!-- post_content3 -->
-</div>
-<?php endif ?>

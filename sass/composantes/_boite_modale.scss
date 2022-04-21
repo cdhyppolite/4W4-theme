@@ -14,6 +14,8 @@
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
     &__titre__cours {
         font-family: $font__titre2;
+        margin-left: 10px;
+        display: flex;
     }
     &--ouvrir {
         transform: scale(1);
@@ -43,7 +45,9 @@
     &__footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     &__info {
         display: flex;

@@ -1,10 +1,10 @@
 <div class="boite__modale">
-    <div class="boite__modale__header" style="">
-        <h4 class="boite__modale__titre__cours" style="visibility: visible;">(Code cours) - (Titre du cours)</h4>
+    <div class="boite__modale__header">
+        <h4 class="boite__modale__titre__cours">(Code cours) - (Titre du cours)</h4>
         <button class="boite__modale__fermer" title="Fermer">X</button>
     </div>
     <!-- <hr> -->
-    <div class="boite__modale__footer" style="">
+    <div class="boite__modale__footer">
         <div class="boite__modale__info">
             <span class="info-title">Nb heures:</span>
             <span class="boite__modale__heure"></span>
@@ -18,6 +18,7 @@
             <span class="boite__modale__categorie">la catégorie</span>
         </div>
     </div>
+    <h2 class="">Description du cours</h2>
     <p class="boite__modale__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus delectus iusto
         voluptates laudantium nisi sint, dolorem quis, exercitationem magni repellat ipsum iste ad. Nobis optio nostrum
         natus ab ad magnam.
