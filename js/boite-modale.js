@@ -6,6 +6,7 @@ let titreModale = document.querySelector('.boite__modale__titre__cours');
 let descriptionModale = document.querySelector('.boite__modale__texte');
 let heureModale = document.querySelector('.boite__modale__heure');
 let categorieModale = document.querySelector('.boite__modale__categorie');
+let departementModale = document.querySelector('.boite__modale__departement');
 
 // Obtenir l'URL du site
 var getUrl = window.location;
@@ -22,11 +23,13 @@ function reuprerContenu(event) {
     let duree = btnCible.parentNode.querySelector('.cours__nbre-heure').innerText;
     let code = btnCible.parentNode.querySelector('.cours__code').innerHTML;
     let categorie = btnCible.parentNode.parentNode.classList[2];
+    let departement = btnCible.parentNode.querySelector('.cours__departement').innerHTML;
 
     titreModale.innerHTML = code + " - " + titre;
     descriptionModale.innerHTML = description;
     heureModale.innerHTML = duree;
-    categorieModale.innerHTML = '<a href="' + baseUrl + '/category/' + categorie + '/">' + categorie + '</a>';
+    categorieModale.innerHTML = '<a href="' + baseUrl + '/category/' + categorie + '/">' + (categorie.charAt(0).toUpperCase() + categorie.slice(1)) + '</a>';
+    departementModale.innerHTML = departement;
 }
 
 (function() {

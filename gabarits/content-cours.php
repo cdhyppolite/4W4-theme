@@ -51,7 +51,7 @@
         <div class="cours_etat"></div>
         <p class="cours__desc"> <?=wp_trim_words($descCours,20);?>
         <p class="cours__desc__complet" style="display: none;"> <?=$descCours;?>
-        <p>Département: <?= substr($departement, 3); ?></p>
+        <p>Département: <p class="cours__departement"><?= substr($departement, 3); ?></p></p>
             
         </p><button class="cours__desc__bouton" onclick="">Lire la suite</button>
         <div class="logoFiltre"></div>
