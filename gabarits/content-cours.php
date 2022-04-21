@@ -45,8 +45,9 @@
         <p class="cours__code"><?= $codeCours; ?></p>
         <div class="cours_etat"></div>
         <p class="cours__desc"> <?=wp_trim_words($descCours,20);?>
-            <button class="cours__desc__bouton" onclick="">Lire la suite</button>
-        </p>
+        <p class="cours__desc__complet" style="display: none;"> <?=$descCours;?>
+            
+        </p><button class="cours__desc__bouton" onclick="">Lire la suite</button>
         <div class="logoFiltre"></div>
     </div>
 </article>
