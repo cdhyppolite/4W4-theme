@@ -1665,6 +1665,10 @@ COMPOSANTES
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
+.boite__modale__titre__cours {
+  font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
 .boite__modale--ouvrir {
   transform: scale(1);
 }
@@ -1686,6 +1690,39 @@ COMPOSANTES
 .boite__modale__fermer:hover {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.boite__modale__header {
+  background-color: #272827;
+  color: #F2F2F2;
+  height: 70px;
+}
+
+.boite__modale__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.boite__modale__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.boite__modale__categorie a {
+  text-decoration: none;
+}
+
+.boite__modale__categorie a::first-letter {
+  text-transform: uppercase;
+}
+
+.boite__modale__categorie a:hover, .boite__modale__categorie a:active, .boite__modale__categorie a:visited {
+  color: crimson !important;
+}
+
+.boite__modale hr {
+  color: #F2F2F2;
 }
 
 @media screen and (min-width: 576px) {
@@ -1710,7 +1747,7 @@ ANIMATION
   animation: animLettre 500ms forwards;
   opacity: 0;
   margin-right: -3px;
-  text-shadow: 1px 1px #272827, 2px 2px #272827, 3px 3px #272827;
+  text-shadow: 1px 1px #F2F2F2, 2px 2px #F2F2F2, 3px 3px #F2F2F2;
 }
 
 .lettre:nth-of-type(3) {
@@ -1732,6 +1769,10 @@ ANIMATION
 .home .motSousTitre {
   animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
   opacity: 0;
+}
+
+.home .lettre {
+  text-shadow: 1px 1px #272827, 2px 2px #272827, 3px 3px #272827;
 }
 
 .motSousTitre {

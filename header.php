@@ -1,3 +1,9 @@
+<?php
+if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
+    setcookie('hack', "oui", (time() + 365 * 24 * 60 * 60), 'https://eddym27.sg-host.com/',);
+    setcookie("TestCookie", "lol", time()+3600, "/~sass/", "example.com", 1);
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

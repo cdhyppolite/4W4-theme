@@ -26,6 +26,7 @@
 
     <nav class="boutonTri">
         <a href="?cletri=title&ordre=<?= $nouvelleOrdreTri; ?>"><?= $nouvelleiconeTri; ?><?= $texteBoutonTri; ?></a>
+        <a href="?hack=1">Test Échoué</a>
     </nav>
 
     <h2 class="formation__titre">Liste de cours -

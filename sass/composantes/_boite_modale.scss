@@ -12,6 +12,9 @@
     transition-duration: .4s;
     transform: scale(0);
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    &__titre__cours {
+        font-family: $font__titre2;
+    }
     &--ouvrir {
         transform: scale(1);
     }
@@ -32,6 +35,36 @@
         font-size: 20px;
         overflow: hidden;
     }
+    &__header {
+        background-color: $couleur2;
+        color: $couleur4;
+        height: 70px;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__categorie {
+        a {
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            text-decoration: none;
+            &:hover,
+            &:active,
+            &:visited {
+                color: $couleur1 !important;
+            }
+        }
+    }
+    hr {
+        color: $couleur4;
+    }
     @media screen and (min-width: $largeur__media--tablette) {
         top: 15%;
         width: 65%;
@@ -41,4 +74,9 @@
         left: 10%;
         width: 80%;
     }
+}
+
+.boite__modale--ouvrir~html {
+    // overflow-y: scroll;
+    // overscroll-behavior: contain;
 }

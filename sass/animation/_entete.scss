@@ -6,9 +6,9 @@
         transform: scaleX(-1) !important;
     }
     margin-right: -3px;
-    text-shadow: 1px 1px $couleur2,
-    2px 2px $couleur2,
-    3px 3px $couleur2;
+    text-shadow: 1px 1px $couleur4,
+    2px 2px $couleur4,
+    3px 3px $couleur4;
 }
 
 @keyframes animLettre {
@@ -24,10 +24,18 @@
 }
 
 // Animations des mots du sous-titre
-.home .motSousTitre {
+.home {
+    .motSousTitre {
     animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
     opacity: 0;
 }
+.lettre {
+    text-shadow: 1px 1px $couleur2,
+    2px 2px $couleur2,
+    3px 3px $couleur2;
+}
+}
+
 
 .motSousTitre {
     margin-right: 1vw;
