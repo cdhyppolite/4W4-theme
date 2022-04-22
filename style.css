@@ -1633,13 +1633,13 @@ COMPOSANTES
   left: 3%;
   top: 13%;
   margin: 0 auto;
-  background-color: #FFCC00;
+  background-color: #F2F2F2;
   color: crimson;
   border-radius: 12px;
   z-index: 10;
   transition-duration: .4s;
   transform: scale(0);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border: 5px solid #272827;
 }
 
 .boite__modale__titre__cours {
@@ -1653,6 +1653,7 @@ COMPOSANTES
 }
 
 .boite__modale__fermer {
+  color: #F2F2F2;
   width: 32px;
   height: 32px;
   background-color: transparent;
@@ -1674,7 +1675,7 @@ COMPOSANTES
 .boite__modale__header {
   background-color: #272827;
   color: #F2F2F2;
-  height: 70px;
+  height: 30px;
 }
 
 .boite__modale__footer {
@@ -1683,6 +1684,11 @@ COMPOSANTES
   justify-content: space-between;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.boite__modale h2 {
+  background-color: #272827;
+  color: #F2F2F2;
 }
 
 .boite__modale__info {
@@ -1700,6 +1706,12 @@ COMPOSANTES
 
 .boite__modale__categorie a:hover, .boite__modale__categorie a:active, .boite__modale__categorie a:visited {
   color: crimson !important;
+}
+
+.boite__modale__texte {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: justify;
 }
 
 .boite__modale hr {

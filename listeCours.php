@@ -18,8 +18,8 @@
             
             $nouvelleOrdreTri; $nouvelleiconeTri; $texteBoutonTri;
 
-            if ((!$_GET['ordre']) || ($_GET['ordre']!='asc')) { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri= $flecheAsc; $texteBoutonTri= 'Ascendant';
-            } else { $nouvelleOrdreTri= 'desc'; $nouvelleiconeTri = $flecheDesc; $texteBoutonTri= 'Désendant'; }
+            if ((!$_GET['ordre']) || ($_GET['ordre']=='asc')) { $nouvelleOrdreTri = 'desc'; $nouvelleiconeTri = $flecheDesc; $texteBoutonTri = 'Désendant'; }
+            else { $nouvelleOrdreTri = 'asc'; $nouvelleiconeTri = $flecheAsc; $texteBoutonTri = 'Ascendant'; }
         ?>
 
     <?php wp_nav_menu(array( "menu" => "categorie_cours", "container" => "nav" )); ?>
@@ -27,7 +27,7 @@
     <nav class="boutonTri">
         <a href="?cletri=title&ordre=<?= $nouvelleOrdreTri; ?>"><?= $nouvelleiconeTri; ?><?= $texteBoutonTri; ?></a>
         <?php if (!isset($_COOKIE['hack'])) : ?>
-            <a href="?hack=1">Test Échoué</a>
+        <a href="?hack=1">Test Échoué</a>
         <?php endif; ?>
     </nav>
 
