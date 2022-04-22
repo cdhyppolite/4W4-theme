@@ -1,5 +1,6 @@
 let bouttons = document.querySelectorAll('.cours__desc__bouton');
 let boiteModale = document.querySelector('.boite__modale');
+let boiteModaleFond = document.querySelector('.boite__modale__fond');
 let btnFermer = document.querySelector('.boite__modale__fermer');
 // Infos de la boite modale
 let titreModale = document.querySelector('.boite__modale__titre__cours');
@@ -13,7 +14,8 @@ var getUrl = window.location;
 var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 function ouvrirFermer() {
-    boiteModale.classList.toggle('boite__modale--ouvrir')
+    boiteModale.classList.toggle('ouvrir')
+    boiteModaleFond.classList.toggle('ouvrir')
 }
 
 function reuprerContenu(event) {

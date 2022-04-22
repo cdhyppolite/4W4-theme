@@ -24,3 +24,4 @@
         natus ab ad magnam.
     </p>
 </div>
+<div class="boite__modale__fond"></div>

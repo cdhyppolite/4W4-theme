@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme name: EX4 - Carl-David Hyppolite
+Theme name: LAB6 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
 Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex4
 Description: Exercice dans le cadre du cours 4W4
@@ -1648,10 +1648,6 @@ COMPOSANTES
   display: flex;
 }
 
-.boite__modale--ouvrir {
-  transform: scale(1);
-}
-
 .boite__modale__fermer {
   color: #F2F2F2;
   width: 32px;
@@ -1714,6 +1710,15 @@ COMPOSANTES
   text-align: justify;
 }
 
+.boite__modale__fond {
+  background-color: rgba(39, 40, 39, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  transform: scale(0);
+}
+
 .boite__modale hr {
   color: #F2F2F2;
 }
@@ -1731,6 +1736,11 @@ COMPOSANTES
     left: 10%;
     width: 80%;
   }
+}
+
+.boite__modale.ouvrir,
+.boite__modale__fond.ouvrir {
+  transform: scale(1) !important;
 }
 
 /* ---------------------------------------------------------
