@@ -58,9 +58,8 @@ html {
 @media screen and (min-width: $largeur__media--tablette) {
     .site {
         &__barre {}
-        // grid-template-columns: auto ($size__site-barre);
-        grid-template-columns: auto clamp(180px, max-content, 350px);
-        // grid-auto-columns: minmax(auto, $size__site-barre-max);
+        // grid-template-columns: clamp(400px, max-content, 80vw) clamp(180px, max-content, 350px);
+        grid-template-columns: 80vw 20vw;
         grid-template-areas: "header header" " main sidebar" "footer footer";
     }
     .home {

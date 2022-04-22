@@ -114,9 +114,9 @@
         &:hover {
             opacity: 0.75;
         }
-    }
-    &__description {
-        font-size: 1rem;
+        img {
+            width: 100%;
+        }
     }
     &__code {
         font-size: 1.2rem;
@@ -141,6 +141,15 @@
         }
     }
     &__desc {
+        &__bouton {
+            background-color: $couleur4;
+            border: none;
+            transition: .1s cubic-bezier(.5, 0, .5, 1.7);
+            &:hover {
+                color: $couleur1;
+                background-color: $color__background-link-hover;
+            }
+        }
         text-align: justify;
     }
     &__texte {

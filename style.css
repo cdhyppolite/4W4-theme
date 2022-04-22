@@ -526,7 +526,7 @@ h6 {
 }
 
 p {
-  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  font-family: "RocknRoll One", "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 /*h1 {
@@ -685,8 +685,8 @@ COMPOSANTES
   opacity: 0.75;
 }
 
-.cours__description {
-  font-size: 1rem;
+.cours__img img {
+  width: 100%;
 }
 
 .cours__code {
@@ -713,6 +713,17 @@ COMPOSANTES
 
 .cours__desc {
   text-align: justify;
+}
+
+.cours__desc__bouton {
+  background-color: #F2F2F2;
+  border: none;
+  transition: 0.1s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+.cours__desc__bouton:hover {
+  color: crimson;
+  background-color: #FFCC00;
 }
 
 .cours__texte {
@@ -1332,7 +1343,7 @@ COMPOSANTES
   color: #272827;
   font-size: 1rem;
   padding: 20px 45px 20px 0px;
-  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  font-family: "RocknRoll One", "Roboto", "Gill Sans MT", "Arial", "sans-serif";
   text-align: justify;
 }
 
@@ -1642,6 +1653,101 @@ COMPOSANTES
   background-size: cover;
 }
 
+.boite__modale {
+  position: fixed;
+  width: 95%;
+  height: 80%;
+  left: 3%;
+  top: 13%;
+  margin: 0 auto;
+  background-color: #FFCC00;
+  color: crimson;
+  border-radius: 12px;
+  z-index: 10;
+  transition-duration: .4s;
+  transform: scale(0);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.boite__modale__titre__cours {
+  font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+  margin-left: 10px;
+  display: flex;
+}
+
+.boite__modale--ouvrir {
+  transform: scale(1);
+}
+
+.boite__modale__fermer {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 21px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.boite__modale__fermer:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.boite__modale__header {
+  background-color: #272827;
+  color: #F2F2F2;
+  height: 70px;
+}
+
+.boite__modale__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.boite__modale__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.boite__modale__categorie a {
+  text-decoration: none;
+}
+
+.boite__modale__categorie a::first-letter {
+  text-transform: uppercase;
+}
+
+.boite__modale__categorie a:hover, .boite__modale__categorie a:active, .boite__modale__categorie a:visited {
+  color: crimson !important;
+}
+
+.boite__modale hr {
+  color: #F2F2F2;
+}
+
+@media screen and (min-width: 576px) {
+  .boite__modale {
+    top: 15%;
+    width: 65%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .boite__modale {
+    left: 10%;
+    width: 80%;
+  }
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1649,7 +1755,7 @@ ANIMATION
   animation: animLettre 500ms forwards;
   opacity: 0;
   margin-right: -3px;
-  text-shadow: 1px 1px #272827, 2px 2px #272827, 3px 3px #272827;
+  text-shadow: 1px 1px #F2F2F2, 2px 2px #F2F2F2, 3px 3px #F2F2F2;
 }
 
 .lettre:nth-of-type(3) {
@@ -1671,6 +1777,10 @@ ANIMATION
 .home .motSousTitre {
   animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
   opacity: 0;
+}
+
+.home .lettre {
+  text-shadow: 1px 1px #272827, 2px 2px #272827, 3px 3px #272827;
 }
 
 .motSousTitre {
@@ -1739,7 +1849,7 @@ LAYOUT
 --------------------------------------------------------- */
 .site {
   background-color: #F2F2F2;
-  font-family: "Roboto", "Gill Sans MT", "Arial", "sans-serif";
+  font-family: "RocknRoll One", "Roboto", "Gill Sans MT", "Arial", "sans-serif";
 }
 
 html {
@@ -1790,7 +1900,7 @@ html {
 
 @media screen and (min-width: 576px) {
   .site {
-    grid-template-columns: auto clamp(180px, max-content, 350px);
+    grid-template-columns: 80vw 20vw;
     grid-template-areas: "header header" " main sidebar" "footer footer";
   }
   .home {

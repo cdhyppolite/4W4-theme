@@ -26,6 +26,9 @@
 
     <nav class="boutonTri">
         <a href="?cletri=title&ordre=<?= $nouvelleOrdreTri; ?>"><?= $nouvelleiconeTri; ?><?= $texteBoutonTri; ?></a>
+        <?php if (!isset($_COOKIE['hack'])) : ?>
+            <a href="?hack=1">Test Échoué</a>
+        <?php endif; ?>
     </nav>
 
     <h2 class="formation__titre">Liste de cours -
