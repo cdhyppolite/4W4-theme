@@ -1442,23 +1442,18 @@ COMPOSANTES
   background-color: #FFCC00;
 }
 
-.recherche,
-.searchform {
+.recherche {
   position: relative;
   border: none;
 }
 
 @media screen and (min-width: 576px) {
-  .recherche,
-  .searchform {
+  .recherche {
     margin-right: 5px;
   }
 }
 
-.recherche__input,
-.recherche #s,
-.searchform__input,
-.searchform #s {
+.recherche__input {
   transition: 0.25s;
   transform: rotateY(0deg) perspective(0);
   width: 96vw;
@@ -1471,40 +1466,24 @@ COMPOSANTES
   border-radius: 5px;
 }
 
-.recherche__input:focus,
-.recherche #s:focus,
-.searchform__input:focus,
-.searchform #s:focus {
+.recherche__input:focus {
   background-color: rgba(0, 0, 0, 0.2);
   color: crimson;
   transform: rotateY(360deg) perspective(500px);
 }
 
-.recherche__input:focus ~ .recherche__bouton,
-.recherche__input:focus ~ #searchsubmit,
-.recherche #s:focus ~ .recherche__bouton,
-.recherche #s:focus ~ #searchsubmit,
-.searchform__input:focus ~ .recherche__bouton,
-.searchform__input:focus ~ #searchsubmit,
-.searchform #s:focus ~ .recherche__bouton,
-.searchform #s:focus ~ #searchsubmit {
+.recherche__input:focus ~ .recherche__bouton {
   background-color: rgba(0, 0, 0, 0);
   transform: rotateY(360deg);
 }
 
 @media screen and (min-width: 576px) {
-  .recherche__input,
-  .recherche #s,
-  .searchform__input,
-  .searchform #s {
+  .recherche__input {
     width: 250px;
   }
 }
 
-.recherche__bouton,
-.recherche #searchsubmit,
-.searchform__bouton,
-.searchform #searchsubmit {
+.recherche__bouton {
   background-color: #F2F2F2;
   top: 0;
   right: 0;
@@ -1519,17 +1498,11 @@ COMPOSANTES
   border-radius: 0 5px 5px 0;
 }
 
-.recherche__bouton:hover,
-.recherche #searchsubmit:hover,
-.searchform__bouton:hover,
-.searchform #searchsubmit:hover {
+.recherche__bouton:hover {
   cursor: pointer;
 }
 
-.recherche__bouton svg,
-.recherche #searchsubmit svg,
-.searchform__bouton svg,
-.searchform #searchsubmit svg {
+.recherche__bouton svg {
   color: #272827;
 }
 

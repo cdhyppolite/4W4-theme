@@ -18,7 +18,7 @@
             
             $nouvelleOrdreTri; $nouvelleiconeTri; $texteBoutonTri;
 
-            if ((!$_GET['ordre']) || ($_GET['ordre']=='desc')) { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri= $flecheAsc; $texteBoutonTri= 'Ascendant';
+            if ((!$_GET['ordre']) || ($_GET['ordre']!='asc')) { $nouvelleOrdreTri= 'asc'; $nouvelleiconeTri= $flecheAsc; $texteBoutonTri= 'Ascendant';
             } else { $nouvelleOrdreTri= 'desc'; $nouvelleiconeTri = $flecheDesc; $texteBoutonTri= 'Désendant'; }
         ?>
 

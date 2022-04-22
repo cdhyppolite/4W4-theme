@@ -141,6 +141,7 @@
         }
     }
     &__desc {
+        // text-overflow: ellipsis;
         &__bouton {
             background-color: $couleur4;
             border: none;

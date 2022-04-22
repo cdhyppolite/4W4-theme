@@ -3,7 +3,7 @@
                     $titreFiltreCours = substr($titre, 4, -6);
                     $departement = get_field('departement');
                     //$nbHeures = substr($titre, -6);
-                    $codeCours = substr($departement, 0,3). '-'. substr($titre, 0,3);
+                    $codeCours = substr($titre, 0,3);
                     $descCours = get_the_content();
                     $categorie = get_the_category();
                     $nombre_dheures = get_field('nombre_dheures');
@@ -27,6 +27,7 @@
                             $etat = "echoue";
                         }
                     }
+                    $codeCours = substr($departement, 0,3). '-'. substr($titre, 0,3);
                     //-----------------------------
                     $delayAnim+=0.05;
                     $imageBlank = get_bloginfo('template_directory')."/images/blank.jpg";
