@@ -1629,10 +1629,9 @@ COMPOSANTES
 .boite__modale {
   position: fixed;
   width: 95%;
-  height: 80%;
+  height: 90%;
   left: 3%;
-  top: 13%;
-  margin: 0 auto;
+  top: 8%;
   background-color: #F2F2F2;
   color: crimson;
   border-radius: 12px;
@@ -1665,13 +1664,13 @@ COMPOSANTES
 
 .boite__modale__fermer:hover {
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 204, 0, 0.5);
 }
 
 .boite__modale__header {
   background-color: #272827;
   color: #F2F2F2;
-  height: 30px;
+  height: 50px;
 }
 
 .boite__modale__footer {
@@ -1725,7 +1724,7 @@ COMPOSANTES
 
 @media screen and (min-width: 576px) {
   .boite__modale {
-    top: 15%;
+    top: 8%;
     width: 65%;
     left: 20%;
   }
