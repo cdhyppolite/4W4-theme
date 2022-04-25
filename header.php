@@ -26,7 +26,7 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('site'); ?>>
+<body <?php body_class('site'); ?>  style="background-color: <?=get_theme_mod('background_body'); ?>;">
 <header class="site__header">
             <?php the_custom_logo(); ?>
     <section class="site__header__titre">

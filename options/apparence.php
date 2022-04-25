@@ -22,4 +22,20 @@
      *          "label"=>l'étiquette de la variable dans le formulaire  ]));
      * 
      */
+
+     add_action('customize_register', function(WP_Customize_Manager $manager){
+
+         $manager->add_section('modifier_background_body', [
+            "title" => "Modifier la couleur d'arrière plan"
+         ]);
+         $manager->add_setting('background_body', [
+            "default" => "#fff",
+            "sanitize_callback"=> "sanitize_hex_color"
+         ]);
+         $manager->add_control("background_body", [
+            "section" => "modifier_background_body",
+            "setting" => "background_body",
+            "label" => "Couleur du l'arrière plan body"
+         ]);
+     });
 ?>
