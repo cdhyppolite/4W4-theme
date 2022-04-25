@@ -1,0 +1,32 @@
+@mixin burger ( $position-haut, $position-gauche, $position-bas, $position-droite, $couleur-fond, $couleur-icone) {
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    top: $position-haut;
+    left: $position-gauche;
+    bottom: $position-bas;
+    right: $position-droite;
+    background-color: $couleur-fond;
+    padding: 10px;
+    border-radius: 5px;
+    // box-shadow: 5px 5px 15px 5px $couleur1;
+    &~.burger__checkbox {
+        display: none;
+    }
+    &:focus,
+    &:active,
+    &:hover {
+        animation: brasser 1s infinite;
+    }
+    svg {
+        color: $couleur-icone;
+    }
+}
+
+.burger__etiquette[for="site__header__util-checkbox"] {
+    @include burger( 15px, unset, unset, 15px, $couleur1, $couleur3)
+}
+
+.burger__etiquette[for="site__barre__menu-principal-container-checkbox"] {
+    @include burger( 15px, 15px, unset, unset, $couleur3, $couleur1)
+}
