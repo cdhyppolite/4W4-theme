@@ -1,8 +1,23 @@
-#burger {
+.burgerMenuParent {
+    top: 1.5vh;
+    left: 1vw;
+    position: fixed;
+    z-index: 10;
+    // -
+    background-color: $couleur4;
+    padding: 10px;
+    border-radius: 5px;
+    // width: 50px;
+    // height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#burger {
     cursor: pointer;
-    position: absolute;
+    display: flex;
+    align-items: center;
     transition: .4s cubic-bezier(.5, 0, .5, 1.7);
     svg {
         color: black;
@@ -11,9 +26,6 @@
     justify-content: space-between;
     width: 45px;
     height: 25px;
-    top: 6vh;
-    left: 1vw;
-    z-index: 10;
     overflow: hidden;
 }
 
@@ -38,22 +50,26 @@
 
 #chk-burger {
     display: none;
-    &:checked~#burger {
-        height: 36px;
-        width: 36px;
-        svg {
-            color: white;
-        }
-        .ligne {
-            background-color: $color__background-main;
-            &:first-child {
-                transform: rotate(45deg);
+    &:checked~.burgerMenuParent {
+        top: 1vh;
+        #burger {
+            height: 36px;
+            width: 36px;
+            svg {
+                color: white;
             }
-            &:nth-child(2) {
-                width: 0px;
-            }
-            &:last-child {
-                transform: rotate(-45deg);
+            .ligne {
+                // background-color: $color__background-main;
+                background-color: $couleur3;
+                &:first-child {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    width: 0px;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
             }
         }
     }
@@ -110,7 +126,13 @@
 
 @media screen and (min-width: $largeur__media--tablette) {
     #burger {
-        width: 0;
+        // width: 0;
+    }
+    .burgerMenuParent {
+        // display: none;
+        // width: 0;
+        // height: 0;
+        // padding: 0;
     }
 }
 

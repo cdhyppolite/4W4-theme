@@ -34,11 +34,11 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
             <a class="titreComplet" href="<?= esc_url( home_url( '/' ) ); ?>" rel="home">
                 <?php $nom = get_bloginfo('name'); $delayAnim = 1;?>
                 <!-- Séparer les lettres du titre -->
-                    <?php while($nbLettre != strlen($nom)) : ?>
-                        <div style="animation-delay:<?= $delayAnim?>s;" class="lettre"><?= $nom[$nbLettre]; ?></div>
-                        <?php $delayAnim+=0.7 ?>
-                        <?php $nbLettre++; ?>
-                    <?php endwhile ?>
+                <?php while($nbLettre != strlen($nom)) : ?>
+                    <div style="animation-delay:<?= $delayAnim?>s;" class="lettre"><?= $nom[$nbLettre]; ?></div>
+                    <?php $delayAnim+=0.7 ?>
+                    <?php $nbLettre++; ?>
+                <?php endwhile ?>
             </a>
         </h1>
 

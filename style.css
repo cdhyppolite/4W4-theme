@@ -1112,19 +1112,28 @@ COMPOSANTES
   text-decoration: none;
 }
 
-#burger {
+.burgerMenuParent {
+  top: 1.5vh;
+  left: 1vw;
+  position: fixed;
+  z-index: 10;
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#burger {
   cursor: pointer;
-  position: absolute;
+  display: flex;
+  align-items: center;
   transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
   flex-flow: column wrap;
   justify-content: space-between;
   width: 45px;
   height: 25px;
-  top: 6vh;
-  left: 1vw;
-  z-index: 10;
   overflow: hidden;
 }
 
@@ -1159,28 +1168,32 @@ COMPOSANTES
   display: none;
 }
 
-#chk-burger:checked ~ #burger {
+#chk-burger:checked ~ .burgerMenuParent {
+  top: 1vh;
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger {
   height: 36px;
   width: 36px;
 }
 
-#chk-burger:checked ~ #burger svg {
+#chk-burger:checked ~ .burgerMenuParent #burger svg {
   color: white;
 }
 
-#chk-burger:checked ~ #burger .ligne {
-  background-color: #F2F2F2;
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne {
+  background-color: #FFCC00;
 }
 
-#chk-burger:checked ~ #burger .ligne:first-child {
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:first-child {
   transform: rotate(45deg);
 }
 
-#chk-burger:checked ~ #burger .ligne:nth-child(2) {
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:nth-child(2) {
   width: 0px;
 }
 
-#chk-burger:checked ~ #burger .ligne:last-child {
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:last-child {
   transform: rotate(-45deg);
 }
 
@@ -1237,12 +1250,6 @@ COMPOSANTES
 
 .wp-block-latest-posts li a:hover {
   background-color: #FFCC00;
-}
-
-@media screen and (min-width: 576px) {
-  #burger {
-    width: 0;
-  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1459,7 +1466,7 @@ COMPOSANTES
   right: 0;
   top: 40px;
   padding: 1em;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   z-index: 8;
 }
 
@@ -1517,7 +1524,6 @@ COMPOSANTES
 .recherche__input {
   transition: 0.25s;
   transform: rotateY(0deg) perspective(0);
-  width: 96vw;
   font-family: 'Roboto';
   height: 35px;
   border: none;
@@ -1571,12 +1577,16 @@ COMPOSANTES
   color: #272827;
 }
 
+#site__header__util-checkbox:checked ~ .util {
+  transform: translate(0);
+}
+
 .wp-social-link {
   background-color: crimson !important;
 }
 
-#site__header__util-checkbox:checked ~ .util {
-  transform: translate(0);
+.wp-social-link:hover {
+  animation: brasser 1s infinite;
 }
 
 .menu-categorie_cours-container .menu {
@@ -1994,12 +2004,6 @@ html {
   }
 }
 
-@media screen and (min-width: 783px) {
-  .home #burger {
-    top: 40px;
-  }
-}
-
 .home .site__header {
   background-color: rgba(39, 40, 39, 0.5);
 }
@@ -2034,5 +2038,17 @@ html {
     */
 .logged-in .burger__etiquette[for="site__header__util-checkbox"] {
   top: unset;
+}
+
+.logged-in .util {
+  top: 120px;
+}
+
+.logged-in .burgerMenuParent {
+  top: 6vh;
+}
+
+.logged-in #chk-burger:checked ~ .burgerMenuParent {
+  top: 5.5vh;
 }
 /*# sourceMappingURL=style.css.map */
