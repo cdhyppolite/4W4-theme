@@ -6,15 +6,15 @@
     <!-- <hr> -->
     <div class="boite__modale__footer">
         <div class="boite__modale__info">
-            <span class="info-title">Nb heures:</span>
+            <span>Nb heures:</span>
             <span class="boite__modale__heure"></span>
         </div>
         <div class="boite__modale__info">
-            <span class="info-title">Département:</span>
+            <span>Département:</span>
             <span class="boite__modale__departement">Techniques d'intégration Multimédia</span>
         </div>
         <div class="boite__modale__info">
-            <span class="info-title">Catégorie:</span>
+            <span>Catégorie:</span>
             <span class="boite__modale__categorie">la catégorie</span>
         </div>
     </div>

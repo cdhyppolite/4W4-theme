@@ -1,61 +1,37 @@
 <?php 
-                    $titre = get_the_title();
-                    $titreFiltreCours = substr($titre, 4, -6);
-                    $departement = get_field('departement');
-                    //$nbHeures = substr($titre, -6);
-                    $codeCours = substr($titre, 0,3);
-                    $descCours = get_the_content();
-                    $categorie = get_the_category();
-                    $nombre_dheures = get_field('nombre_dheures');
-                    
-                    //----Afficher Bordu cours-----
-                    if (isset($_COOKIE['hack'])) {
-                        $etat= "echoue";
-                    } else {
-                        $etat = "a-faire";
-                        $reussi = array("1J1", "2J2", "3J3", "1W1","2W2","3W3","1M1","1M2","2M3","2M4", "3M5","3C1");
-                        $encours = array("4J4","4PA","4W4","4C2");
-                        $choisi = array("5E1","5N1","5JA","5W5","5PA","6N3","6N2");
-                        $nonchoisi = array("5MB","5JB","4MB");
-                        if (in_array($codeCours, $reussi)) {
-                            $etat = "reussi";
-                        } else if (in_array($codeCours, $encours)) {
-                            $etat = "en-cours";
-                        } else if (in_array($codeCours, $choisi)) {
-                            $etat = "choisi";
-                        } else if (intval($codeCours[0])==0) {
-                            $etat = "echoue";
-                        }
-                    }
-                    $codeCours = substr($departement, 0,3). '-'. substr($titre, 0,3);
-                    //-----------------------------
-                    $delayAnim+=0.05;
-                    $imageBlank = get_bloginfo('template_directory')."/images/blank.jpg";
-                ?>
+    $titre = get_the_title();
+    $titreFiltreCours = substr($titre, 4, -6);
+    $departement = get_field('departement');
+    //$nbHeures = substr($titre, -6);
+    $codeCours = substr($titre, 0,3);
+    $descriptionCours = get_the_content();
+    $categorie = get_the_category();
+    $nombre_dheures = get_field('nombre_dheures');
+?>
+<?php 
+    // ----Afficher Bordu cours-----
+    include get_theme_file_path( '/inclusions/conditionCoursBorder.php' );
+?>
 
-<article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>"
-    style="animation-delay:<?= $delayAnim?>s;">
+<article class="formation__cours <?= $etat; ?> <?= $categorie[1]->slug; ?>" style="animation-delay:<?= $delayAnim?>s;">
 
     <div class="cours__img">
         <a href="<?php the_permalink(); ?>"> <img src="<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail_url(); } else { echo $imageBlank; } ?>" alt=""> </a>
     </div>
     <div class="cours__texte">
-        <h3 class="cours__titre">
-            <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a>
-        </h3>
+        <h3 class="cours__titre"> <a href="<?= get_permalink(); ?>"> <?= $titreFiltreCours; ?> </a> </h3>
 
-        <div class="cours__nbre-heure"><?= $nombre_dheures; ?>
-            <div class="horloge"></div>
+        <div class="cours__nbre-heure">
+            <?= $nombre_dheures; ?> <div class="horloge"></div>
         </div>
 
         <p class="cours__code"><?= $codeCours; ?></p>
         <div class="cours_etat"></div>
-        <p class="cours__desc"> <?=wp_trim_words($descCours,20);?>
-        <p class="cours__desc__complet" style="display: none;"> <?=$descCours;?>
-        <p>Département: <z class="cours__departement"><?= substr($departement, 3); ?></z>
+        <p class="cours__desc"> <?=wp_trim_words($descriptionCours,20);?>
+        <p class="cours__desc__complet" style="display: none;"> <?=$descriptionCours;?>
+            <p>Département: <z class="cours__departement"><?= substr($departement, 3); ?></z> </p>
         </p>
-            
-        </p><button class="cours__desc__bouton" onclick="">Lire la suite</button>
+        <button class="cours__desc__bouton" onclick="">Lire la suite</button>
         <div class="logoFiltre"></div>
     </div>
 </article>

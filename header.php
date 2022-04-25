@@ -1,7 +1,6 @@
 <?php
 if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
-    setcookie('hack', "oui", (time() + 365 * 24 * 60 * 60), 'https://eddym27.sg-host.com/',);
-    setcookie("TestCookie", "lol", time()+3600, "/~sass/", "example.com", 1);
+    setcookie('hack', "oui", (time() + 600), 'https://eddym27.sg-host.com/',);
 }
 ?>
 <!DOCTYPE html>
@@ -21,13 +20,12 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     <link href="https://fonts.cdnfonts.com/css/super-mario-256" rel="stylesheet">
     <link rel="preload" href="<?php echo (get_bloginfo('template_directory')."/fonts/moon_get-Heavy.woff2") ?>" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
-
     <!-- Script pour l'erreur 404 -->
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
-
     <title><?= get_bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 </head>
+
 <body <?php body_class('site'); ?>>
 <header class="site__header">
             <?php the_custom_logo(); ?>
@@ -67,18 +65,5 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     </section>
     
 </header>
-<section class="site__barre">
-    <input type="checkbox" id="chk-burger">
-    <label for="chk-burger" id="burger">
-        <div class="ligne"></div>
-        <div class="ligne"></div>
-        <div class="ligne"></div>
-        <!-- <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#F7F1F0"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg> -->
-    </label>
-    <?php
-    $icone= '<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>';
-    ?>
-    <?php wp_nav_menu(array("menu"=>"principal",
-                            "container"=>"nav",
-                            "link_before" => $icone)); ?>
-</section>
+<!-- Menu avec la liste des cours -->
+<?php include('inclusions/menuBarreCours.php');?>

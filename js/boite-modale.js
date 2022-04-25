@@ -18,7 +18,7 @@ function ouvrirFermer() {
     boiteModaleFond.classList.toggle('ouvrir')
 }
 
-function reuprerContenu(event) {
+function recupererContenu(event) {
     let btnCible = event.target;
     let titre = btnCible.parentNode.querySelector('.cours__titre').querySelector('a').innerHTML;
     let description = btnCible.parentNode.querySelector('.cours__desc__complet').innerHTML;
@@ -27,6 +27,7 @@ function reuprerContenu(event) {
     let categorie = btnCible.parentNode.parentNode.classList[2];
     let departement = btnCible.parentNode.querySelector('.cours__departement').innerHTML;
 
+    // Transférer les variables dans la boite modale
     titreModale.innerHTML = code + " - " + titre;
     descriptionModale.innerHTML = description;
     heureModale.innerHTML = duree;
@@ -38,7 +39,7 @@ function reuprerContenu(event) {
     for (const bout of bouttons) {
         bout.addEventListener('mousedown', function(event) {
             ouvrirFermer();
-            reuprerContenu(event);
+            recupererContenu(event);
         })
     }
 

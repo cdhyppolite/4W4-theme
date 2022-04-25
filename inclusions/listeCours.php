@@ -1,6 +1,7 @@
-<!-- Permet d'importer la cours des cours dans d'autres pages (ex: Index.php) -->
 <section class="formation">
     <?php
+    // Permet d'importer la cours des cours dans d'autres pages (ex: Index.php)
+    
             $idCategorie = get_queried_object() -> slug;
             $nomCategorie = get_queried_object() -> name;
 

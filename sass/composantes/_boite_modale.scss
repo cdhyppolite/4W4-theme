@@ -58,6 +58,7 @@
     }
     &__categorie {
         a {
+            color: $couleur1;
             &::first-letter {
                 text-transform: uppercase;
             }
