@@ -1,4 +1,4 @@
-<div class="boite__modale">
+<div class="boite__modale" style="background-color: <?=get_theme_mod('background_modale'); ?>;">
     <div class="boite__modale__header">
         <h4 class="boite__modale__titre__cours">(Code cours) - (Titre du cours)</h4>
         <button class="boite__modale__fermer" title="Fermer">X</button>

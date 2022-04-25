@@ -26,16 +26,13 @@
 // Animations des mots du sous-titre
 .home {
     .motSousTitre {
-    animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
-    opacity: 0;
+        animation: animSousTitre 500ms forwards, text-arc-en-ciel 4.5s infinite;
+        opacity: 0;
+    }
+    .lettre {
+        text-shadow: 1px 1px $couleur2, 2px 2px $couleur2, 3px 3px $couleur2;
+    }
 }
-.lettre {
-    text-shadow: 1px 1px $couleur2,
-    2px 2px $couleur2,
-    3px 3px $couleur2;
-}
-}
-
 
 .motSousTitre {
     margin-right: 1vw;
@@ -101,6 +98,19 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+// Autre
+@keyframes brasser {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 

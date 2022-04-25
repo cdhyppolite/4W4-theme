@@ -26,16 +26,44 @@
      add_action('customize_register', function(WP_Customize_Manager $manager){
 
          $manager->add_section('modifier_background_body', [
-            "title" => "Modifier la couleur d'arrière plan"
+            "title" => "LAB7 - Modifier la couleur d'arrière plan"
          ]);
-         $manager->add_setting('background_body', [
-            "default" => "#fff",
+
+         // Header
+         $manager->add_setting('background_header', [
+            "default" => "#272827",
             "sanitize_callback"=> "sanitize_hex_color"
          ]);
-         $manager->add_control("background_body", [
+
+         $manager->add_control(new WP_Customize_Color_Control ($manager, 'background_header',[
             "section" => "modifier_background_body",
-            "setting" => "background_body",
             "label" => "Couleur du l'arrière plan body"
+         ]));
+
+         // Clip-path
+
+         $manager->add_setting('background_etoile', [
+            "default" => "#FFCC00",
+            "sanitize_callback"=> "sanitize_hex_color"
          ]);
+
+         $manager->add_control(new WP_Customize_Color_Control ($manager, 'background_etoile',[
+            "section" => "modifier_background_body",
+            "label" => "Couleur de la forme en arrière-plan"
+         ]));
+
+         // Boite modale
+
+         $manager->add_setting('background_modale', [
+            "default" => "#F2F2F2",
+            "sanitize_callback"=> "sanitize_hex_color"
+         ]);
+
+         $manager->add_control(new WP_Customize_Color_Control ($manager, 'background_modale',[
+            "section" => "modifier_background_body",
+            "label" => "Couleur boite modale"
+         ]));
+
+
      });
 ?>

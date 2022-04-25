@@ -26,8 +26,8 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class('site'); ?>  style="background-color: <?=get_theme_mod('background_body'); ?>;">
-<header class="site__header">
+<body <?php body_class('site'); ?> style="background-color: <?=get_theme_mod('background_etoile'); ?>;">
+<header class="site__header" style="background-color: <?=get_theme_mod('background_header'); ?>;">
             <?php the_custom_logo(); ?>
     <section class="site__header__titre">
         <h1>
@@ -57,12 +57,17 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
             
         </h2>
     </section>
-    <section class="util">
+    <section style="display: none;" class="util">
         <div class="util__menu">
         <?php get_sidebar('entete_1') ?>
         </div>
             <?php get_search_form(); ?>
     </section>
+
+    <label class="burger__etiquette" for="site__header__util-checkbox">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"><path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"></path></svg>
+        </label>
+    <input class="burger__checkbox" type="checkbox" id="site__header__util-checkbox">
     
 </header>
 <!-- Menu avec la liste des cours -->
