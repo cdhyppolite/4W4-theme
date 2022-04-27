@@ -1,4 +1,10 @@
 .evenement {
+    &__titre {
+        font-family: $font__titre2;
+    }
+    img {
+        width: 100%;
+    }
     &__endroit {}
     &__resume {}
     &__organisateur {}

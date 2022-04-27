@@ -573,10 +573,6 @@ p {
   display: none;
 }
 
-.burger__etiquette[for="site__header__util-checkbox"]:focus, .burger__etiquette[for="site__header__util-checkbox"]:active, .burger__etiquette[for="site__header__util-checkbox"]:hover {
-  animation: brasser 1s infinite;
-}
-
 .burger__etiquette[for="site__header__util-checkbox"] svg {
   color: #FFCC00;
 }
@@ -596,10 +592,6 @@ p {
 
 .burger__etiquette[for="site__barre__menu-principal-container-checkbox"] ~ .burger__checkbox {
   display: none;
-}
-
-.burger__etiquette[for="site__barre__menu-principal-container-checkbox"]:focus, .burger__etiquette[for="site__barre__menu-principal-container-checkbox"]:active, .burger__etiquette[for="site__barre__menu-principal-container-checkbox"]:hover {
-  animation: brasser 1s infinite;
 }
 
 .burger__etiquette[for="site__barre__menu-principal-container-checkbox"] svg {
@@ -1117,7 +1109,7 @@ COMPOSANTES
   left: 1vw;
   position: fixed;
   z-index: 10;
-  background-color: #F2F2F2;
+  background-color: crimson;
   padding: 10px;
   border-radius: 5px;
   display: flex;
@@ -1182,7 +1174,7 @@ COMPOSANTES
 }
 
 #chk-burger:checked ~ .burgerMenuParent #burger .ligne {
-  background-color: #FFCC00;
+  background-color: #272827;
 }
 
 #chk-burger:checked ~ .burgerMenuParent #burger .ligne:first-child {
@@ -1201,7 +1193,7 @@ COMPOSANTES
   width: 44px;
   height: 4px;
   border-radius: 2px;
-  background-color: crimson;
+  background-color: #FFCC00;
   transition: 0.4s;
 }
 
@@ -1816,6 +1808,14 @@ COMPOSANTES
 .boite__modale.ouvrir,
 .boite__modale__fond.ouvrir {
   transform: scale(1) !important;
+}
+
+.evenement__titre {
+  font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+.evenement img {
+  width: 100%;
 }
 
 /* ---------------------------------------------------------

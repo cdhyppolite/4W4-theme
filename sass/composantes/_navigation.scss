@@ -4,7 +4,7 @@
     position: fixed;
     z-index: 10;
     // -
-    background-color: $couleur4;
+    background-color: $couleur1;
     padding: 10px;
     border-radius: 5px;
     // width: 50px;
@@ -60,7 +60,7 @@
             }
             .ligne {
                 // background-color: $color__background-main;
-                background-color: $couleur3;
+                background-color: $couleur2;
                 &:first-child {
                     transform: rotate(45deg);
                 }
@@ -79,7 +79,7 @@
     width: 44px;
     height: 4px;
     border-radius: 2px;
-    background-color: $couleur1;
+    background-color: $couleur3;
     transition: 0.4s;
     &:nth-child(1) {
         transform-origin: bottom left;
