@@ -1670,7 +1670,7 @@ COMPOSANTES
 
 .menu-accueil-container .menu .accueil__project .menu-item-icone,
 .menu-evenement-container .menu .accueil__project .menu-item-icone {
-  background-image: url("");
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-submodule");
 }
 
 .menu-accueil-container .menu .menu-item,
