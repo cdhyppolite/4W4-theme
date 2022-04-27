@@ -9,20 +9,26 @@
     get_header();
 ?>
 
-<main class="site__main">
-    <!-- <h1>------ template evenements ------</h1> -->
-    <h1><?php the_title(); ?></h1>
-    <?php if (have_posts()): the_post(); ?>
-    
-        <?php if (has_post_thumbnail()): ?>
-            <?php the_post_thumbnail('medium'); ?>
-        <?php else: ?>
-            <img src="https://media.sciencephoto.com/image/f0244454/800wm" alt="">
-        <?php endif; ?>
+<main class="site__main" style="background-color: <?php the_field('couleur'); ?>;">
+   <section class="evenement">
+      <!-- <h1>---- template-evenement.php ------</h1> -->
+      <?php if (have_posts()):  the_post(); ?>
 
-        <?php the_title(); ?>
-        <?php the_content(); ?>
-    <?php endif; ?>
+      <h1 class="evenement__titre"><?php the_title() ?></h1>
+
+      <?php $image = get_field('image'); ?>
+      <?php if( !empty( $image ) ): ?>
+         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+      <?php endif; ?>
+
+      <p class='evenement__resume'><?php the_field('resume'); ?></p>
+      <p class='evenement__endroit'>Lieu: <?php the_field('endroit'); ?></p>
+      <p>Organisé par: <?php the_field('organisateur'); ?></p>
+      <p>Date: <?php the_field('date'); ?></p>
+      <p>Heure: <?php the_field('heure'); ?></p>
+
+      <?php endif ?>
+   </section>
 </main>
 
 <?php get_footer(); ?>

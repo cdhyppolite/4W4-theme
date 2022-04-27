@@ -1,0 +1,108 @@
+.boite__modale {
+    position: fixed;
+    width: 95%;
+    height: 90%;
+    left: 3%;
+    top: 8%;
+    // margin: 0 auto;
+    background-color: $couleur4;
+    color: $couleur1;
+    border-radius: 12px;
+    z-index: 10;
+    transition-duration: .4s;
+    transform: scale(0);
+    border: 5px solid $couleur2;
+    // box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    &__titre__cours {
+        font-family: $font__titre2;
+        margin-left: 10px;
+        display: flex;
+    }
+    &__fermer {
+        color: $couleur4;
+        width: 32px;
+        height: 32px;
+        &:hover {
+            border-radius: 50%;
+            background-color: rgba($couleur3, .5);
+        }
+        background-color: transparent;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 12px;
+        right: 21px;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    &__header {
+        background-color: $couleur2;
+        color: $couleur4;
+        height: 50px;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    h2 {
+        background-color: $couleur2;
+        color: $couleur4;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+    &__categorie {
+        a {
+            color: $couleur1;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            text-decoration: none;
+            &:hover,
+            &:active,
+            &:visited {
+                color: $couleur1 !important;
+            }
+        }
+    }
+    &__texte {
+        margin-left: 15px;
+        margin-right: 15px;
+        text-align: justify;
+    }
+    &__fond {
+        background-color: rgba($couleur2, .7);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        transform: scale(0);
+    }
+    hr {
+        color: $couleur4;
+    }
+    @media screen and (min-width: $largeur__media--tablette) {
+        top: 8%;
+        width: 65%;
+        left: 20%;
+    }
+    @media screen and (min-width: $largeur__media--desktop) {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+.boite__modale.ouvrir,
+.boite__modale__fond.ouvrir {
+    transform: scale(1) !important;
+}
+
+.boite__modale.ouvrir~html {
+    // overflow-y: hidden;
+    // overscroll-behavior: contain;
+}

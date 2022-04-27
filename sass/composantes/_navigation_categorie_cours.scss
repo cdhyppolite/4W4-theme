@@ -10,6 +10,8 @@
                 column-gap: 4px;
                 a {
                     text-decoration: none;
+                    max-height: 26px;
+                    overflow: hidden;
                 }
             }
         }
@@ -18,7 +20,10 @@
     .current-menu-item {
         a {
             transition: .3s;
-            color: white;
-            background-color: $color__background-link-hover;
+            color: $couleur1;
+            background-color: $color__link__menu-current;
+            svg {
+                color: $couleur1;
+            }
         }
     }

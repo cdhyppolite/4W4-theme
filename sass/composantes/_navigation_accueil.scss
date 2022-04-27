@@ -1,21 +1,43 @@
-.menu-accueil-container {
+.menu-accueil-container,
+.menu-evenement-container {
+    max-width: 100%;
     margin-bottom: 15px;
     // nav
     .menu {
         //ul
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-around;
-        .accueil__cours .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+        @media screen and (min-width: $largeur__media--tablette) {
+            flex-direction: row;
         }
-        .accueil__prof .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
-        }
-        .accueil__aide .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
-        }
-        .accueil__etudiant .menu-item-icone {
-            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        .accueil {
+            &__cours .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
+            }
+            &__prof .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
+            }
+            &__aide .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
+            }
+            &__etudiant .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+            }
+            // Événements
+            &__journee .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/weather-icons.svg?ic=day-sunny");
+            }
+            &__porte1 .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
+            }
+            &__porte2 .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
+            }
+            &__project .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-submodule");
+            }
         }
         .menu-item {
             //li
@@ -25,6 +47,7 @@
             height: 175px;
             // border: 1px solid #aaa;
             a {
+                // max-width: 20%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -32,19 +55,21 @@
                 height: 100%;
                 font-size: 2rem;
                 //a
-                .menu-item-description {
-                    // span`
-                    font-size: 1rem;
-                    text-align: center;
-                }
-                .menu-item-icone {
-                    width: 2rem;
-                    height: 2rem;
-                    // border: 1px solid #aaa;
-                    margin-top: auto;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: cover;
+                .menu-item {
+                    &-description {
+                        // span`
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                    &-icone {
+                        width: 2rem;
+                        height: 2rem;
+                        // border: 1px solid #aaa;
+                        margin-top: auto;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
                 }
             }
         }

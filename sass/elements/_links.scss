@@ -35,7 +35,7 @@
     &:hover,
     &:focus,
     &:active {
-        color: $couleur--hover;
+        color: $couleur--hover !important;
         background-color: $background--hover;
         svg {
             // .site__footer__menu__ul .menu-item a svg

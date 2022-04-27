@@ -1,7 +1,7 @@
 /*
-Theme name: EX3 - Carl-David Hyppolite
+Theme name: LAB6 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex3
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex4
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -9,6 +9,13 @@ License: GNU General Public License v2 or later
 Text Domain: cidw-4w4
 */
 
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
 
 /* ---------------------------------------------------------
 VARIABLES
@@ -19,18 +26,12 @@ VARIABLES
 @import "variables/structure";
 
 /* ---------------------------------------------------------
-INITIALISATION
---------------------------------------------------------- */
-
-@import "initialisation/normalize";
-@import "initialisation/box-sizing";
-
-/* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
 
 @import "elements/links";
 @import "elements/balises";
+@import "elements/boutons";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -46,6 +47,8 @@ COMPOSANTES
 @import "composantes/recherche";
 @import "composantes/navigation_categorie_cours";
 @import "composantes/navigation_accueil";
+@import "composantes/boite_modale";
+@import "composantes/evenement";
 
 /* ---------------------------------------------------------
 ANIMATION
@@ -77,3 +80,5 @@ LAYOUT
       `--'`   ) )    .-'.'      '.'.  | (
              ( /    ( (`          ) )  \ \
     */
+
+@import "./admin";

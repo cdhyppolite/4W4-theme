@@ -1,0 +1,14 @@
+.logged-in {
+    .burger__etiquette[for="site__header__util-checkbox"] {
+        top: unset;
+    }
+    .util {
+        top: 120px;
+    }
+    .burgerMenuParent {
+        top: 6vh;
+    }
+    #chk-burger:checked~.burgerMenuParent {
+        top: 5.5vh;
+    }
+}
