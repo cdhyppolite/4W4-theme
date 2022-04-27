@@ -123,6 +123,9 @@
         margin: 0;
         color: $color__background-link-hover;
         font-weight: bold;
+        &::after {
+            content: '-MA';
+        }
     }
     &__nbre-heure {
         position: relative;

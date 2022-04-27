@@ -18,6 +18,7 @@
             $etat = "echoue";
         }
     }
+    if ($codeCours=='4J4') {$departement='360 '.substr($departement, 3);}
     $codeCours = substr($departement, 0,3). '-'. substr($titre, 0,3);
     //-----------------------------
     $delayAnim+=0.05;

@@ -738,6 +738,10 @@ COMPOSANTES
   font-weight: bold;
 }
 
+.cours__code::after {
+  content: '-MA';
+}
+
 .cours__nbre-heure {
   position: relative;
 }
