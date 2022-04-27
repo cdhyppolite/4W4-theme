@@ -1614,13 +1614,23 @@ COMPOSANTES
 
 .menu-accueil-container,
 .menu-evenement-container {
+  max-width: 100%;
   margin-bottom: 15px;
 }
 
 .menu-accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 576px) {
+  .menu-accueil-container .menu,
+  .menu-evenement-container .menu {
+    flex-direction: row;
+  }
 }
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone,
@@ -2019,7 +2029,7 @@ html {
 .home .site__main {
   background-color: rgba(242, 242, 242, 0.5);
   min-height: 600px;
-  animation: animHomeSiteMain 6s forwards;
+  animation: animHomeSiteMain 3s forwards;
 }
 
 /*                       ___
