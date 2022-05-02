@@ -1739,6 +1739,10 @@ COMPOSANTES
   transform: scale(0);
 }
 
+.boite__modale__img {
+  width: 100%;
+}
+
 .boite__modale hr {
   color: #F2F2F2;
 }

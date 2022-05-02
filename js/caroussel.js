@@ -3,7 +3,7 @@ let modaleImg = document.querySelector('.boite__modale__img');
 
 function recupererImage(event) {
     let imgCible = event.target;
-    console.log(imgCible.getAttribute('src'));
+    // console.log(imgCible.getAttribute('src'));
     modaleImg.setAttribute('src', imgCible.getAttribute('src'));
 }
 
