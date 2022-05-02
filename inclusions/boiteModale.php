@@ -18,7 +18,7 @@
             <span class="boite__modale__categorie">la catégorie</span>
         </div>
     </div>
-    <h2 class="">Description du cours</h2>
+    <h2 class="boite__modale__h2">Description du cours</h2>
     <p class="boite__modale__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus delectus iusto
         voluptates laudantium nisi sint, dolorem quis, exercitationem magni repellat ipsum iste ad. Nobis optio nostrum
         natus ab ad magnam.

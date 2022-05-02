@@ -34,6 +34,8 @@ function recupererContenu(event) {
     categorieModale.innerHTML = '<a href="' + baseUrl + '/category/' + categorie +
         '/">' + (categorie.charAt(0).toUpperCase() + categorie.slice(1)) + '</a>';
     departementModale.innerHTML = departement;
+
+    modaleImg.classList.add('cacher');
 }
 
 (function() {
