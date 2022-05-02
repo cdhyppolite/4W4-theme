@@ -1549,6 +1549,15 @@ COMPOSANTES
   justify-content: space-around;
 }
 
+@media screen and (max-width: 575px) {
+  .menu-accueil-container .menu,
+  .menu-evenement-container .menu {
+    border-radius: 25px;
+    overflow: hidden;
+    border: 3px solid #272827;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .menu-accueil-container .menu,
   .menu-evenement-container .menu {
