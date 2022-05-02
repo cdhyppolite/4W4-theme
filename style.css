@@ -1792,7 +1792,14 @@ COMPOSANTES
 }
 
 .galerie {
-  width: 70%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+  .galerie {
+    width: 85%;
+  }
 }
 
 /* ---------------------------------------------------------

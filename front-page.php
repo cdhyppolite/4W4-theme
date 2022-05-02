@@ -10,8 +10,7 @@
     <?php wp_nav_menu(array("menu"=>"evenement",
             "container"=>"nav")); ?>
 
-     <h4>Voici le dernier cours de la liste:</h4>
-     
+     <!-- <h4>Récupéréer un post</h4> -->
      <?php if (have_posts()): the_post(); ?>
           <?php the_title() ?>
           <?php the_content() ?>
