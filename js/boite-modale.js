@@ -31,7 +31,8 @@ function recupererContenu(event) {
     titreModale.innerHTML = code + " - " + titre;
     descriptionModale.innerHTML = description;
     heureModale.innerHTML = duree;
-    categorieModale.innerHTML = '<a href="' + baseUrl + '/category/' + categorie + '/">' + (categorie.charAt(0).toUpperCase() + categorie.slice(1)) + '</a>';
+    categorieModale.innerHTML = '<a href="' + baseUrl + '/category/' + categorie +
+        '/">' + (categorie.charAt(0).toUpperCase() + categorie.slice(1)) + '</a>';
     departementModale.innerHTML = departement;
 }
 

@@ -71,9 +71,10 @@ html {
             height: 0px;
             top: 5vh;
         }
-        #burger {
+        .burgerMenuParent {
             width: auto;
-            top: 53px;
+            height: auto;
+            padding: 10px;
         }
         #chk-burger:checked~.menu-principal-container {
             height: 30*32.5px;

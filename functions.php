@@ -5,6 +5,7 @@ function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_script('4w4-boite-modale', get_template_directory_uri() . '/js/boite-modale.js', array(), filemtime(get_template_directory() . '/js/boite-modale.js'), true);
+    wp_enqueue_script('4w4-burger', get_template_directory_uri() . '/js/burger.js', array(), filemtime(get_template_directory() . '/js/burger.js'), true);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme name: LAB6 - Carl-David Hyppolite
+Theme name: LAB8 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
 Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex4
 Description: Exercice dans le cadre du cours 4W4
@@ -1020,6 +1020,8 @@ COMPOSANTES
 }
 
 .site__header .custom-logo {
+  width: 0;
+  height: 0;
   margin: 80px 0 0 15px;
   text-decoration: none;
   border-radius: 50%;
@@ -1108,39 +1110,17 @@ COMPOSANTES
   text-decoration: none;
 }
 
-.burgerMenuParent {
-  top: 1.5vh;
-  left: 1vw;
-  position: fixed;
-  z-index: 10;
-  background-color: crimson;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#burger {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
-  flex-flow: column wrap;
-  justify-content: space-between;
-  width: 45px;
-  height: 25px;
-  overflow: hidden;
-}
-
-#burger svg {
-  color: black;
-}
-
 .menu-principal-container {
   position: relative;
   overflow: hidden;
   transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
+}
+
+@media screen and (max-width: 575px) {
+  .menu-principal-container {
+    height: 0px;
+    top: 5vh;
+  }
 }
 
 .menu-principal-container li:nth-child(2) {
@@ -1158,59 +1138,6 @@ COMPOSANTES
 
 .menu-principal-container .current-menu-item a svg {
   color: crimson;
-}
-
-#chk-burger {
-  display: none;
-}
-
-#chk-burger:checked ~ .burgerMenuParent {
-  top: 1vh;
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger {
-  height: 36px;
-  width: 36px;
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger svg {
-  color: white;
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger .ligne {
-  background-color: #272827;
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger .ligne:first-child {
-  transform: rotate(45deg);
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger .ligne:nth-child(2) {
-  width: 0px;
-}
-
-#chk-burger:checked ~ .burgerMenuParent #burger .ligne:last-child {
-  transform: rotate(-45deg);
-}
-
-.ligne {
-  width: 44px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #FFCC00;
-  transition: 0.4s;
-}
-
-.ligne:nth-child(1) {
-  transform-origin: bottom left;
-}
-
-.ligne:nth-child(2) {
-  transform-origin: center;
-}
-
-.ligne:nth-child(3) {
-  transform-origin: top left;
 }
 
 .menu {
@@ -1236,6 +1163,12 @@ COMPOSANTES
   background-color: #FFCC00;
 }
 
+@media screen and (max-width: 575px) {
+  #chk-burger:checked ~ .menu-principal-container {
+    height: 975px;
+  }
+}
+
 .wp-block-latest-posts li a {
   display: block;
   text-decoration: none;
@@ -1246,16 +1179,6 @@ COMPOSANTES
 
 .wp-block-latest-posts li a:hover {
   background-color: #FFCC00;
-}
-
-@media screen and (max-width: 575px) {
-  .menu-principal-container {
-    height: 0px;
-    top: 5vh;
-  }
-  #chk-burger:checked ~ .menu-principal-container {
-    height: 975px;
-  }
 }
 
 .site__footer {
@@ -1729,7 +1652,9 @@ COMPOSANTES
 }
 
 .boite__modale__fermer {
+  border-radius: 50%;
   color: #F2F2F2;
+  background-color: crimson !important;
   width: 32px;
   height: 32px;
   background-color: transparent;
@@ -1744,8 +1669,7 @@ COMPOSANTES
 }
 
 .boite__modale__fermer:hover {
-  border-radius: 50%;
-  background-color: rgba(255, 204, 0, 0.5);
+  background-color: rgba(255, 204, 0, 0.5) !important;
 }
 
 .boite__modale__header {
@@ -1824,12 +1748,32 @@ COMPOSANTES
   transform: scale(1) !important;
 }
 
+.evenement__contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 992px) {
+  .evenement__contenu {
+    flex-direction: row;
+  }
+}
+
 .evenement__titre {
   font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
 }
 
+.evenement__texte {
+  padding: 10px;
+}
+
 .evenement img {
   width: 100%;
+  max-width: 600px;
+}
+
+.evenement__resume {
+  text-align: justify;
 }
 
 /* ---------------------------------------------------------
@@ -1940,6 +1884,96 @@ ANIMATION
   }
 }
 
+.burgerMenuParent {
+  top: 1.5vh;
+  left: 1vw;
+  position: fixed;
+  z-index: 10;
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 576px) {
+  .burgerMenuParent {
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+}
+
+.burgerMenuParent #burger {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.4s cubic-bezier(0.5, 0, 0.5, 1.7);
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 45px;
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.burgerMenuParent #burger svg {
+  color: black;
+}
+
+.burgerMenuParent #burger .ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FFCC00;
+  transition: 0.4s;
+}
+
+.burgerMenuParent #burger .ligne:nth-child(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burgerMenuParent #burger .ligne:nth-child(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burgerMenuParent #burger .ligne:nth-child(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .burgerMenuParent {
+  top: 1vh;
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger {
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne {
+  background-color: #272827;
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:first-child {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:nth-child(2) {
+  clip-path: polygon(35% 50%, 50% 35%, 65% 50%, 50% 65%);
+  opacity: 0;
+}
+
+#chk-burger:checked ~ .burgerMenuParent #burger .ligne:last-child {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -2009,9 +2043,10 @@ html {
     height: 0px;
     top: 5vh;
   }
-  .home #burger {
+  .home .burgerMenuParent {
     width: auto;
-    top: 53px;
+    height: auto;
+    padding: 10px;
   }
   .home #chk-burger:checked ~ .menu-principal-container {
     height: 975px;

@@ -24,9 +24,14 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     <script src="https://kit.fontawesome.com/4b9ba14b0f.js" crossorigin="anonymous"></script>
     <title><?= get_bloginfo('name'); ?></title>
     <?php wp_head(); ?>
+    <style>
+        .home::after {
+            background-color: <?=get_theme_mod('background_etoile'); ?>;
+        }
+    </style>
 </head>
 
-<body <?php body_class('site'); ?> style="background-color: <?=get_theme_mod('background_etoile'); ?>;">
+<body <?php body_class('site'); ?> >
 <header class="site__header" style="background-color: <?=get_theme_mod('background_header'); ?>;">
             <?php the_custom_logo(); ?>
     <section class="site__header__titre">

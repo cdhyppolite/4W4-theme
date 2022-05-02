@@ -1,11 +1,24 @@
 .evenement {
+    &__contenu {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $largeur__media--desktop) {
+            flex-direction: row;
+        }
+    }
     &__titre {
         font-family: $font__titre2;
     }
+    &__texte {
+        padding: 10px;
+    }
     img {
         width: 100%;
+        max-width: 600px;
     }
     &__endroit {}
-    &__resume {}
+    &__resume {
+        text-align: justify;
+    }
     &__organisateur {}
 }
