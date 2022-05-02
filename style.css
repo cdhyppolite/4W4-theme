@@ -678,9 +678,15 @@ COMPOSANTES
   transition-duration: .5s;
 }
 
+@media screen and (min-width: 576px) {
+  .formation__cours {
+    width: clamp(170px, 40%, 260px);
+  }
+}
+
 @media screen and (min-width: 992px) {
   .formation__cours {
-    width: 20%;
+    width: clamp(200px, 20%, 260px);
   }
 }
 
@@ -1783,6 +1789,10 @@ COMPOSANTES
 
 .evenement__resume {
   text-align: justify;
+}
+
+.galerie {
+  width: 70%;
 }
 
 /* ---------------------------------------------------------

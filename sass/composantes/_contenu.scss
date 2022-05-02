@@ -67,10 +67,10 @@
         flex-direction: column;
         width: 100%;
         @media screen and (min-width: $largeur__media--tablette) {
-            // width: 45%;
+            width: clamp(170px, 40%, 260px);
         }
         @media screen and (min-width: $largeur__media--desktop) {
-            width: 20%;
+            width: clamp(200px, 20%, 260px);
         }
         transition-duration: .5s;
         &:hover {
