@@ -23,5 +23,6 @@
         voluptates laudantium nisi sint, dolorem quis, exercitationem magni repellat ipsum iste ad. Nobis optio nostrum
         natus ab ad magnam.
     </p>
+    <img class="boite__modale__img"src="<?= get_bloginfo('template_directory')."/images/blank.jpg"; ?>" alt="">
 </div>
 <div class="boite__modale__fond"></div>
