@@ -1646,6 +1646,7 @@ COMPOSANTES
 }
 
 .boite__modale {
+  overflow: hidden;
   position: fixed;
   width: 95%;
   height: 90%;
