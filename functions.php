@@ -5,12 +5,12 @@ function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
     wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_register_script('4w4-boite-modale', get_template_directory_uri() . '/js/boite-modale.js', array(), filemtime(get_template_directory() . '/js/boite-modale.js'), true);
-    wp_register_script('4w4-caroussel', get_template_directory_uri() . '/js/caroussel.js', array(), filemtime(get_template_directory() . '/js/caroussel.js'), true);
+    wp_register_script('4w4-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . '/js/carrousel.js'), true);
 
     $listesCategories = array("cours", "jeu", "web","design","video","creation-3d", "utilitaire");
     if ((in_array(get_queried_object() -> slug, $listesCategories)) || (is_front_page())) {
          wp_enqueue_script('4w4-boite-modale');
-         wp_enqueue_script('4w4-caroussel');
+         wp_enqueue_script('4w4-carrousel');
     }
 }
 
