@@ -85,8 +85,19 @@
         z-index: 9;
         transform: scale(0);
     }
+    &__img__div {
+        // width: 100%;
+        max-height: 95%;
+    }
     &__img {
         width: 100%;
+    }
+    &__navigation {
+        position: absolute;
+        background-color: rgba($couleur2, .7);
+        bottom: 0;
+        min-height: 70px;
+        border-top: 5px solid $couleur4;
     }
     hr {
         color: $couleur4;

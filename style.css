@@ -1740,8 +1740,20 @@ COMPOSANTES
   transform: scale(0);
 }
 
+.boite__modale__img__div {
+  max-height: 95%;
+}
+
 .boite__modale__img {
   width: 100%;
+}
+
+.boite__modale__navigation {
+  position: absolute;
+  background-color: rgba(39, 40, 39, 0.7);
+  bottom: 0;
+  min-height: 70px;
+  border-top: 5px solid #F2F2F2;
 }
 
 .boite__modale hr {
