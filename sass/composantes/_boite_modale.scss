@@ -118,7 +118,7 @@
     transform: scale(1) !important;
 }
 
-.boite__modale.ouvrir~html {
-    // overflow-y: hidden;
+.bloquer {
+    overflow-y: hidden;
     // overscroll-behavior: contain;
 }

@@ -1780,6 +1780,10 @@ COMPOSANTES
   transform: scale(1) !important;
 }
 
+.bloquer {
+  overflow-y: hidden;
+}
+
 .evenement__contenu {
   display: flex;
   flex-direction: column;

@@ -8,14 +8,16 @@ let descriptionModale = document.querySelector('.boite__modale__texte');
 let heureModale = document.querySelector('.boite__modale__heure');
 let categorieModale = document.querySelector('.boite__modale__categorie');
 let departementModale = document.querySelector('.boite__modale__departement');
+let page = document.querySelector('html');
 
 // Obtenir l'URL du site
 var getUrl = window.location;
 var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
 
 function ouvrirFermer() {
-    boiteModale.classList.toggle('ouvrir')
-    boiteModaleFond.classList.toggle('ouvrir')
+    boiteModale.classList.toggle('ouvrir');
+    boiteModaleFond.classList.toggle('ouvrir');
+    page.classList.toggle('bloquer');
 }
 
 function recupererContenu(event) {
