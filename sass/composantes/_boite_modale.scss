@@ -112,6 +112,13 @@
             border-radius: 50%;
             &:focus {
                 background-color: $couleur1;
+                border-color: $couleur4;
+                &.ordre {
+                    background-color: $couleur3;
+                }
+            }
+            &.ordre {
+                background-color: $couleur3;
             }
         }
     }
