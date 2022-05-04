@@ -25,7 +25,6 @@
     <img class="boite__modale__img" src="<?= get_bloginfo('template_directory')."/images/blank.jpg"; ?>" alt="">
     
     <section class="boite__modale__navigation">
-        nav
     </section>
 </div>
 <div class="boite__modale__fond"></div>

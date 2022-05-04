@@ -16,13 +16,22 @@ function recupererImage(event) {
     h2Modale.classList.add('cacher');
 }
 
+function imageBtn(event) {
+    let cible = event.target;
+    modaleImg.setAttribute('src', ImagesGalerie[cible.dataset.indexNumber].getAttribute('src'));
+    // console.log(cible.dataset.indexNumber);
+}
+
 (function() {
-    let indexe = 0
-        // console.log(ImagesGalerie.length);
-    for (let i = 0; i <= ImagesGalerie.length; i++) {
+    // console.log(ImagesGalerie.length);
+    for (let i = 0; i < ImagesGalerie.length; i++) {
         let btnImg = document.createElement('button');
         btnImg.dataset.indexNumber = i;
         navModale.append(btnImg);
+
+        btnImg.addEventListener('mousedown', function(event) {
+            imageBtn(event);
+        })
     }
 
     for (const image of ImagesGalerie) {

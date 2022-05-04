@@ -1774,7 +1774,7 @@ COMPOSANTES
 }
 
 .boite__modale__navigation button:focus {
-  background-color: #F2F2F2;
+  background-color: crimson;
 }
 
 .boite__modale hr {
