@@ -1756,11 +1756,25 @@ COMPOSANTES
 }
 
 .boite__modale__navigation {
+  width: 100%;
   position: absolute;
   background-color: rgba(39, 40, 39, 0.7);
   bottom: 0;
   min-height: 70px;
   border-top: 3px solid #FFCC00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.boite__modale__navigation button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.boite__modale__navigation button:focus {
+  background-color: #F2F2F2;
 }
 
 .boite__modale hr {

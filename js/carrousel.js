@@ -17,13 +17,17 @@ function recupererImage(event) {
 }
 
 (function() {
-    // console.log(ImagesGalerie.length);
+    let indexe = 0
+        // console.log(ImagesGalerie.length);
     for (let i = 0; i <= ImagesGalerie.length; i++) {
-        console.log(i);
+        let btnImg = document.createElement('button');
+        btnImg.dataset.indexNumber = i;
+        navModale.append(btnImg);
     }
 
-    let btnImg = document.createElement('button');
     for (const image of ImagesGalerie) {
+
+
         image.addEventListener('mousedown', function(event) {
             ouvrirFermer();
             recupererImage(event);
