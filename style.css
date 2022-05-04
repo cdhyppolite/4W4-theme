@@ -1748,12 +1748,19 @@ COMPOSANTES
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .boite__modale__img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .boite__modale__navigation {
   position: absolute;
   background-color: rgba(39, 40, 39, 0.7);
   bottom: 0;
   min-height: 70px;
-  border-top: 3px solid #F2F2F2;
+  border-top: 3px solid #FFCC00;
 }
 
 .boite__modale hr {

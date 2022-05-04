@@ -24,6 +24,8 @@
     </p>
     <img class="boite__modale__img" src="<?= get_bloginfo('template_directory')."/images/blank.jpg"; ?>" alt="">
     
-    <section class="boite__modale__navigation">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt hic ex excepturi dolorum ea harum fugiat molestias quis provident sit, at accusantium sapiente enim pariatur voluptatum illum. Nam, sit ea.</section>
+    <section class="boite__modale__navigation">
+        nav
+    </section>
 </div>
 <div class="boite__modale__fond"></div>
