@@ -52,5 +52,8 @@ function recupererContenu(event) {
     btnFermer.addEventListener('mousedown', function() {
         ouvrirFermer();
     })
+    boiteModaleFond.addEventListener('mousedown', function() {
+        ouvrirFermer();
+    })
 
 }())
