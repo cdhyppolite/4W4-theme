@@ -4,10 +4,11 @@ let modaleImg = document.querySelector('.boite__modale__img');
 let h2Modale = document.querySelector('.boite__modale__h2');
 let footerModale = document.querySelector('.boite__modale__footer');
 let navModale = document.querySelector('.boite__modale__navigation');
-let modaleBtnImgActuel;
+let modaleBtnImgActuel = 0;
 
 function recupererImage(event) {
     let imgCible = event.target;
+    // console.log(imgCible.dataset.indexNumber);
     // console.log(imgCible.getAttribute('src'));
     modaleImg.setAttribute('src', imgCible.getAttribute('src'));
 
@@ -15,15 +16,31 @@ function recupererImage(event) {
     footerModale.classList.add('cacher');
     descriptionModale.classList.add('cacher');
     h2Modale.classList.add('cacher');
+    // modaleBtnImgActuel = imgCible.dataset.indexNumber;
 }
 
 function imageBtn(event) {
     let cible = event.target;
     modaleImg.setAttribute('src', ImagesGalerie[cible.dataset.indexNumber].getAttribute('src'));
     modaleBtnImgActuel = cible.dataset.indexNumber;
-    console.log(modaleBtnImgActuel);
+    // console.log(modaleBtnImgActuel);
     // console.log(cible.dataset.indexNumber);
 }
+
+function imageBtnSuivPre(choix) {
+    if (choix) {
+        modaleBtnImgActuel += 1;
+        if (modaleBtnImgActuel >= ImagesGalerie.length) modaleBtnImgActuel = 0;
+    } else {
+        modaleBtnImgActuel -= 1;
+        if (modaleBtnImgActuel <= 0) modaleBtnImgActuel = ImagesGalerie.length;
+    }
+    // console.log(modaleBtnImgActuel);
+
+    modaleImg.setAttribute('src', ImagesGalerie[modaleBtnImgActuel].getAttribute('src'));
+
+}
+
 
 (function() {
 
@@ -31,6 +48,10 @@ function imageBtn(event) {
     btnImgMoins.title = "Précédent";
     btnImgMoins.classList.add('ordre');
     navModale.append(btnImgMoins);
+
+    btnImgMoins.addEventListener('mousedown', function() {
+        imageBtnSuivPre(false);
+    })
 
     // Boutons pour les images
     for (let i = 0; i < ImagesGalerie.length; i++) {
@@ -48,6 +69,10 @@ function imageBtn(event) {
     btnImgPlus.title = "Suivant";
     btnImgPlus.classList.add('ordre');
     navModale.append(btnImgPlus);
+
+    btnImgPlus.addEventListener('mousedown', function() {
+        imageBtnSuivPre(true);
+    })
 
     for (const image of ImagesGalerie) {
 
