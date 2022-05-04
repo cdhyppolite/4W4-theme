@@ -38,6 +38,7 @@ function recupererContenu(event) {
     departementModale.innerHTML = departement;
 
     modaleImg.classList.add('cacher');
+    navModale.classList.add('cacher');
 }
 
 (function() {

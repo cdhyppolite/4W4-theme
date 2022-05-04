@@ -1753,7 +1753,7 @@ COMPOSANTES
   background-color: rgba(39, 40, 39, 0.7);
   bottom: 0;
   min-height: 70px;
-  border-top: 5px solid #F2F2F2;
+  border-top: 3px solid #F2F2F2;
 }
 
 .boite__modale hr {

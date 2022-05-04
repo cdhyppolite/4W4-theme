@@ -3,6 +3,7 @@ let modaleImg = document.querySelector('.boite__modale__img');
 // Infos boite modale
 let h2Modale = document.querySelector('.boite__modale__h2');
 let footerModale = document.querySelector('.boite__modale__footer');
+let navModale = document.querySelector('.boite__modale__navigation');
 
 function recupererImage(event) {
     let imgCible = event.target;
