@@ -16,7 +16,8 @@ function recupererImage(event) {
     footerModale.classList.add('cacher');
     descriptionModale.classList.add('cacher');
     h2Modale.classList.add('cacher');
-    // modaleBtnImgActuel = imgCible.dataset.indexNumber;
+    modaleBtnImgActuel = imgCible.dataset.indexNumber;
+    // console.log(modaleBtnImgActuel, imgCible.dataset.indexNumber);
 }
 
 function imageBtn(event) {
@@ -33,9 +34,9 @@ function imageBtnSuivPre(choix) {
         if (modaleBtnImgActuel >= ImagesGalerie.length) modaleBtnImgActuel = 0;
     } else {
         modaleBtnImgActuel -= 1;
-        if (modaleBtnImgActuel <= 0) modaleBtnImgActuel = ImagesGalerie.length;
+        if (modaleBtnImgActuel < 0) modaleBtnImgActuel = ImagesGalerie.length - 1;
     }
-    // console.log(modaleBtnImgActuel);
+    // console.log(modaleBtnImgActuel, ImagesGalerie.length);
 
     modaleImg.setAttribute('src', ImagesGalerie[modaleBtnImgActuel].getAttribute('src'));
 
@@ -57,8 +58,9 @@ function imageBtnSuivPre(choix) {
     for (let i = 0; i < ImagesGalerie.length; i++) {
         let btnImg = document.createElement('button');
         btnImg.dataset.indexNumber = i;
-        btnImg.title = "Image " + i;
+        btnImg.title = "Image " + (i + 1);
         navModale.append(btnImg);
+        ImagesGalerie[i].dataset.indexNumber = i;
 
         btnImg.addEventListener('mousedown', function(event) {
             imageBtn(event);
@@ -75,7 +77,6 @@ function imageBtnSuivPre(choix) {
     })
 
     for (const image of ImagesGalerie) {
-
 
         image.addEventListener('mousedown', function(event) {
             ouvrirFermer();
