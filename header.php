@@ -70,9 +70,9 @@ if (($_GET['hack']) && (!isset($_COOKIE["hack"]))) {
     
     <section class="util">
         <div class="util__menu">
-        <?php get_sidebar('entete_1') ?>
+            <?php get_sidebar('entete_1') ?>
         </div>
-            <?php get_search_form(); ?>
+        <?php get_search_form(); ?>
     </section>
     
 </header>

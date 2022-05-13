@@ -14,6 +14,7 @@
     transform: scale(0);
     border: 5px solid $couleur2;
     // box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 8px 8px 8px $couleur4;
     &__titre__cours {
         font-family: $font__titre2;
         margin-left: 10px;

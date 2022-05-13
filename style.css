@@ -1659,6 +1659,7 @@ COMPOSANTES
   transition-duration: .4s;
   transform: scale(0);
   border: 5px solid #272827;
+  box-shadow: 8px 8px 8px #F2F2F2;
 }
 
 .boite__modale__titre__cours {
