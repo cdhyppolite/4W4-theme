@@ -1645,6 +1645,18 @@ COMPOSANTES
   background-size: cover;
 }
 
+.menu-evenement-container .menu {
+  flex-direction: column !important;
+}
+
+.menu-evenement-container .menu-item {
+  align-items: flex-start;
+}
+
+.menu-evenement-container .menu-item a {
+  width: 100%;
+}
+
 .boite__modale {
   overflow: hidden;
   position: fixed;

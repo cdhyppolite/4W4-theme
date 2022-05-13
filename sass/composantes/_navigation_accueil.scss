@@ -79,4 +79,14 @@
             }
         }
     }
-} // .menu-accueil-container
+}
+
+.menu-evenement-container .menu {
+    flex-direction: column !important;
+    &-item {
+        align-items: flex-start;
+        a {
+            width: 100%;
+        }
+    }
+}
