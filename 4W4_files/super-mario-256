@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Super Mario 256';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Super Mario 256'), url('https://fonts.cdnfonts.com/s/17913/SuperMario256.woff') format('woff');
+}
+
+
