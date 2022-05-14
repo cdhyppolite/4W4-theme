@@ -1629,6 +1629,11 @@ COMPOSANTES
   font-size: 2rem;
 }
 
+.menu-accueil-container .menu .menu-item a:hover .menu-item-icone,
+.menu-evenement-container .menu .menu-item a:hover .menu-item-icone {
+  transform: translateY(-10px);
+}
+
 .menu-accueil-container .menu .menu-item a .menu-item-description,
 .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
@@ -1643,6 +1648,7 @@ COMPOSANTES
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: .4s;
 }
 
 .menu-evenement-container .menu {
