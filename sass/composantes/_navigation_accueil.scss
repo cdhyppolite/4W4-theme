@@ -59,7 +59,9 @@
                     }
                 }
                 hr {
-                    opacity: 0;
+                    // opacity: 0;
+                    width: 50%;
+                    color: $couleur4;
                 }
                 // max-width: 20%;
                 display: flex;
@@ -93,6 +95,9 @@
 
 .menu-evenement-container .menu {
     flex-direction: column !important;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 3px solid $couleur2;
     &-item {
         align-items: flex-start;
         a {

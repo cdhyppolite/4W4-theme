@@ -1644,7 +1644,8 @@ COMPOSANTES
 
 .menu-accueil-container .menu .menu-item a hr,
 .menu-evenement-container .menu .menu-item a hr {
-  opacity: 0;
+  width: 50%;
+  color: #F2F2F2;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
@@ -1666,6 +1667,9 @@ COMPOSANTES
 
 .menu-evenement-container .menu {
   flex-direction: column !important;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 3px solid #272827;
 }
 
 .menu-evenement-container .menu-item {
