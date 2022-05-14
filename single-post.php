@@ -10,7 +10,7 @@
             <?php if (have_posts()): the_post(); ?>
             
             <article class="article__seul">
-                <h4> <label for="chk-single"><?php the_title(); ?><div class="cours_etat"></div> </label></h4>
+                <h2> <label for="chk-single"><?php the_title(); ?><div class="cours_etat"></div> </label></h2>
                 <div class="article__seul__contenu">
                     <?php the_content(); ?>
                 </div>
