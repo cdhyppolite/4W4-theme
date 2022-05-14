@@ -1,7 +1,7 @@
 /*
-Theme name: LAB6 - Carl-David Hyppolite
+Theme name: TP2 - Carl-David Hyppolite
 Author: Carl-David Hyppolite
-Author URI: https://github.com/cdhyppolite/4W4-theme/commits/ex4
+Author URI: https://github.com/cdhyppolite/4W4-theme/commits/tp2
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
@@ -49,12 +49,14 @@ COMPOSANTES
 @import "composantes/navigation_accueil";
 @import "composantes/boite_modale";
 @import "composantes/evenement";
+@import "composantes/galeries";
 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 
 @import "animation/entete";
+@import "animation/burger";
 
 /* ---------------------------------------------------------
 LAYOUT

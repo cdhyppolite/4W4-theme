@@ -3,7 +3,6 @@
         <h4 class="boite__modale__titre__cours">(Code cours) - (Titre du cours)</h4>
         <button class="boite__modale__fermer" title="Fermer">X</button>
     </div>
-    <!-- <hr> -->
     <div class="boite__modale__footer">
         <div class="boite__modale__info">
             <span>Nb heures:</span>
@@ -18,10 +17,14 @@
             <span class="boite__modale__categorie">la catégorie</span>
         </div>
     </div>
-    <h2 class="">Description du cours</h2>
+    <h2 class="boite__modale__h2">Description du cours</h2>
     <p class="boite__modale__texte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus delectus iusto
         voluptates laudantium nisi sint, dolorem quis, exercitationem magni repellat ipsum iste ad. Nobis optio nostrum
         natus ab ad magnam.
     </p>
+    <img class="boite__modale__img" src="<?= get_bloginfo('template_directory')."/images/blank.jpg"; ?>" alt="">
+    
+    <section class="boite__modale__navigation">
+    </section>
 </div>
 <div class="boite__modale__fond"></div>

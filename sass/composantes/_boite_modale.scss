@@ -1,4 +1,5 @@
 .boite__modale {
+    overflow: hidden;
     position: fixed;
     width: 95%;
     height: 90%;
@@ -13,18 +14,20 @@
     transform: scale(0);
     border: 5px solid $couleur2;
     // box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 8px 8px 8px $couleur4;
     &__titre__cours {
         font-family: $font__titre2;
         margin-left: 10px;
         display: flex;
     }
     &__fermer {
+        border-radius: 50%;
         color: $couleur4;
+        background-color: $couleur1 !important;
         width: 32px;
         height: 32px;
         &:hover {
-            border-radius: 50%;
-            background-color: rgba($couleur3, .5);
+            background-color: rgba($couleur3, .5) !important;
         }
         background-color: transparent;
         border: none;
@@ -83,6 +86,43 @@
         z-index: 9;
         transform: scale(0);
     }
+    &__img__div {
+        // width: 100%;
+        max-height: 95%;
+    }
+    &__img {
+        width: 100%;
+        @media screen and (min-width: $largeur__media--desktop) {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__navigation {
+        width: 100%;
+        position: absolute;
+        background-color: rgba($couleur2, .7);
+        bottom: 0;
+        min-height: 70px;
+        border-top: 3px solid $couleur3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        button {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            &:focus {
+                background-color: $couleur1;
+                border-color: $couleur4;
+                &.ordre {
+                    background-color: $couleur3;
+                }
+            }
+            &.ordre {
+                background-color: $couleur3;
+            }
+        }
+    }
     hr {
         color: $couleur4;
     }
@@ -102,7 +142,7 @@
     transform: scale(1) !important;
 }
 
-.boite__modale.ouvrir~html {
-    // overflow-y: hidden;
+.bloquer {
+    overflow-y: hidden;
     // overscroll-behavior: contain;
 }

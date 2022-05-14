@@ -31,7 +31,7 @@
         <p class="cours__desc__complet" style="display: none;"> <?=$descriptionCours;?>
             <p>Département: <z class="cours__departement"><?= substr($departement, 3); ?></z> </p>
         </p>
-        <button class="cours__desc__bouton" onclick="">Lire la suite</button>
+        <button class="cours__desc__bouton">Lire la suite</button>
         <div class="logoFiltre"></div>
     </div>
 </article>

@@ -28,7 +28,7 @@
     <nav class="boutonTri">
         <a href="?cletri=title&ordre=<?= $nouvelleOrdreTri; ?>"><?= $nouvelleiconeTri; ?><?= $texteBoutonTri; ?></a>
         <?php if (!isset($_COOKIE['hack'])) : ?>
-        <a href="?hack=1">Test Échoué</a>
+        <a href="?hack=1">???</a>
         <?php endif; ?>
     </nav>
 
