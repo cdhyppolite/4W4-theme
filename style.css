@@ -1337,6 +1337,10 @@ COMPOSANTES
   cursor: pointer;
 }
 
+.article__seul label:hover {
+  opacity: .7;
+}
+
 .single-post .cours_etat {
   font-size: 20px;
 }
