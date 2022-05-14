@@ -787,6 +787,10 @@ COMPOSANTES
   margin-top: 15px;
 }
 
+.boutonTri svg {
+  color: #F2F2F2;
+}
+
 .boutonTri a {
   text-decoration: none;
   padding: 4px;
