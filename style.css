@@ -1634,6 +1634,11 @@ COMPOSANTES
   transform: translateY(-10px);
 }
 
+.menu-accueil-container .menu .menu-item a hr,
+.menu-evenement-container .menu .menu-item a hr {
+  opacity: 0;
+}
+
 .menu-accueil-container .menu .menu-item a .menu-item-description,
 .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
