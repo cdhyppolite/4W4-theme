@@ -9,7 +9,7 @@
     get_header();
 ?>
 
-<main class="site__main" style="background-color: <?php the_field('couleur'); ?>;">
+<main class="site__main" style="background-color: <?php the_field('couleur'); ?>; color:<?php the_field('couleur_texte'); ?>;">
    <section class="atelier">
 
       <h1 class="atelier__titre">Nom de l'atelier: <?php the_title() ?></h1>
@@ -17,9 +17,9 @@
       <div class="atelier__contenu">
          <h2 class="atelier__sous-titre">Description de l'atelier</h2>
          <p>Animé par: <?php the_field('animateur'); ?></p>
-         <p>Numéro du local: <i><?php the_field('local'); ?></i> du Collège de Maisonneuve</p>
+         <p>Au local <i><?php the_field('local'); ?></i> du Collège de Maisonneuve</p>
          <!-- Description -->
-         <p><?php the_field('atelier_desc'); ?></p>
+         <p class="atelier__description"><?php the_field('atelier_desc'); ?></p>
 
          <h2 class="atelier__sous-titre">Quand se déroulera l'atelier?</h2>
          <p>Atelier commence le <?php the_field('date_debut'); ?></p>

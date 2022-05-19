@@ -18,6 +18,9 @@
             color: $couleur3;
         }
     }
+    &__description {
+        text-align: justify;
+    }
 }
 
 .page-template-template-atelier-php {
@@ -40,5 +43,14 @@
     .current-menu-item {
         display: none !important;
         a {}
+    }
+}
+
+.menu-atelier-container {
+    .menu-item-description {
+        font-size: 15px !important;
+    }
+    a {
+        overflow: hidden;
     }
 }
