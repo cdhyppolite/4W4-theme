@@ -1932,6 +1932,28 @@ COMPOSANTES
   text-align: justify;
 }
 
+.atelier__titre {
+  font-family: "MOON GET!", "Super Mario 256", "Ubuntu", "Gill Sans MT", "Arial", "sans-serif";
+}
+
+.atelier__sous-titre {
+  font-weight: bold !important;
+  color: crimson;
+}
+
+.atelier__texte {
+  padding: 10px;
+}
+
+.atelier__contenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.atelier__jours i {
+  color: #FFCC00;
+}
+
 .galerie {
   width: 100%;
   margin: 0 auto;

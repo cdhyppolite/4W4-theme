@@ -1,0 +1,21 @@
+.atelier {
+    &__titre {
+        font-family: $font__titre2;
+    }
+    &__sous-titre {
+        font-weight: bold !important;
+        color: $couleur1;
+    }
+    &__texte {
+        padding: 10px;
+    }
+    &__contenu {
+        display: flex;
+        flex-direction: column;
+    }
+    &__jours {
+        i {
+            color: $couleur3;
+        }
+    }
+}
