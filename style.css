@@ -1554,13 +1554,15 @@ COMPOSANTES
 }
 
 .menu-accueil-container,
-.menu-evenement-container {
+.menu-evenement-container,
+.menu-atelier-container {
   max-width: 100%;
   margin-bottom: 15px;
 }
 
 .menu-accueil-container .menu,
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-atelier-container .menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -1569,7 +1571,8 @@ COMPOSANTES
 
 @media screen and (max-width: 575px) {
   .menu-accueil-container .menu,
-  .menu-evenement-container .menu {
+  .menu-evenement-container .menu,
+  .menu-atelier-container .menu {
     border-radius: 25px;
     overflow: hidden;
     border: 3px solid #272827;
@@ -1578,53 +1581,95 @@ COMPOSANTES
 
 @media screen and (min-width: 576px) {
   .menu-accueil-container .menu,
-  .menu-evenement-container .menu {
+  .menu-evenement-container .menu,
+  .menu-atelier-container .menu {
     flex-direction: row;
   }
 }
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone,
-.menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.menu-evenement-container .menu .accueil__cours .menu-item-icone,
+.menu-atelier-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=article");
 }
 
 .menu-accueil-container .menu .accueil__prof .menu-item-icone,
-.menu-evenement-container .menu .accueil__prof .menu-item-icone {
+.menu-evenement-container .menu .accueil__prof .menu-item-icone,
+.menu-atelier-container .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=local_library");
 }
 
 .menu-accueil-container .menu .accueil__aide .menu-item-icone,
-.menu-evenement-container .menu .accueil__aide .menu-item-icone {
+.menu-evenement-container .menu .accueil__aide .menu-item-icone,
+.menu-atelier-container .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=rule");
 }
 
 .menu-accueil-container .menu .accueil__etudiant .menu-item-icone,
-.menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
+.menu-evenement-container .menu .accueil__etudiant .menu-item-icone,
+.menu-atelier-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
 .menu-accueil-container .menu .accueil__journee .menu-item-icone,
-.menu-evenement-container .menu .accueil__journee .menu-item-icone {
+.menu-evenement-container .menu .accueil__journee .menu-item-icone,
+.menu-atelier-container .menu .accueil__journee .menu-item-icone {
   background-image: url("https://s2.svgbox.net/weather-icons.svg?ic=day-sunny");
 }
 
 .menu-accueil-container .menu .accueil__porte1 .menu-item-icone,
-.menu-evenement-container .menu .accueil__porte1 .menu-item-icone {
+.menu-evenement-container .menu .accueil__porte1 .menu-item-icone,
+.menu-atelier-container .menu .accueil__porte1 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
 .menu-accueil-container .menu .accueil__porte2 .menu-item-icone,
-.menu-evenement-container .menu .accueil__porte2 .menu-item-icone {
+.menu-evenement-container .menu .accueil__porte2 .menu-item-icone,
+.menu-atelier-container .menu .accueil__porte2 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=sensor_door");
 }
 
 .menu-accueil-container .menu .accueil__project .menu-item-icone,
-.menu-evenement-container .menu .accueil__project .menu-item-icone {
+.menu-evenement-container .menu .accueil__project .menu-item-icone,
+.menu-atelier-container .menu .accueil__project .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-submodule");
 }
 
+.menu-accueil-container .menu .accueil__html .menu-item-icone,
+.menu-evenement-container .menu .accueil__html .menu-item-icone,
+.menu-atelier-container .menu .accueil__html .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+  border: 2px solid #272827;
+  background-color: #F2F2F2;
+}
+
+.menu-accueil-container .menu .accueil__css .menu-item-icone,
+.menu-evenement-container .menu .accueil__css .menu-item-icone,
+.menu-atelier-container .menu .accueil__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+  border: 2px solid #272827;
+  background-color: #F2F2F2;
+}
+
+.menu-accueil-container .menu .accueil__git .menu-item-icone,
+.menu-evenement-container .menu .accueil__git .menu-item-icone,
+.menu-atelier-container .menu .accueil__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+  border: 2px solid #272827;
+  background-color: #F2F2F2;
+}
+
+.menu-accueil-container .menu .accueil__react .menu-item-icone,
+.menu-evenement-container .menu .accueil__react .menu-item-icone,
+.menu-atelier-container .menu .accueil__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+  border: 2px solid #272827;
+  background-color: #F2F2F2;
+}
+
 .menu-accueil-container .menu .menu-item,
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-atelier-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   flex: 0 0 20%;
@@ -1632,7 +1677,8 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item a,
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-atelier-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1642,24 +1688,28 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item a:hover .menu-item-icone,
-.menu-evenement-container .menu .menu-item a:hover .menu-item-icone {
+.menu-evenement-container .menu .menu-item a:hover .menu-item-icone,
+.menu-atelier-container .menu .menu-item a:hover .menu-item-icone {
   transform: translateY(-10px);
 }
 
 .menu-accueil-container .menu .menu-item a hr,
-.menu-evenement-container .menu .menu-item a hr {
+.menu-evenement-container .menu .menu-item a hr,
+.menu-atelier-container .menu .menu-item a hr {
   width: 50%;
   color: #F2F2F2;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
-.menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-evenement-container .menu .menu-item a .menu-item-description,
+.menu-atelier-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
   text-align: center;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
-.menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-evenement-container .menu .menu-item a .menu-item-icone,
+.menu-atelier-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   margin-top: auto;

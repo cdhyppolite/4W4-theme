@@ -1,5 +1,6 @@
 .menu-accueil-container,
-.menu-evenement-container {
+.menu-evenement-container,
+.menu-atelier-container {
     max-width: 100%;
     margin-bottom: 15px;
     // nav
@@ -42,6 +43,26 @@
             }
             &__project .menu-item-icone {
                 background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-submodule");
+            }
+            &__html .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+                border: 2px solid $couleur2;
+                background-color: $couleur4;
+            }
+            &__css .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+                border: 2px solid $couleur2;
+                background-color: $couleur4;
+            }
+            &__git .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+                border: 2px solid $couleur2;
+                background-color: $couleur4;
+            }
+            &__react .menu-item-icone {
+                background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+                border: 2px solid $couleur2;
+                background-color: $couleur4;
             }
         }
         .menu-item {

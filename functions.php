@@ -25,6 +25,7 @@ function cidw_4w4_register_nav_menu(){
         'menu_categorie_cours'  => __( 'menu cours', 'cidw_4w4' ),
         'menu_accueil'  => __( 'menu accueil', 'cidw_4w4' ),
         'menu_accueil_evenement'  => __( 'menu Accueil evenement', 'cidw_4w4' ),
+        'menu_atelier'  => __( 'menu Atelier', 'cidw_4w4' )
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );

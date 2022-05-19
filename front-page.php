@@ -10,6 +10,10 @@
     <h1 class="formation__titre">Nos événements à venir</h1>
     <?php wp_nav_menu(array("menu"=>"evenement",
             "container"=>"nav")); ?>
+    <!------------------------------------ Exament ------------------------------------>
+    <h1 class="formation__titre">Voici les ateliers à venir</h1>
+    <?php wp_nav_menu(array("menu"=>"atelier",
+            "container"=>"nav")); ?>
 
      <!-- <h4>Récupéréer un post</h4> -->
      <?php if (have_posts()): the_post(); ?>
