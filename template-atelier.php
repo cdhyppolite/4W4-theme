@@ -30,6 +30,10 @@
       </div>
 
    </section>
+   
+   <h1 class="atelier__sous-titre">Voir les autres ateliers</h1>
+   <?php wp_nav_menu(array("menu"=>"atelier",
+            "container"=>"nav")); ?>
 </main>
 
 <?php get_footer(); ?>
