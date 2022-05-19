@@ -66,6 +66,13 @@
             }
         }
         .menu-item {
+            // position: relative;
+            .menu-item-icone {
+                // position: absolute;
+                min-height: 32px;
+                z-index: 10;
+                // bottom: 5px;
+            }
             //li
             display: flex;
             flex-direction: column;
@@ -76,7 +83,7 @@
                 &:hover {
                     // display: none;
                     .menu-item-icone {
-                        transform: translateY(-10px);
+                        transform: translateY(-15px) scale(1.25);
                     }
                 }
                 hr {

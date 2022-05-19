@@ -1676,6 +1676,13 @@ COMPOSANTES
   height: 175px;
 }
 
+.menu-accueil-container .menu .menu-item .menu-item-icone,
+.menu-evenement-container .menu .menu-item .menu-item-icone,
+.menu-atelier-container .menu .menu-item .menu-item-icone {
+  min-height: 32px;
+  z-index: 10;
+}
+
 .menu-accueil-container .menu .menu-item a,
 .menu-evenement-container .menu .menu-item a,
 .menu-atelier-container .menu .menu-item a {
@@ -1690,7 +1697,7 @@ COMPOSANTES
 .menu-accueil-container .menu .menu-item a:hover .menu-item-icone,
 .menu-evenement-container .menu .menu-item a:hover .menu-item-icone,
 .menu-atelier-container .menu .menu-item a:hover .menu-item-icone {
-  transform: translateY(-10px);
+  transform: translateY(-15px) scale(1.25);
 }
 
 .menu-accueil-container .menu .menu-item a hr,
@@ -1958,19 +1965,26 @@ COMPOSANTES
   text-align: justify;
 }
 
-@media screen and (min-width: 575px) {
-  .page-template-template-atelier-php .menu-atelier-container .menu {
-    list-style-type: none;
-    justify-content: flex-start;
+@media screen and (max-width: 575px) {
+  .page-template-template-atelier-php .menu-atelier-container {
+    max-width: 60% !important;
+    margin: 0 auto;
   }
-  .page-template-template-atelier-php .menu-atelier-container .menu .menu-item {
-    display: block;
-    column-gap: 4px;
-  }
-  .page-template-template-atelier-php .menu-atelier-container .menu .menu-item a {
-    font-size: 20px;
-    max-height: 60px;
-  }
+}
+
+.page-template-template-atelier-php .menu-atelier-container .menu {
+  list-style-type: none;
+  justify-content: flex-start;
+}
+
+.page-template-template-atelier-php .menu-atelier-container .menu .menu-item {
+  display: block;
+  column-gap: 4px;
+}
+
+.page-template-template-atelier-php .menu-atelier-container .menu .menu-item a {
+  font-size: 20px;
+  max-height: 60px;
 }
 
 .page-template-template-atelier-php .current-menu-item {

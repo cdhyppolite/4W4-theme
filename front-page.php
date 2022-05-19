@@ -6,13 +6,13 @@
      <!------------------------------------ Menu accueil ------------------------------------>
     <?php wp_nav_menu(array("menu"=>"accueil",
                             "container"=>"nav")); ?>
+     <!------------------------------------ Ateliers ------------------------------------>
+    <h1 class="formation__titre">Voici les ateliers à venir</h1>
+    <?php wp_nav_menu(array("menu"=>"atelier",
+            "container"=>"nav")); ?>
     <!------------------------------------ Menu evenement ------------------------------------>
     <h1 class="formation__titre">Nos événements à venir</h1>
     <?php wp_nav_menu(array("menu"=>"evenement",
-            "container"=>"nav")); ?>
-    <!------------------------------------ Exament ------------------------------------>
-    <h1 class="formation__titre">Voici les ateliers à venir</h1>
-    <?php wp_nav_menu(array("menu"=>"atelier",
             "container"=>"nav")); ?>
 
      <!-- <h4>Récupéréer un post</h4> -->
